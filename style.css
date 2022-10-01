@@ -4,6 +4,9 @@
   box-sizing: border-box;
 } */
 
+.header {
+  background-color: #8c8418;
+}
 .nav-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -17,7 +20,11 @@ li {
 
 .search-bar {
   height: 30px;
-  width: 550px;
+  width: 1000px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 50px;
+  border: none;
 }
 
 .main-img {
@@ -36,6 +43,17 @@ li {
   display: grid;
   grid-template-columns: repeat(9, 5fr);
   margin-top: 20px;
+  color: whitesmoke;
+  font-weight: 250;
+  border-top: 1px solid whitesmoke;
+}
+
+ul {
+  margin-left: auto;
+  margin-right: auto;
+}
+li {
+  margin-top: 10px;
 }
 
 h1 {
@@ -57,4 +75,9 @@ p {
   margin-left: auto;
   margin-right: auto;
   width: 1000px;
+}
+
+.footer-section {
+  font-size: 16px;
+  font-weight: 600;
 }
