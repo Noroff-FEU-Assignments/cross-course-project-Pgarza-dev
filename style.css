@@ -8,8 +8,19 @@
   background-color: #8c8418;
 }
 
-nav li {
-  display: inline-block;
+.nav-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list li {
+  flex-grow: 1;
+  flex-shrink: 1;
+  /* display: inline-block; */
 }
 
 /* .nav-container {
@@ -20,9 +31,10 @@ nav li {
   align-items: center; 
 } */
 
-li {
+/* li {
   list-style: none;
-}
+  margin: 0px;
+} */
 
 .search-bar {
   height: 30px;
@@ -32,8 +44,6 @@ li {
   margin-right: auto;
   border: none;
 }
-
- 
 
 .main-img {
   /* display: block;
@@ -53,8 +63,8 @@ li {
   margin-top: 20px;
   color: whitesmoke;
   font-weight: 250;
-  border-top: 1px solid whitesmoke; */
-}
+  border-top: 1px solid whitesmoke; 
+}*/
 
 ul {
   margin-left: auto;
@@ -62,6 +72,7 @@ ul {
 }
 li {
   margin-top: 10px;
+  list-style: none;
 }
 
 h1 {
@@ -80,12 +91,29 @@ p {
 
 .footer-img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 600px;
   width: 100%;
+  height: 500px;
+}
+.sign-up {
+  background-color: #8c8418;
+  background-image: url("C:\Users\pgarz\OneDrive\Documents\GitHub\cross-course-project-Pgarza-dev\.github\images\mans-hand-landscape.jpg");
 }
 
+.footer-columns {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  /* border: 10px solid firebrick; */
+  flex-direction: row;
+}
+.footer-columns > * {
+  flex-shrink: 1;
+  flex-grow: 1;
+}
 
-
-
+@media (max-width: 900px) {
+  .footer-columns {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
