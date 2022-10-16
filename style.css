@@ -7,11 +7,17 @@
 .header {
   background-color: #8c8418;
 }
+
+nav li {
+  display: inline-block;
+}
+
 .nav-container {
-  display: grid;
+
+  /* display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 10px;
-  align-items: center;
+  align-items: center; */
 }
 
 li {
@@ -20,17 +26,19 @@ li {
 
 .search-bar {
   height: 30px;
-  width: 1000px;
+  width: 70%;
   border-radius: 10px;
   margin-left: 20px;
-  margin-right: 50px;
+  margin-right: auto;
   border: none;
 }
 
+ 
+
 .main-img {
-  display: block;
+  /* display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
   width: 100%;
 }
 
@@ -39,13 +47,13 @@ li {
   width: 300px;
 }
 
-.list-menu {
+/* .list-menu {
   display: grid;
   grid-template-columns: repeat(9, 5fr);
   margin-top: 20px;
   color: whitesmoke;
   font-weight: 250;
-  border-top: 1px solid whitesmoke;
+  border-top: 1px solid whitesmoke; */
 }
 
 ul {
@@ -76,6 +84,10 @@ p {
   margin-right: auto;
   height: 600px;
   width: 100%;
+}
+
+.sign-up {
+  background-image: url("../mans-hand-landscape.jpg");
 }
 
 .footer-section {

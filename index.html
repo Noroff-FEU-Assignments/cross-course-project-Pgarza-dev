@@ -40,40 +40,43 @@
         attack. (sited from https://www.acunetix.com/blog/web-security-zone)
       </p> -->
     <header class="header">
-      <nav class="nav-container">
-        <img
-          class="logo"
-          src=".github\images\RainyDays_Logo.png"
-          alt="RainyDays Logo"
-        />
-        <input
-          class="search-bar"
-          type="text"
-          name="search bar"
-          placeholder="Search"
-        />
-        <p>Amount: kr</p>
-        <p>Checkout</p>
-      </nav>
+      <img
+        class="logo"
+        src=".github\images\RainyDays_Logo.png"
+        alt="RainyDays Logo"
+      />
+      <input
+        class="search-bar"
+        type="text"
+        name="search bar"
+        placeholder="Search"
+      />
+      <button>Search</button>
+      <p>Amount: kr</p>
+      <p>Checkout</p>
 
-      <ul class="list-menu">
-        <li>YOUR GEAR TYPE</li>
-        <li>MEN</li>
-        <li>WOMEAN</li>
-        <li>KIDS</li>
-        <li>ACTIVITY</li>
-        <li>SIZE</li>
-        <li>SORT BY</li>
-        <li>UNISEX</li>
-        <li>EXPLORE</li>
-      </ul>
+      <nav class="nav-container">
+        <ul class="list-menu">
+          <li>YOUR GEAR TYPE</li>
+          <li>MEN</li>
+          <li>WOMEAN</li>
+          <li>KIDS</li>
+          <li>ACTIVITY</li>
+          <li>SIZE</li>
+          <li>SORT BY</li>
+          <li>UNISEX</li>
+          <li>EXPLORE</li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <img
-        class="main-img"
-        src=".github\images\headshot.jpg"
-        alt="Head Shot of woman snowboarding"
-      />
+      <section>
+        <img
+          class="main-img"
+          src=".github\images\headshot.jpg"
+          alt="Head Shot of woman snowboarding"
+        />
+      </section>
       <h1>JACKETS</h1>
       <article>
         <h2>Hiking</h2>
@@ -115,9 +118,35 @@
         </ul>
       </article>
     </main>
-    <img class="footer-img" src=".github\images\mans-hand-landscape.jpg" />
-    <hr />
     <footer class="footer-section">
+      <section>
+        <div class="sign-up">
+          <label for="email">Get the latest news and offers first</label>
+          <input
+            type="email"
+            id="email"
+            pattern=""
+            placeholder="Email*"
+            size="30"
+          />
+          <button>SIGH UP</button>
+          <br />
+          <label for="sign-up"></label>
+          <input type="radio" id="sign-up" name="sign-up" value="sign-up" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus sapiente ut necessitatibus reprehenderit eveniet
+            incidunt provident libero amet nihil labore doloremque minima
+            aliquid suscipit magnam sint illum, quis sunt error.
+          </p>
+
+          <!-- <img
+            class="footer-img"
+            src=".github\images\mans-hand-landscape.jpg"
+          /> -->
+        </div>
+        <hr />
+      </section>
       <section class="footer-grid">
         <h3>SECURE PAYMENT</h3>
         <ul class="footer-info">
@@ -154,7 +183,12 @@
           <li>Customer Service</li>
           <li>Phone 123 45 678</li>
         </ul>
-        <p>TAG US AND SHARE YOUR EXPERIENCES</p>
+        <h3>TAG US AND SHARE YOUR EXPERIENCES</h3>
+        <ul>
+          <span>facebook icon</span>
+          <span>twitter icon</span>
+          <span>instagram icon</span>
+        </ul>
       </section>
     </footer>
   </body>
