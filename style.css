@@ -1,13 +1,27 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+}
+
+.free-shipping {
+  background-color: #594e38;
+  width: 100%;
+}
 
 .header {
   background-color: #8c8418;
+  color: white;
+  padding-bottom: 5px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  text-align: justify;
 }
 
+.payment {
+  padding-left: 50px;
+  display: inline-block;
+}
 .nav-list {
   display: flex;
   gap: 1rem;
@@ -15,11 +29,21 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  border-top: 1px solid #000;
+  border-color: white;
+  padding-top: 1px;
+}
+
+.nav-list a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
 }
 
 .nav-list li {
   flex-grow: 1;
   flex-shrink: 1;
+
   /* display: inline-block; */
 }
 
@@ -38,10 +62,10 @@
 
 .search-bar {
   height: 30px;
-  width: 70%;
+  width: 60%;
   border-radius: 10px;
   margin-left: 20px;
-  margin-right: auto;
+  /* margin-right: auto; */
   border: none;
 }
 
@@ -50,6 +74,7 @@
   margin-left: auto;
   margin-right: auto; */
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .logo {
@@ -77,22 +102,46 @@ li {
 
 h1 {
   text-align: center;
+  font-size: 2.5rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
 }
 
 p {
-  /* display: block; */
-  display: inline-block;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-top: 50px;
 }
 
 .most-sold {
   height: 300px;
   width: 250px;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+section p {
+  margin-top: 5px;
+}
+
+.jacket-colors {
+  border-bottom: 1px solid #000;
 }
 
 .footer-img {
   display: block;
   width: 100%;
-  height: 500px;
+  height: auto;
 }
 .sign-up {
   background-color: #8c8418;
@@ -103,12 +152,19 @@ p {
   display: flex;
   gap: 1rem;
   list-style: none;
-  /* border: 10px solid firebrick; */
   flex-direction: row;
+  border-top: 1px solid #000;
+  margin-top: 30px;
+  padding: 30px 30px 30px 30px;
 }
 .footer-columns > * {
   flex-shrink: 1;
   flex-grow: 1;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: black;
 }
 
 @media (max-width: 900px) {

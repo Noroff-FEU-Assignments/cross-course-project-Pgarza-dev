@@ -9,20 +9,29 @@
   </head>
   <body>
     <header class="header">
-      <img
-        class="logo"
-        src=".github\images\RainyDays_Logo.png"
-        alt="RainyDays Logo"
-      />
-      <input
-        class="search-bar"
-        type="text"
-        name="search bar"
-        placeholder="Search"
-      />
-      <!-- <button>Search</button> -->
-      <p>Amount: kr</p>
-      <p>Checkout</p>
+      <div class="free-shipping">
+        <p>
+          Free shipping on orders over 1000 NOK. 30-day money back guarantee.
+        </p>
+      </div>
+
+      <div>
+        <img
+          class="logo"
+          src=".github\images\RainyDays_Logo.png"
+          alt="RainyDays Logo"
+        />
+        <input
+          class="search-bar"
+          type="text"
+          name="search bar"
+          placeholder="Search"
+        />
+        <!-- <button>Search</button> -->
+
+        <p class="payment">Amount:</p>
+        <p class="payment">Checkout</p>
+      </div>
 
       <nav class="nav-container">
         <ul class="nav-list">
@@ -37,6 +46,7 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <section>
         <img
@@ -45,46 +55,70 @@
           alt="Head Shot of woman snowboarding"
         />
       </section>
+
       <h1>JACKETS</h1>
-      <article>
-        <h2>Hiking</h2>
-        <img
-          class="most-sold"
-          src=".github\images\RainyDays_Jacket2.png"
-          alt=""
-        />
-        <h2>Sking</h2>
-        <img
-          class="most-sold"
-          src=".github\images\RainyDays_Jacket1.png"
-          alt=""
-        />
-        <h2>Canoeing</h2>
-        <img
-          class="most-sold"
-          src=".github\images\RainyDays_Jacket3.png"
-          alt=""
-        />
-        <h2>Camping</h2>
-        <img
-          class="most-sold"
-          src=".github\images\RainyDays_Jacket4.png"
-          alt=""
-        />
-        <h2>Exploring</h2>
-        <img
-          class="most-sold"
-          src=".github\images\RainyDays_Jacket5.png"
-          alt=""
-        />
-        <ul>
-          <li>Hiking</li>
-          <li>Sking</li>
-          <li>Canoeing</li>
-          <li>Camping</li>
-          <li>Exploring</li>
-        </ul>
-      </article>
+
+      <div class="article">
+        <section>
+          <h2>Hiking</h2>
+          <img
+            class="most-sold"
+            src=".github\images\RainyDays_Jacket2.png"
+            alt=""
+          />
+          <p class="jacket-colors">Colors</p>
+          <h3>JACKET NAME</h3>
+          <p>Nok 1,299.00</p>
+        </section>
+
+        <section>
+          <h2>Sking</h2>
+          <img
+            class="most-sold"
+            src=".github\images\RainyDays_Jacket1.png"
+            alt=""
+          />
+          <p class="jacket-colors">Colors</p>
+          <h3>JACKET NAME</h3>
+          <p>Nok 1,299.00</p>
+        </section>
+
+        <section>
+          <h2>Canoeing</h2>
+          <img
+            class="most-sold"
+            src=".github\images\RainyDays_Jacket3.png"
+            alt=""
+          />
+          <p class="jacket-colors">Colors</p>
+          <h3>JACKET NAME</h3>
+          <p>Nok 1,299.00</p>
+        </section>
+
+        <section>
+          <h2>Camping</h2>
+          <img
+            class="most-sold"
+            src=".github\images\RainyDays_Jacket4.png"
+            alt=""
+          />
+          <p class="jacket-colors">Colors</p>
+          <h3>JACKET NAME</h3>
+          <p>Nok 1,299.00</p>
+        </section>
+
+        <section>
+          <h2>Exploring</h2>
+          <img
+            class="most-sold"
+            src=".github\images\RainyDays_Jacket5.png"
+            alt=""
+          />
+          <p class="jacket-colors">Colors</p>
+          <h3>JACKET NAME</h3>
+          <p>Nok 1,299.00</p>
+        </section>
+      </div>
     </main>
     <footer class="footer-section">
       <section>
@@ -108,29 +142,31 @@
             aliquid suscipit magnam sint illum, quis sunt error.
           </p>
 
-          <img
+          <!-- <img
             class="footer-img"
             src=".github\images\mans-hand-landscape.jpg"
-          />
+          /> -->
         </div>
         <hr />
       </section>
       <section class="">
         <div class="footer-columns">
-          <ul class="">
+          <ul class="footer-list">
             <h3>SECURE PAYMENT</h3>
             <li><a href="#">VISA</a></li>
             <li><a href="#">MASTER CARD</a></li>
             <li><a href="#">VIPPS</a></li>
           </ul>
-          <ul>
+
+          <ul class="footer-list">
             <h3>CUSTOMER SERVICE</h3>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Terms & Conditions</a></li>
             <li><a href="#">Delivery</a></li>
             <li><a href="#">Returns</a></li>
           </ul>
-          <ul>
+
+          <ul class="footer-list">
             <h3>ABOUT US</h3>
             <li><a href="#">Lineage</a></li>
             <li><a href="#">Our Office</a></li>
@@ -139,19 +175,20 @@
             <li><a href="#">Newsletter</a></li>
           </ul>
 
-          <ul>
+          <ul class="footer-list">
             <h3>MEMBERS</h3>
             <li><a href="#">Military</a></li>
             <li><a href="#">First Responders</a></li>
             <li><a href="#">Healthcare Professionls</a></li>
           </ul>
-          <ul>
+
+          <ul class="footer-list">
             <h3>CONTACT US</h3>
             <li><a href="#">Opening Hours</a></li>
             <li><a href="#">Customer Service</a></li>
             <li><a href="#">Phone 123 45 678</a></li>
           </ul>
-          <ul>
+          <ul class="footer-list">
             <h3>SHARE YOUR EXPERIENCES</h3>
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Twitter</a></li>
