@@ -111,9 +111,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-p {
-}
-
 .article {
   display: flex;
   flex-direction: row;
@@ -138,15 +135,25 @@ section p {
   border-bottom: 1px solid #000;
 }
 
+.newsletter {
+  background-image: url(../images/mans-hand-landscape.jpg);
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
 .footer-img {
   display: block;
   width: 100%;
   height: auto;
 }
-.sign-up {
+/* .sign-up {
   background-color: #8c8418;
   background-image: url("C:\Users\pgarz\OneDrive\Documents\GitHub\cross-course-project-Pgarza-dev\.github\images\mans-hand-landscape.jpg");
-}
+} */
 
 .footer-columns {
   display: flex;
