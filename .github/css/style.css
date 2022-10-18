@@ -143,6 +143,8 @@ section p {
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
+  color: white;
+  text-align: end;
 }
 
 .footer-img {
