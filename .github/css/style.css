@@ -100,11 +100,27 @@
 }
 
 .main-img {
+  background-image: url(../images/headshot.jpg);
+  padding-bottom: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
   /* display: block;
   margin-left: auto;
   margin-right: auto; */
   width: 100%;
   margin-bottom: 50px;
+}
+
+.slogan {
+  color: black;
+
+  text-decoration: underline;
+  margin-left: 980px;
+  padding-top: 386px;
+  font-weight: 100;
+  /* margin-left: 980px;
+  margin-top: -28px;
+  font-weight: 100; */
 }
 
 /* .logo {
