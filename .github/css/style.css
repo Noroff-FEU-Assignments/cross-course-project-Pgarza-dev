@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* HOME PAGE */
 .logo {
   background-image: url(../images/RainyDays_Logo.png);
   background-color: #8c8418;
@@ -266,3 +266,5 @@ section p {
     justify-content: center;
   }
 }
+
+/* JACKETS PAGE */
