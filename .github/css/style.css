@@ -3,7 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+}
 /* HOME PAGE */
+
+nav {
+  display: inline;
+}
+
 .logo {
   background-image: url(../images/RainyDays_Logo.png);
   background-color: #8c8418;
@@ -26,7 +35,6 @@
   list-style: none;
   color: white;
   margin-top: -29px;
-  padding-right: 10px;
 }
 
 .header-li a {
@@ -34,6 +42,7 @@
   list-style: none;
   text-decoration: none;
   display: inline-block;
+  padding-right: 10px;
 }
 
 .header {
