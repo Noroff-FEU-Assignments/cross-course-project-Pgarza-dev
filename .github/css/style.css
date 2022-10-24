@@ -137,6 +137,7 @@ main {
 .main-img {
   background-image: url(../images/headshot.jpg);
   padding-bottom: 600px;
+  padding-top: 500px;
   background-repeat: no-repeat;
   background-size: cover;
   /* display: block;
@@ -150,9 +151,13 @@ main {
   color: black;
 
   text-decoration: underline;
-  margin-left: 980px;
+  position: relative;
+  float: right;
+  /* top: 500px; */
+  right: 130px;
+  /* margin-left: 980px;
   padding-top: 386px;
-  font-weight: 100;
+  font-weight: 100; */
   /* margin-left: 980px;
   margin-top: -28px;
   font-weight: 100; */
