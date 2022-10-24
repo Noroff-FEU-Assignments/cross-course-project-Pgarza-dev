@@ -114,7 +114,7 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 10px;
-  align-items: center; 
+  align-items: center;
 } */
 
 /* li {
@@ -147,12 +147,17 @@ main {
   margin-bottom: 50px;
 }
 
+.welcome {
+  position: relative;
+}
+
 .welcome-content {
   color: black;
 
   text-decoration: underline;
   position: relative;
   float: right;
+
   /* top: 500px; */
   right: 130px;
   /* margin-left: 980px;
@@ -174,7 +179,7 @@ main {
   margin-top: 20px;
   color: whitesmoke;
   font-weight: 250;
-  border-top: 1px solid whitesmoke; 
+  border-top: 1px solid whitesmoke;
 }*/
 
 ul {
@@ -201,7 +206,7 @@ li {
   text-align: center;
   font-size: 1.4rem;
   margin-bottom: 20px;
-  
+
 } */
 
 section a {
@@ -246,10 +251,11 @@ section p {
 .footer-image {
   background-image: url(../images/mans-hand-landscape.jpg);
   width: 100%;
-  padding-top: 200px;
-  padding-bottom: 400px;
+  /* padding-top: 200px; 
+  padding-bottom: 400px; */
   background-repeat: no-repeat;
   background-size: cover;
+  height: 645px;
 }
 
 .input-email {
@@ -258,14 +264,16 @@ section p {
   margin-top: 10px;
   border: none;
   border-radius: 5px;
-  text-decoration: ;
 }
 
 .newsletter {
   color: white;
   width: 360px;
-  float: right;
-  margin-right: 200px;
+  position: relative;
+  top: 35%;
+  left: 65%;
+  /* float: right;
+  margin-right: 200px; */
   /* margin-left: 980px;
   margin-top: -28px; */
   font-weight: 100;
@@ -313,32 +321,10 @@ section p {
   color: black;
 }
 
-@media (max-width: 900px) {
-  .footer-columns {
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
 /* JACKETS PAGE */
 
 .home-cta {
   display: inline-block;
-}
-
-.card {
-  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
-
-  display: flex;
-  width: 100%;
-  /* justify-content: space-between; */
-  flex-wrap: wrap;
-  margin-bottom: 50px;
-  padding-top: 160px;
-  /* margin: auto; */
-  text-align: left;
-  font-family: arial;
-  background-color: rgb(249, 252, 255);
 }
 
 .jacket-page-colors {
@@ -348,25 +334,43 @@ section p {
   justify-content: space-between;
 }
 
+.card {
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  padding-top: 160px;
+  /* margin: auto; */
+  text-align: left;
+  font-family: arial;
+  background-color: rgb(249, 252, 255);
+}
+
 .box-1 {
   max-width: 390px;
-  /* margin-right: 35px; */
+  width: 300px;
   margin-left: 30px;
+  /* margin-right: 35px; */
 }
 
 .box-2 {
   max-width: 390px;
-  margin-right: 100px;
+  width: 300px;
+  /* margin-right: 100px;
   margin-right: 50px;
-  margin-left: 50px;
+  margin-left: 50px; */
   padding: 5px;
   /* background-color: rgb(245, 245, 245); */
 }
 
 .box-3 {
   max-width: 390px;
-  margin-right: 100px;
-  margin-left: 100px;
+  width: 300px;
+  /* margin-right: 100px;
+  margin-left: 100px; */
 }
 
 /* .box-3 > * {
@@ -375,10 +379,11 @@ section p {
 
 .box-4 {
   max-width: 390px;
-  width: 300;
-  margin-left: 100px;
+  width: 300px;
   margin-right: 30px;
+  /* margin-left: 100px; */
 }
+
 .jacket-one {
   /* margin-top: 20px; */
   margin-bottom: 20px;
@@ -387,6 +392,7 @@ section p {
 }
 
 .about-jacket {
+  list-style: disc;
 }
 
 .size-selection-border {
@@ -407,4 +413,34 @@ section p {
   margin-top: 15px;
   border: none;
   border-radius: 5px;
+}
+
+.review-border {
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  margin: 0px 50px 0px 50px;
+}
+
+.review-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 0px 50px 0px 50px;
+}
+
+.review-contant-border {
+  border-right: 1px solid #000;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-right: 25px;
+}
+
+/* PAGE RESPONSIVNESS */
+
+@media (max-width: 900px) {
+  .footer-columns {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
