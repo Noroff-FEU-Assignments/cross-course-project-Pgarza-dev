@@ -327,10 +327,22 @@ section p {
   color: black;
 }
 
-/* JACKETS PAGE */
+/* --------JACKETS PAGE--------- */
 
 .home-cta {
   display: inline-block;
+}
+
+.thumbnail {
+  border: 1px solid #000;
+  height: 60px;
+  display: flex;
+  margin-top: 10px;
+  width: 50px;
+}
+
+.thumbnail:hover {
+  zoom: 200%;
 }
 
 .jacket-page-colors {
@@ -342,7 +354,6 @@ section p {
 
 .card {
   box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
-
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -379,6 +390,16 @@ section p {
   margin-left: 100px; */
 }
 
+.box-3 > p,
+h1,
+h3 {
+  margin-bottom: 15px;
+}
+
+.box-3 > h4 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
 /* .box-3 > * {
   padding: 0px 0px 20px 0px;
 } */
@@ -401,12 +422,56 @@ section p {
   list-style: disc;
 }
 
-.size-selection-border {
+.s-button {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #ff7700;
+  color: #000;
+  padding: 10px 15px 10px 15px;
+  margin-top: 15px;
+  border: none;
+}
+
+.m-button {
+  background-color: #ff7700;
+  color: #000;
+  padding: 10px 15px 10px 15px;
+  margin-top: 15px;
+  border: none;
+}
+
+.l-button {
+  background-color: #ff7700;
+  color: #000;
+  padding: 10px 15px 10px 15px;
+  margin-top: 15px;
+  border: none;
+}
+
+.xl-button {
+  background-color: #ff7700;
+  color: #000;
+  padding: 10px 15px 10px 15px;
+  margin-top: 15px;
+  border: none;
+}
+
+.xxl-button {
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #ff7700;
+  color: #000;
+  padding: 10px 15px 10px 15px;
+  margin-top: 15px;
+  border: none;
+}
+
+/* .size-selection-border {
   border: 1px solid black;
   margin-right: 2px;
   margin-left: 2px;
   padding: 3px 10px 3px 10px;
-}
+} */
 
 /* .sizes {
   padding: 20px 0px 20px 0px;
