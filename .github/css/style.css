@@ -533,6 +533,35 @@ h3 {
   padding-right: 25px;
 }
 
+/*---------CART PAGE-------  */
+
+.added-items {
+  box-shadow: 0 4px 8px 4px rgb(0 0 0 / 20%);
+  display: flex;
+  /* width: 90%; */
+  width: 1000px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0px 0px 50px 30;
+  padding-top: 160px;
+  text-align: left;
+  font-family: arial;
+  background-color: rgb(249, 252, 255);
+}
+
+.product-box {
+  height: 380px;
+  width: 295px;
+  margin-bottom: 100px;
+}
+.product {
+  background-image: url(../images/RainyDays_Jacket2.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
 /* PAGE RESPONSIVNESS */
 
 /* Free shipping */
