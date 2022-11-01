@@ -6,6 +6,11 @@
 
 body {
   font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f2f2f2;
+}
+
+main {
+  background-color: #f2f2f2;
 }
 /* HOME PAGE */
 
@@ -328,6 +333,23 @@ section p {
   color: black;
 }
 
+.secure-payment-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+.secure-payment-icons {
+  width: 50px;
+  height: 40px;
+}
+
+.social-media-icons {
+  display: flex;
+  gap: 1em;
+}
+
 /* --------JACKETS PAGE--------- */
 
 .home-cta {
@@ -344,7 +366,7 @@ section p {
   padding-top: 160px;
   text-align: left;
   font-family: arial;
-  background-color: rgb(249, 252, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 .thumbnail {
@@ -422,6 +444,10 @@ h3 {
   list-style: disc;
 }
 
+.in-stock-text {
+  font-weight: bold;
+}
+
 .s-button {
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
@@ -430,6 +456,7 @@ h3 {
   padding: 10px 15px 10px 15px;
   margin-top: 15px;
   border: none;
+  font-weight: bold;
 }
 
 /* .on-hover:active {
@@ -442,6 +469,7 @@ h3 {
   padding: 10px 15px 10px 15px;
   margin-top: 15px;
   border: none;
+  font-weight: bold;
 }
 
 .l-button {
@@ -450,6 +478,7 @@ h3 {
   padding: 10px 15px 10px 15px;
   margin-top: 15px;
   border: none;
+  font-weight: bold;
 }
 
 .xl-button {
@@ -458,6 +487,7 @@ h3 {
   padding: 10px 15px 10px 15px;
   margin-top: 15px;
   border: none;
+  font-weight: bold;
 }
 
 .xxl-button {
@@ -468,6 +498,7 @@ h3 {
   padding: 10px 15px 10px 15px;
   margin-top: 15px;
   border: none;
+  font-weight: bold;
 }
 .on-hover:hover {
   background-color: #ffaa00;
@@ -533,6 +564,17 @@ h3 {
   padding-right: 25px;
 }
 
+.review-content-hidden-border {
+  border-right: hidden;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-right: 25px;
+}
+
+.review-text {
+  margin-top: 20px;
+}
+
 /*---------CART PAGE-------  */
 
 .added-items {
@@ -540,27 +582,86 @@ h3 {
   display: flex;
   /* width: 90%; */
   width: 1000px;
-  justify-content: space-around;
+
   flex-wrap: wrap;
   margin: 0px 0px 50px 30;
   padding-top: 160px;
   text-align: left;
   font-family: arial;
-  background-color: rgb(249, 252, 255);
+  background-color: rgb(255, 255, 255);
+  gap: 5em;
 }
 
+.items-added-box {
+  max-width: 390px;
+  width: 315px;
+  padding: 5px;
+}
 .product-box {
   height: 380px;
   width: 295px;
   margin-bottom: 100px;
 }
-.product {
+
+.info-box {
+  box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
+  width: 400;
+  border-radius: 10px;
+  margin-left: 30px;
+  padding-top: 3px;
+  padding-left: 10px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+}
+
+.your-orders {
+  box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
+  height: 600px;
+  width: 400;
+  border-radius: 10px;
+  padding: 10px 10px 0px 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.orders-box {
+  background-color: #f2f2f2;
+  height: 115px;
+}
+
+.total-box {
+  background-color: rgb(232 232 232);
+  height: 115px;
+  margin-bottom: 20px;
+}
+
+.checkout-button {
+  background-color: #ffaa00;
+  color: #000;
+  padding: 10px 15px 10px 15px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 118px;
+}
+
+.discount-code {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 35px;
+  border-radius: 10px;
+  border-width: thin;
+  text-align: justify;
+}
+
+/* .product {
   background-image: url(../images/RainyDays_Jacket2.png);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-}
+} */
 
 /* PAGE RESPONSIVNESS */
 
