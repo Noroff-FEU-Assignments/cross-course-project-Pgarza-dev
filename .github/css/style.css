@@ -388,6 +388,7 @@ section a {
 
 .jacket-page-colors {
   border-bottom: 1px solid #000;
+  margin-top: 30px;
   margin-bottom: 5px;
   display: flex;
   justify-content: space-between;
@@ -589,21 +590,21 @@ h3 {
   margin-top: 20px;
 }
 
-/*---------CART PAGE-------  */
+/*---------ITEMS ADDED TO CART PAGE-------  */
 
 .added-items {
-  box-shadow: 0 4px 8px 4px rgb(0 0 0 / 20%);
+  box-shadow: 0 4px 8px 4px rgb(0 0 0 / 2%);
   display: flex;
-  /* width: 90%; */
-  width: 1000px;
-
+  width: 57%;
+  height: 80%;
+  /* width: 1000px; */
   flex-wrap: wrap;
   margin: 0px 0px 50px 30;
   padding-top: 160px;
   text-align: left;
   font-family: arial;
   background-color: rgb(255, 255, 255);
-  gap: 5em;
+  gap: 1em;
 }
 
 .items-added-box {
@@ -611,12 +612,50 @@ h3 {
   width: 315px;
   padding: 5px;
 }
+
 .product-box {
   height: 380px;
   width: 295px;
   margin-bottom: 100px;
 }
 
+.color-choice {
+  display: flex;
+  gap: 1em;
+}
+
+.color-choice-turquoise {
+  border: 1px solid rgb(33, 170, 177);
+  background-color: rgb(33, 170, 177);
+  height: 15px;
+  width: 15px;
+}
+
+.color-choice-red {
+  border: 1px solid red;
+  background-color: red;
+  height: 15px;
+  width: 15px;
+}
+
+.color-choice-blue {
+  border: 1px solid blue;
+  background-color: blue;
+  height: 15px;
+  width: 15px;
+}
+
+.color-choice-green {
+  border: 1px solid green;
+  background-color: green;
+  height: 15px;
+  width: 15px;
+}
+
+.review-stars {
+  display: flex;
+  margin-bottom: 30px;
+}
 .info-box {
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
   width: 400;
