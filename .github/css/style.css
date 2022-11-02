@@ -251,6 +251,8 @@ section a {
   height: 300px;
   width: 250px;
   cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 20px;
   /* display: flex;
   flex-direction: column; */
 }
@@ -371,6 +373,7 @@ section a {
   text-align: left;
   font-family: arial;
   background-color: rgb(255, 255, 255);
+  gap: 1em;
 }
 
 .thumbnail {
@@ -406,7 +409,7 @@ section a {
   max-width: 393px;
   width: 550px;
   height: 450px;
-  margin-left: auto;
+  margin-left: 70px;
   /* margin-right: 100px;
   margin-right: 50px;
   margin-left: 50px; */
@@ -450,15 +453,15 @@ h3 {
 .box-4 {
   max-width: 390px;
   width: 300px;
-  margin-right: 150px;
+  margin-left: 120px;
   /* margin-left: 100px; */
 }
 
 .jacket-one {
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 550px;
-  width: 450px;
+  height: 450px;
+  width: 350px;
 }
 
 .about-jacket {
@@ -602,11 +605,11 @@ h3 {
 .added-items {
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 2%);
   display: flex;
-  width: 65%;
-  height: 665px;
+  width: 50%;
+  height: 585px;
   /* width: 1000px; */
   flex-wrap: wrap;
-  /* margin: 0px 0px 50px 30; */
+  margin: 0px 0px 0px 30px;
   padding: 20px 0px 0px 20px;
   text-align: left;
   font-family: arial;
@@ -678,7 +681,6 @@ h3 {
 
 .orders-card {
   display: flex;
-  justify-content: space-around;
   padding-top: 160px;
 }
 
@@ -686,6 +688,7 @@ h3 {
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
   height: 720px;
   width: 420px;
+  margin-left: 120px;
   border-radius: 10px;
   padding: 10px 10px 0px 10px;
   background-color: rgb(255, 255, 255);
@@ -778,6 +781,33 @@ h3 {
   justify-content: space-between;
   padding: 10px 10px 10px 10px;
   border-bottom: 1px solid #c1c1c1;
+}
+
+/* --------------------
+INFORMATION PAGE------------ */
+
+.purchased-jacket {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 200px;
+  width: 150px;
+}
+
+.box-3-purchased {
+  margin-top: 75px;
+}
+
+.added-items-purchased {
+  box-shadow: 0 4px 8px 4px rgb(0 0 0 / 2%);
+  display: flex;
+  width: 50%;
+  height: 325px;
+  flex-wrap: wrap;
+  margin: 0px 0px 0px 30px;
+  padding: 20px 0px 0px 20px;
+  text-align: left;
+  font-family: arial;
+  background-color: rgb(255, 255, 255);
 }
 
 /* .product {
