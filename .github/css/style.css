@@ -387,11 +387,12 @@ section a {
 }
 
 .jacket-page-colors {
-  border-bottom: 1px solid #000;
-  margin-top: 30px;
+  border-bottom: 1px solid #c1c1c1;
+  margin-top: 70px;
   margin-bottom: 5px;
   display: flex;
   justify-content: space-between;
+  color: #594e38;
 }
 
 .box-1 {
@@ -427,8 +428,13 @@ h3 {
   margin-bottom: 15px;
 }
 
-.box-3 > h3 {
-  font-size: 30px;
+.box-3 > h1,
+h3 {
+  font-size: 20px;
+}
+
+.items-added-box > h1 {
+  font-size: 28px;
 }
 
 .box-3 > h4 {
@@ -610,7 +616,7 @@ h3 {
 
 .items-added-box {
   max-width: 390px;
-  width: 315px;
+  width: 400px;
   padding: 5px;
 }
 
@@ -622,7 +628,7 @@ h3 {
 
 .color-choice {
   display: flex;
-  gap: 1em;
+  gap: 0.5em;
 }
 
 .color-choice-turquoise {
@@ -656,6 +662,8 @@ h3 {
 .review-stars {
   display: flex;
   margin-bottom: 30px;
+  margin-top: 12px;
+  justify-content: space-between;
 }
 .info-box {
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
@@ -711,7 +719,7 @@ h3 {
   border: 1px solid #ffaa00;
   border-radius: 10px;
   margin-bottom: 15px;
-  margin-left: 200px;
+  margin-left: 240px;
   width: 150px;
   height: 30px;
   display: flex;
