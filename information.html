@@ -66,7 +66,7 @@
     <section class="added-items-purchased">
       <div>
       </div>
-      <div class="product-box">
+      <div class="purchased-product-box">
         <div class="items-added-box">
           <h1>1. ITEMS ADDED TO CART</h1>
           <img class="purchased-jacket" src=".github\images\RainyDays_Jacket2.png" alt="" />
@@ -75,9 +75,9 @@
       </div>
 
       <div class="box-3-purchased">
-        <h1>Mens Hiking Jacket</h1>
-        <h2>Wind Breaker</h2>
-        <div class="jacket-page-colors">
+        <!-- <h1>Mens Hiking Jacket</h1> -->
+        <h1>Wind Breaker</h1>
+        <div class="purchased-jacket-colors">
           <p>Colors</p>
           <div class="color-choice">
             <a href="#" class="color-choice-turquoise"></a>
@@ -110,6 +110,9 @@
             </p>
             <p>37 Reviews</p>
           </a>
+          <b>
+            <p>Nok. 599.-</p>
+          </b>
         </div>
         <!-- <p class="in-stock-text">In Stock</p> -->
         <!-- <h4>Wind Breaker</h4> -->
@@ -127,7 +130,7 @@
       </div>
     </section>
 
-    <section>
+    <!-- <section>
       <div class="your-orders">
 
         <h2>YOUR ORDERS</h2>
@@ -176,13 +179,28 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
   </section>
 
   <section>
-    <div>
-      <h1 class="info-box">2. DELIVERLY INFORMATION</h1>
+    <div class="purchase-info-box">
+      <h1>2. DELIVERY INFORMATION</h1>
+      <label for="name"><b>Basic information</b></label>
+      <div>
+        <input class="name-input" type="text" id="first name" pattern="" placeholder="First Name" size="30" />
+        <input class="name-input" type="text" id="last name" pattern="" placeholder="Last Name" size="30">
+        <input class="emial-input" type="text" id="email address" pattern="" placeholder="Email Address" size="30">
+        <input class="company-input" type="text" id="company name" pattern="" placeholder="Company Name" size="30">
+      </div>
+      <label for="name"><b>Billing Address</b></label>
+      <div>
+        <input class="street-input" type="text" id="street" pattern="" placeholder="Street" size="30" />
+        <input class="city-input" type="text" id="city" pattern="" placeholder="City" size="30">
+        <input class="post-code-input" type="text" id="post code" pattern="" placeholder="Post code" size="30">
+        <input class="country-input" type="text" id="county" pattern="" placeholder="County" size="30">
+      </div>
     </div>
+
     <div>
       <h1 class="info-box">3. DELIVERY METHOD</h1>
     </div>
