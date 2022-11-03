@@ -419,7 +419,7 @@ section a {
 
 .box-3 {
   max-width: 390px;
-  width: 300px;
+  /* width: 300px; */
   margin-left: 250px;
   /* margin-right: auto;
   margin-left: auto; */
@@ -634,9 +634,9 @@ h3 {
   gap: 0.5em;
 }
 
-.color-choice-turquoise {
-  border: 1px solid rgb(33, 170, 177);
-  background-color: rgb(33, 170, 177);
+.color-choice-black {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
   height: 15px;
   width: 15px;
 }
@@ -644,22 +644,37 @@ h3 {
 .color-choice-red {
   border: 1px solid red;
   background-color: red;
+  border-color: white;
   height: 15px;
   width: 15px;
+}
+
+.color-choice-red:hover {
+  border-color: red;
 }
 
 .color-choice-blue {
   border: 1px solid blue;
   background-color: blue;
+  border-color: white;
   height: 15px;
   width: 15px;
+}
+
+.color-choice-blue:hover {
+  border-color: blue;
 }
 
 .color-choice-green {
   border: 1px solid green;
   background-color: green;
+  border-color: white;
   height: 15px;
   width: 15px;
+}
+
+.color-choice-green:hover {
+  border-color: green;
 }
 
 .review-stars {
@@ -825,15 +840,16 @@ INFORMATION PAGE------------ */
   padding: 20px 0px 0px 20px;
   text-align: left;
   font-family: arial;
+  border-radius: 10px;
   background-color: rgb(255, 255, 255);
 }
 
 .purchase-info-box {
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
-  height: 325px;
-  width: 520px;
+  height: 400px;
+  width: 900px;
   margin: 20px 0px 20px 30px;
-  border-radius: 3px;
+  border-radius: 10px;
   margin-left: 30px;
   padding-top: 3px;
   padding-left: 10px;
@@ -844,7 +860,8 @@ INFORMATION PAGE------------ */
 .street-input,
 .city-input {
   border: 2px solid #c1c1c1;
-  height: 30px;
+  height: 45px;
+  width: 437px;
   border-radius: 5px;
   margin: 10px 0px 10px 0px;
 }
@@ -852,16 +869,17 @@ INFORMATION PAGE------------ */
 .emial-input,
 .company-input {
   border: 2px solid #c1c1c1;
-  height: 30px;
+  height: 45px;
   border-radius: 5px;
-  width: 490px;
+  width: 878px;
   margin-bottom: 10px;
 }
 
 .post-code-input,
 .country-input {
   border: 2px solid #c1c1c1;
-  height: 30px;
+  height: 45px;
+  width: 437px;
   border-radius: 5px;
 }
 
