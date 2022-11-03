@@ -251,6 +251,8 @@ section a {
   height: 300px;
   width: 250px;
   cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 20px;
   /* display: flex;
   flex-direction: column; */
 }
@@ -363,7 +365,7 @@ section a {
   box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
   display: flex;
   width: 100%;
-  height: 80%;
+  height: 780px;
   /* justify-content: space-around; */
   flex-wrap: wrap;
   margin: 0px auto 50px auto;
@@ -371,6 +373,7 @@ section a {
   text-align: left;
   font-family: arial;
   background-color: rgb(255, 255, 255);
+  gap: 1em;
 }
 
 .thumbnail {
@@ -387,11 +390,12 @@ section a {
 }
 
 .jacket-page-colors {
-  border-bottom: 1px solid #000;
-  margin-top: 30px;
+  border-bottom: 1px solid #c1c1c1;
+  margin-top: 70px;
   margin-bottom: 5px;
   display: flex;
   justify-content: space-between;
+  color: #594e38;
 }
 
 .box-1 {
@@ -405,7 +409,7 @@ section a {
   max-width: 393px;
   width: 550px;
   height: 450px;
-  margin-left: auto;
+  margin-left: 70px;
   /* margin-right: 100px;
   margin-right: 50px;
   margin-left: 50px; */
@@ -415,9 +419,10 @@ section a {
 
 .box-3 {
   max-width: 390px;
-  width: 300px;
-  margin-right: auto;
-  margin-left: auto;
+  /* width: 300px; */
+  margin-left: 250px;
+  /* margin-right: auto;
+  margin-left: auto; */
 }
 
 .box-3 > p,
@@ -426,8 +431,13 @@ h3 {
   margin-bottom: 15px;
 }
 
-.box-3 > h3 {
-  font-size: 30px;
+.box-3 > h1,
+h3 {
+  font-size: 20px;
+}
+
+.items-added-box > h1 {
+  font-size: 28px;
 }
 
 .box-3 > h4 {
@@ -443,15 +453,15 @@ h3 {
 .box-4 {
   max-width: 390px;
   width: 300px;
-  margin-right: 150px;
+  margin-left: 120px;
   /* margin-left: 100px; */
 }
 
 .jacket-one {
-  /* margin-top: 20px; */
+  margin-top: 20px;
   margin-bottom: 20px;
-  height: 550px;
-  width: 450px;
+  height: 450px;
+  width: 350px;
 }
 
 .about-jacket {
@@ -595,21 +605,21 @@ h3 {
 .added-items {
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 2%);
   display: flex;
-  width: 57%;
-  height: 80%;
+  width: 50%;
+  height: 585px;
   /* width: 1000px; */
   flex-wrap: wrap;
-  margin: 0px 0px 50px 30;
-  padding-top: 160px;
+  margin: 0px 0px 0px 30px;
+  padding: 20px 0px 0px 20px;
   text-align: left;
   font-family: arial;
   background-color: rgb(255, 255, 255);
-  gap: 1em;
+  /* gap: 1em; */
 }
 
 .items-added-box {
   max-width: 390px;
-  width: 315px;
+  width: 400px;
   padding: 5px;
 }
 
@@ -621,12 +631,12 @@ h3 {
 
 .color-choice {
   display: flex;
-  gap: 1em;
+  gap: 0.5em;
 }
 
-.color-choice-turquoise {
-  border: 1px solid rgb(33, 170, 177);
-  background-color: rgb(33, 170, 177);
+.color-choice-black {
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
   height: 15px;
   width: 15px;
 }
@@ -634,31 +644,48 @@ h3 {
 .color-choice-red {
   border: 1px solid red;
   background-color: red;
+  border-color: white;
   height: 15px;
   width: 15px;
+}
+
+.color-choice-red:hover {
+  border-color: red;
 }
 
 .color-choice-blue {
   border: 1px solid blue;
   background-color: blue;
+  border-color: white;
   height: 15px;
   width: 15px;
+}
+
+.color-choice-blue:hover {
+  border-color: blue;
 }
 
 .color-choice-green {
   border: 1px solid green;
   background-color: green;
+  border-color: white;
   height: 15px;
   width: 15px;
+}
+
+.color-choice-green:hover {
+  border-color: green;
 }
 
 .review-stars {
   display: flex;
   margin-bottom: 30px;
+  margin-top: 12px;
+  justify-content: space-between;
 }
 .info-box {
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
-  width: 400;
+  width: 400px;
   border-radius: 10px;
   margin-left: 30px;
   padding-top: 3px;
@@ -667,10 +694,16 @@ h3 {
   background-color: rgb(255, 255, 255);
 }
 
+.orders-card {
+  display: flex;
+  padding-top: 160px;
+}
+
 .your-orders {
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
-  height: 600px;
-  width: 520;
+  height: 720px;
+  width: 420px;
+  margin-left: 120px;
   border-radius: 10px;
   padding: 10px 10px 0px 10px;
   background-color: rgb(255, 255, 255);
@@ -680,12 +713,22 @@ h3 {
   background-color: #f2f2f2;
   height: 115px;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px 0px 20px;
 }
 
 .total-box {
   background-color: rgb(232 232 232);
   height: 115px;
   margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .checkout-button {
@@ -694,6 +737,7 @@ h3 {
   border: 1px solid #ffaa00;
   border-radius: 10px;
   margin-bottom: 15px;
+  margin-left: 240px;
   width: 150px;
   height: 30px;
   display: flex;
@@ -701,6 +745,11 @@ h3 {
   justify-content: center;
   flex-wrap: wrap;
   align-content: center;
+  font-weight: 100;
+}
+
+.checkout-button:hover {
+  background-color: #ff7700;
 }
 
 .discount-code {
@@ -710,7 +759,9 @@ h3 {
   height: 35px;
   border-radius: 10px;
   border-width: thin;
-  text-align: justify;
+  border-color: #c1c1c1;
+  text-align: center;
+  color: #8c8418;
 }
 
 .add-button {
@@ -730,9 +781,108 @@ h3 {
   font-size: 10px;
 }
 
-.checkout-button:hover {
-  background-color: #ff7700;
+.insurance-header {
+  border-bottom: 1px solid #c1c1c1;
+  margin-top: 40px;
 }
+
+.insurance-prices {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  padding-left: 10px;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+/* --------------------
+INFORMATION PAGE------------ */
+
+.purchased-jacket {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 200px;
+  width: 150px;
+}
+
+.purchased-jacket-colors {
+  border-bottom: 1px solid #c1c1c1;
+  width: 185px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  display: flex;
+  color: #594e38;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.box-3-purchased {
+  margin-top: 75px;
+}
+
+.purchased-product-box {
+  height: 380px;
+  width: 235px;
+  margin-bottom: 100px;
+}
+
+.added-items-purchased {
+  box-shadow: 0 4px 8px 4px rgb(0 0 0 / 2%);
+  display: flex;
+  width: 520px;
+  height: 325px;
+  flex-wrap: wrap;
+  margin: 0px 0px 0px 30px;
+  padding: 20px 0px 0px 20px;
+  text-align: left;
+  font-family: arial;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.purchase-info-box {
+  box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
+  height: 400px;
+  width: 900px;
+  margin: 20px 0px 20px 30px;
+  border-radius: 10px;
+  margin-left: 30px;
+  padding-top: 3px;
+  padding-left: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.name-input,
+.street-input,
+.city-input {
+  border: 2px solid #c1c1c1;
+  height: 45px;
+  width: 437px;
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
+}
+
+.emial-input,
+.company-input {
+  border: 2px solid #c1c1c1;
+  height: 45px;
+  border-radius: 5px;
+  width: 878px;
+  margin-bottom: 10px;
+}
+
+.post-code-input,
+.country-input {
+  border: 2px solid #c1c1c1;
+  height: 45px;
+  width: 437px;
+  border-radius: 5px;
+}
+
 /* .product {
   background-image: url(../images/RainyDays_Jacket2.png);
   width: 100%;
