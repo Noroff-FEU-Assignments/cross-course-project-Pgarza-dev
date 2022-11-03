@@ -883,6 +883,10 @@ INFORMATION PAGE------------ */
   border-radius: 5px;
 }
 
+#delivery-method {
+  text-align: left;
+}
+
 /* .product {
   background-image: url(../images/RainyDays_Jacket2.png);
   width: 100%;

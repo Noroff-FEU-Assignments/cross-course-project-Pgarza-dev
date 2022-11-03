@@ -883,6 +883,28 @@ INFORMATION PAGE------------ */
   border-radius: 5px;
 }
 
+.delivery-info-box {
+  box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
+  height: 225px;
+  width: 900px;
+  margin: 20px 0px 20px 30px;
+  border-radius: 10px;
+  margin-left: 30px;
+  padding-top: 3px;
+  padding-left: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.card-number-input,
+.card-name-input,
+.city-input {
+  border: 2px solid #c1c1c1;
+  height: 45px;
+  width: 437px;
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
+}
+
 /* .product {
   background-image: url(../images/RainyDays_Jacket2.png);
   width: 100%;
