@@ -48,7 +48,7 @@
 
     <nav class="nav-container">
       <ul class="nav-list">
-        <li><a href="#">YOUR GEAR TYPE</a></li>
+        <li><a href="#">YOUR GEAR</a></li>
         <li><a href="#">MEN</a></li>
         <li><a href="#">WOMEAN</a></li>
         <li><a href="#">KIDS</a></li>
@@ -61,6 +61,49 @@
   </header>
 </body>
 <main>
+
+  <section class="flex">
+    <div class="your-orders">
+      <h2>YOUR ORDERS</h2>
+      <div class="orders-box">
+        <p>1 x WIND BREAKER</p>
+        <p>599-</p>
+        <a href="#">Remove</a>
+      </div>
+      <div class="total-box">
+        <h2>TOTAL</h2>
+        <p>599-</p>
+      </div>
+      <div>
+        <a href="information.html"><button class="checkout-button">CHECK OUT</button></a>
+      </div>
+      <div>
+        <label for="discount code">Discount code</label>
+        <input class="discount-code" type="text" id="discount-code" pattern="" placeholder="Discount code*" size="30" />
+      </div>
+      <div>
+        <h3 class="insurance-header">RAINY DAYS INSURANCE</h3>
+        <div class="insurance-prices">
+          <p>,99- 6 MO</p>
+          <a href="#"><button class="add-button">ADD</button></a>
+        </div>
+        <div class="insurance-prices">
+          <p>199,- 12 MO</p>
+          <a href="#"><button class="add-button">ADD</button></a>
+        </div>
+        <div class="insurance-prices">
+          <p>299,- 18 MO</p>
+          <a href="#"><button class="add-button">ADD</button></a>
+        </div>
+      </div>
+      <div class="insurance-disclaimer">
+        <p>**Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore cupiditate tempora molestias voluptatem
+          veritatis necessitatibus consequatur doloremque, soluta, vitae dignissimos ipsam, repellendus assumenda ab
+          odit alias iste magnam reprehenderit voluptatum.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="orders-card">
 
     <section class="added-items-purchased">
@@ -114,6 +157,7 @@
             <p>Nok. 599.-</p>
           </b>
         </div>
+
         <!-- <p class="in-stock-text">In Stock</p> -->
         <!-- <h4>Wind Breaker</h4> -->
         <!-- <h3>Nok. 599.-</h3>
@@ -129,58 +173,9 @@
         <a href="cart.html"> <button class="add-to-cart">ADD TO CART</button></a> -->
       </div>
     </section>
-
-    <!-- <section>
-      <div class="your-orders">
-
-        <h2>YOUR ORDERS</h2>
-        <div class="orders-box">
-          <p>1 x WIND BREAKER</p>
-          <p>599-</p>
-          <a href="#">Remove</a>
-        </div>
-
-        <div class="total-box">
-          <h2>TOTAL</h2>
-          <p>599-</p>
-        </div>
-
-        <div>
-          <a href="information.html"><button class="checkout-button">CHECK OUT</button></a>
-
-        </div>
-
-        <div>
-          <label for="discount code">Discount code</label>
-          <input class="discount-code" type="text" id="discount-code" pattern="" placeholder="Discount code*"
-            size="30" />
-        </div>
-
-        <div>
-          <h3 class="insurance-header">RAINY DAYS INSURANCE</h3>
-          <div class="insurance-prices">
-            <p>,99- 6 MO</p>
-            <a href="#"><button class="add-button">ADD</button></a>
-          </div>
-          <div class="insurance-prices">
-            <p>199,- 12 MO</p>
-            <a href="#"><button class="add-button">ADD</button></a>
-          </div>
-          <div class="insurance-prices">
-            <p>299,- 18 MO</p>
-            <a href="#"><button class="add-button">ADD</button></a>
-          </div>
-        </div>
-
-        <div class="insurance-disclaimer">
-          <p>**Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore cupiditate tempora molestias voluptatem
-            veritatis necessitatibus consequatur doloremque, soluta, vitae dignissimos ipsam, repellendus assumenda ab
-            odit alias iste magnam reprehenderit voluptatum.</p>
-        </div>
-
-      </div>
-    </section> -->
   </section>
+
+
 
   <section>
     <div class="purchase-info-box">
@@ -224,16 +219,29 @@
       <h1>4. PAYMENT</h1>
       <label for="name"><b>Payment information</b></label>
       <div>
-        <input class="card-number" type="number" id="card number" pattern="" placeholder="Card number" size="16" />
-        <input class="card-type" type="text" id="card type" pattern="" placeholder="Card Type" size="30">
-        <input class="name-on-card" type="text" id="name on card" pattern="" placeholder="Name on card" size="30">
-        <input class="exp-date" type="text" id="exp data" pattern="" placeholder="Exp. Date" size="30">
-        <input class="password" type="text" id="password" pattern="" placeholder="Password" size="30">
-        <input class="secure-payment" type="text" id="secure payment" pattern="" placeholder="Secure Payment" size="30">
-        <input class="exp-date" type="text" id="exp data" pattern="" placeholder="Exp. Date" size="30">
+        <div>
+          <input class="card-number" type="text" id="card number" pattern="" placeholder="Card number" size="16" />
+          <input class="card-type" type="text" id="card type" pattern="" placeholder="Card Type" size="30">
+        </div>
+        <div>
+          <input class="name-on-card" type="text" id="name on card" pattern="" placeholder="Name on card" size="30">
+        </div>
+        <div>
+          <input class="experation-date" type="text" id="experation data" pattern="" placeholder="Exp. Date" size="30">
+          <input class="ccv" type="text" id="CCV" pattern="" placeholder="CCV" size="30">
+        </div>
+        <div>
+          <input type="checkbox" type="" id="save card" pattern="" placeholder="" size="" value="">
+          <span>Save Card</span>
+
+        </div>
+        <button class="secure-payment">Secure Payment</button>
+        <!-- <input class="secure-payment" type="text" id="secure payment" pattern="" placeholder="Secure Payment" size="30"> -->
       </div>
     </div>
   </section>
+
+
 
   <h2 class="review-border">REVIEWS</h2>
   <div class="review-container">

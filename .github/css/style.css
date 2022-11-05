@@ -50,7 +50,7 @@ main {
 }
 
 .header-li {
-  display: flex;
+  display: inline-flex;
   float: right;
   flex-direction: row;
   flex: 1;
@@ -108,14 +108,20 @@ main {
   color: white;
   list-style: none;
   text-decoration: none;
+  margin: 0px 30px 0px 30px;
 }
 
 .nav-list a:hover {
-  font-size: 125%;
+  border: 1px solid white;
+  border-color: white;
+  background-color: white;
+  color: #8c8418;
+  border-radius: 10px;
+  padding: 3px;
 }
 
 .nav-list li {
-  flex-grow: 1;
+  /* flex-grow: 1; */
   flex-shrink: 1;
 
   /* display: inline-block; */
@@ -559,7 +565,7 @@ h3 {
   margin-top: 15px;
   border: none;
   border-radius: 5px;
-  width: 57px;
+  width: 65px;
   display: flex;
 }
 
@@ -903,6 +909,52 @@ INFORMATION PAGE------------ */
   width: 437px;
   border-radius: 5px;
   margin: 10px 0px 10px 0px;
+}
+
+.card-number,
+.name-on-card,
+.password {
+  border: 2px solid #c1c1c1;
+  height: 45px;
+  width: 437px;
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
+}
+
+.card-type,
+.experation-date,
+.ccv {
+  border: 2px solid #c1c1c1;
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
+}
+
+.secure-payment {
+  background-color: #ffaa00;
+  border: 1px solid #ffaa00;
+  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+  font-weight: 100;
+  margin-top: 35px;
+}
+
+input::placeholder {
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.secure-payment:hover {
+  background-color: #ff7700;
+  border: #ff7700;
+}
+
+.flex {
+  float: right;
+  margin-top: 160px;
+  margin-right: 190px;
 }
 
 /* .product {
