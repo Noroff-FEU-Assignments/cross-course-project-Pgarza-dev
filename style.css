@@ -19,7 +19,7 @@ nav {
 }
 
 header {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   /* overflow: hidden; */
 }
@@ -50,7 +50,7 @@ main {
 }
 
 .header-li {
-  display: flex;
+  display: inline-flex;
   float: right;
   flex-direction: row;
   flex: 1;
@@ -72,6 +72,7 @@ main {
   background-color: #8c8418;
   display: flex;
   flex-direction: column;
+  position: fixed;
 
   /* background-color: #8c8418;
   color: white;
@@ -108,31 +109,24 @@ main {
   color: white;
   list-style: none;
   text-decoration: none;
+  margin: 0px 30px 0px 30px;
 }
 
 .nav-list a:hover {
-  font-size: 125%;
+  border: 1px solid white;
+  border-color: white;
+  background-color: white;
+  color: #8c8418;
+  border-radius: 10px;
+  padding: 3px;
 }
 
 .nav-list li {
-  flex-grow: 1;
+  /* flex-grow: 1; */
   flex-shrink: 1;
 
   /* display: inline-block; */
 }
-
-/* .nav-container {
-  
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 10px;
-  align-items: center;
-} */
-
-/* li {
-  list-style: none;
-  margin: 0px;
-} */
 
 .search-bar {
   height: 30px;
@@ -357,6 +351,31 @@ section a {
 
 /* --------JACKETS PAGE--------- */
 
+.login-in {
+  border: 1px solid white;
+  max-width: 390px;
+  width: 390px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  box-shadow: 0 4px 8px 4px rgb(0 0 0 / 20%);
+}
+
+.full-name,
+.email-address,
+.new-password,
+.confirm-password {
+  border: 2px solid #c1c1c141;
+  height: 45px;
+  width: 315px;
+  border-radius: 10px;
+  margin: 10px auto 10px auto;
+  box-shadow: 0 4px 8px 4px rgb(0 0 0 / 5%);
+}
+
 .home-cta {
   display: inline-block;
 }
@@ -559,7 +578,7 @@ h3 {
   margin-top: 15px;
   border: none;
   border-radius: 5px;
-  width: 57px;
+  width: 65px;
   display: flex;
 }
 
@@ -905,12 +924,106 @@ INFORMATION PAGE------------ */
   margin: 10px 0px 10px 0px;
 }
 
-.card-number-input {
+.card-number,
+.name-on-card,
+.password {
   border: 2px solid #c1c1c1;
   height: 45px;
   width: 437px;
   border-radius: 5px;
   margin: 10px 0px 10px 0px;
+}
+
+.card-type,
+.experation-date,
+.ccv {
+  border: 2px solid #c1c1c1;
+  height: 45px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
+}
+
+.secure-payment {
+  background-color: #ffaa00;
+  border: 1px solid #ffaa00;
+  border-radius: 10px;
+  width: 150px;
+  height: 35px;
+  font-weight: 100;
+  margin-top: 35px;
+}
+
+input::placeholder {
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.secure-payment:hover {
+  background-color: #ff7700;
+  border: #ff7700;
+}
+
+.your-orders-float-right {
+  float: right;
+  margin-top: 160px;
+  margin-right: 190px;
+}
+
+/* ------------
+---------------
+THIS IS THE AFTER PURCHASES PAGE
+------------- */
+
+.congratulations-box {
+  border: 1px solid none;
+  border-radius: 10px;
+  background-color: #c5c18a;
+  margin-right: auto;
+  margin-left: auto;
+  width: 800px;
+  height: 615px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 160px;
+}
+
+.congratulations-text-one {
+  background-color: white;
+  border: 1px solid none;
+  border-radius: 10px;
+  padding: 20px 65px 20px 65px;
+  margin: 0px 10px 50px 10px;
+}
+
+.congratulations-text-one > p {
+  margin-bottom: 10px;
+}
+
+.click-view-order {
+  color: #ffaa00;
+}
+
+.click-view-order:hover {
+  color: #ff7700;
+}
+
+.purchase-discount-code {
+  border: 1px solid none;
+  border-radius: 10px;
+  background-color: white;
+  margin: 0px auto 0px auto;
+  width: 300px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.view-my-order {
+  margin-top: 55px;
+  color: #000;
 }
 
 /* .product {

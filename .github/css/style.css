@@ -362,20 +362,52 @@ section a {
   flex-wrap: wrap;
   align-content: center;
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 20%);
+  text-align: center;
+  padding-top: 20px;
 }
 
 .full-name,
 .email-address,
 .new-password,
 .confirm-password {
-  border: 2px solid #c1c1c1;
+  border: 2px solid #c1c1c145;
   height: 45px;
   width: 315px;
-  border-radius: 5px;
-  margin: 10px 0px 10px 0px;
-  box-shadow: 0 4px 8px 4px rgb(0 0 0 / 5%);
+  border-radius: 10px;
+  margin: 10px auto 10px auto;
+  box-shadow: 0 2px 8px 2px rgb(0 0 0 / 5%);
+}
+.full-name:hover,
+.email-address:hover,
+.new-password:hover,
+.confirm-password:hover {
+  box-shadow: 0 2px 8px 2px rgb(0 0 0 /15%);
 }
 
+.privacy-text {
+  margin-top: 30px;
+  padding: 0px 50px 0px 50px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 45%);
+}
+.confirm-button {
+  width: 315px;
+  height: 45px;
+  font-size: 18px;
+  border: 2px solid #c1c1c145;
+  border-radius: 10px;
+  margin: 50px auto 50px auto;
+  background-color: white;
+  box-shadow: 0 2px 8px 2px rgb(0 0 0 / 5%);
+}
+
+#member:hover {
+  text-decoration: underline;
+}
+
+.confirm-button:hover {
+  background-color: #ff7700;
+}
 .home-cta {
   display: inline-block;
 }
