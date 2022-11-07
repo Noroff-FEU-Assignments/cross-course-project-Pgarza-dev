@@ -734,6 +734,11 @@ h3 {
   margin-top: 12px;
   justify-content: space-between;
 }
+
+#info-box {
+  text-align: left;
+}
+
 .info-box {
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
   width: 400px;
@@ -751,6 +756,11 @@ h3 {
 .orders-card {
   display: flex;
   padding-top: 160px;
+  /* margin-bottom: -105px; */
+}
+
+#orders-card {
+  margin-bottom: -105px;
 }
 
 .your-orders {
@@ -913,16 +923,16 @@ INFORMATION PAGE------------ */
 .name-input,
 .street-input,
 .city-input {
-  border: 2px solid #c1c1c1;
+  border: 1px solid #c1c1c1;
   height: 45px;
   width: 437px;
   border-radius: 5px;
   margin: 10px 0px 10px 0px;
 }
 
-.emial-input,
+.email-input,
 .company-input {
-  border: 2px solid #c1c1c1;
+  border: 1px solid #c1c1c1;
   height: 45px;
   border-radius: 5px;
   width: 878px;
@@ -931,7 +941,7 @@ INFORMATION PAGE------------ */
 
 .post-code-input,
 .country-input {
-  border: 2px solid #c1c1c1;
+  border: 1px solid #c1c1c1;
   height: 45px;
   width: 437px;
   border-radius: 5px;
@@ -952,7 +962,7 @@ INFORMATION PAGE------------ */
 .card-number-input,
 .card-name-input,
 .city-input {
-  border: 2px solid #c1c1c1;
+  border: 1px solid #c1c1c1;
   height: 45px;
   width: 437px;
   border-radius: 5px;
@@ -962,7 +972,7 @@ INFORMATION PAGE------------ */
 .card-number,
 .name-on-card,
 .password {
-  border: 2px solid #c1c1c1;
+  border: 1px solid #c1c1c1;
   height: 45px;
   width: 437px;
   border-radius: 5px;
@@ -972,7 +982,7 @@ INFORMATION PAGE------------ */
 .card-type,
 .experation-date,
 .ccv {
-  border: 2px solid #c1c1c1;
+  border: 1px solid #c1c1c1;
   height: 45px;
   width: 100px;
   border-radius: 5px;
