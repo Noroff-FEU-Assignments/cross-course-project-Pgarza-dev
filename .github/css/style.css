@@ -88,6 +88,15 @@ main {
   color: white;
 }
 
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-container {
   background-color: #8c8418;
 }
@@ -95,7 +104,7 @@ main {
 .nav-list {
   display: flex;
   text-align: center;
-  gap: 1rem;
+  /* gap: 1rem; */
   flex-wrap: wrap;
   list-style: none;
   border-top: 1px solid white;
@@ -1020,6 +1029,9 @@ input::placeholder {
 THIS IS THE AFTER PURCHASES PAGE
 ------------- */
 
+#congratulations-box {
+  padding-top: 160px;
+}
 .congratulations-box {
   border: 1px solid none;
   border-radius: 10px;
@@ -1027,10 +1039,10 @@ THIS IS THE AFTER PURCHASES PAGE
   margin-right: auto;
   margin-left: auto;
   width: 800px;
-  height: 615px;
+  height: 540px;
   text-align: center;
   font-weight: bold;
-  padding-top: 160px;
+  padding-top: 30px;
 }
 
 .congratulations-text-one {
@@ -1047,6 +1059,7 @@ THIS IS THE AFTER PURCHASES PAGE
 
 .click-view-order {
   color: #ffaa00;
+  text-decoration: underline;
 }
 
 .click-view-order:hover {
@@ -1069,7 +1082,12 @@ THIS IS THE AFTER PURCHASES PAGE
 .view-my-order {
   margin-top: 55px;
   color: #000;
+  text-decoration: underline;
 }
+
+/* .flex {
+  display: flex;
+} */
 
 /* .product {
   background-image: url(../images/RainyDays_Jacket2.png);
@@ -1080,6 +1098,8 @@ THIS IS THE AFTER PURCHASES PAGE
 } */
 
 /* PAGE RESPONSIVNESS */
+@media (max-width: 600px) {
+}
 
 /* Free shipping */
 @media (max-width: 1000px) {
@@ -1092,9 +1112,21 @@ THIS IS THE AFTER PURCHASES PAGE
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 1000px) {
   .footer-columns {
     flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .social-media-icons {
     justify-content: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .home-img {
+    width: 500px;
   }
 }
