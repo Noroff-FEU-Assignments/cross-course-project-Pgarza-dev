@@ -88,6 +88,15 @@ main {
   color: white;
 }
 
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-container {
   background-color: #8c8418;
 }
@@ -95,7 +104,7 @@ main {
 .nav-list {
   display: flex;
   text-align: center;
-  gap: 1rem;
+  /* gap: 1rem; */
   flex-wrap: wrap;
   list-style: none;
   border-top: 1px solid white;
@@ -362,20 +371,52 @@ section a {
   flex-wrap: wrap;
   align-content: center;
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 20%);
+  text-align: center;
+  padding-top: 20px;
 }
 
 .full-name,
 .email-address,
 .new-password,
 .confirm-password {
-  border: 2px solid #c1c1c141;
+  border: 2px solid #c1c1c145;
   height: 45px;
   width: 315px;
   border-radius: 10px;
   margin: 10px auto 10px auto;
-  box-shadow: 0 4px 8px 4px rgb(0 0 0 / 5%);
+  box-shadow: 0 2px 8px 2px rgb(0 0 0 / 5%);
+}
+.full-name:hover,
+.email-address:hover,
+.new-password:hover,
+.confirm-password:hover {
+  box-shadow: 0 2px 8px 2px rgb(0 0 0 /15%);
 }
 
+.privacy-text {
+  margin-top: 30px;
+  padding: 0px 50px 0px 50px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 45%);
+}
+.confirm-button {
+  width: 315px;
+  height: 45px;
+  font-size: 18px;
+  border: 2px solid #c1c1c145;
+  border-radius: 10px;
+  margin: 50px auto 50px auto;
+  background-color: white;
+  box-shadow: 0 2px 8px 2px rgb(0 0 0 / 5%);
+}
+
+#member:hover {
+  text-decoration: underline;
+}
+
+.confirm-button:hover {
+  background-color: #ff7700;
+}
 .home-cta {
   display: inline-block;
 }
@@ -494,7 +535,7 @@ h3 {
 .s-button {
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
-  background-color: #ff7700;
+  background-color: #ffaa00;
   color: #000;
   padding: 10px 15px 10px 15px;
   margin-top: 15px;
@@ -507,7 +548,7 @@ h3 {
 } */
 
 .m-button {
-  background-color: #ff7700;
+  background-color: #ffaa00;
   color: #000;
   padding: 10px 15px 10px 15px;
   margin-top: 15px;
@@ -516,7 +557,7 @@ h3 {
 }
 
 .l-button {
-  background-color: #ff7700;
+  background-color: #ffaa00;
   color: #000;
   padding: 10px 15px 10px 15px;
   margin-top: 15px;
@@ -525,7 +566,7 @@ h3 {
 }
 
 .xl-button {
-  background-color: #ff7700;
+  background-color: #ffaa00;
   color: #000;
   padding: 10px 15px 10px 15px;
   margin-top: 15px;
@@ -536,7 +577,7 @@ h3 {
 .xxl-button {
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: #ff7700;
+  background-color: #ffaa00;
   color: #000;
   padding: 10px 15px 10px 15px;
   margin-top: 15px;
@@ -544,7 +585,7 @@ h3 {
   font-weight: bold;
 }
 .on-hover:hover {
-  background-color: #ffaa00;
+  background-color: #ff7700;
 }
 
 /* .size-selection-border {
@@ -702,6 +743,11 @@ h3 {
   margin-top: 12px;
   justify-content: space-between;
 }
+
+#info-box {
+  text-align: left;
+}
+
 .info-box {
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
   width: 400px;
@@ -713,9 +759,17 @@ h3 {
   background-color: rgb(255, 255, 255);
 }
 
+.info-box:hover {
+  box-shadow: 0 4px 8px 4px rgb(0 0 0 / 15%);
+}
 .orders-card {
   display: flex;
   padding-top: 160px;
+  /* margin-bottom: -105px; */
+}
+
+#orders-card {
+  margin-bottom: -105px;
 }
 
 .your-orders {
@@ -878,16 +932,16 @@ INFORMATION PAGE------------ */
 .name-input,
 .street-input,
 .city-input {
-  border: 2px solid #c1c1c1;
+  border: 1px solid #c1c1c1;
   height: 45px;
   width: 437px;
   border-radius: 5px;
   margin: 10px 0px 10px 0px;
 }
 
-.emial-input,
+.email-input,
 .company-input {
-  border: 2px solid #c1c1c1;
+  border: 1px solid #c1c1c1;
   height: 45px;
   border-radius: 5px;
   width: 878px;
@@ -896,7 +950,7 @@ INFORMATION PAGE------------ */
 
 .post-code-input,
 .country-input {
-  border: 2px solid #c1c1c1;
+  border: 1px solid #c1c1c1;
   height: 45px;
   width: 437px;
   border-radius: 5px;
@@ -917,7 +971,7 @@ INFORMATION PAGE------------ */
 .card-number-input,
 .card-name-input,
 .city-input {
-  border: 2px solid #c1c1c1;
+  border: 1px solid #c1c1c1;
   height: 45px;
   width: 437px;
   border-radius: 5px;
@@ -927,7 +981,7 @@ INFORMATION PAGE------------ */
 .card-number,
 .name-on-card,
 .password {
-  border: 2px solid #c1c1c1;
+  border: 1px solid #c1c1c1;
   height: 45px;
   width: 437px;
   border-radius: 5px;
@@ -937,7 +991,7 @@ INFORMATION PAGE------------ */
 .card-type,
 .experation-date,
 .ccv {
-  border: 2px solid #c1c1c1;
+  border: 1px solid #c1c1c1;
   height: 45px;
   width: 100px;
   border-radius: 5px;
@@ -975,6 +1029,9 @@ input::placeholder {
 THIS IS THE AFTER PURCHASES PAGE
 ------------- */
 
+#congratulations-box {
+  padding-top: 160px;
+}
 .congratulations-box {
   border: 1px solid none;
   border-radius: 10px;
@@ -982,10 +1039,10 @@ THIS IS THE AFTER PURCHASES PAGE
   margin-right: auto;
   margin-left: auto;
   width: 800px;
-  height: 615px;
+  height: 540px;
   text-align: center;
   font-weight: bold;
-  padding-top: 160px;
+  padding-top: 30px;
 }
 
 .congratulations-text-one {
@@ -1002,6 +1059,7 @@ THIS IS THE AFTER PURCHASES PAGE
 
 .click-view-order {
   color: #ffaa00;
+  text-decoration: underline;
 }
 
 .click-view-order:hover {
@@ -1024,7 +1082,12 @@ THIS IS THE AFTER PURCHASES PAGE
 .view-my-order {
   margin-top: 55px;
   color: #000;
+  text-decoration: underline;
 }
+
+/* .flex {
+  display: flex;
+} */
 
 /* .product {
   background-image: url(../images/RainyDays_Jacket2.png);
@@ -1035,6 +1098,8 @@ THIS IS THE AFTER PURCHASES PAGE
 } */
 
 /* PAGE RESPONSIVNESS */
+@media (max-width: 600px) {
+}
 
 /* Free shipping */
 @media (max-width: 1000px) {
@@ -1047,9 +1112,23 @@ THIS IS THE AFTER PURCHASES PAGE
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 1000px) {
   .footer-columns {
     flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .social-media-icons {
     justify-content: center;
   }
+}
+
+@media (max-width: 1000px) {
+  .home-img {
+    width: 500px;
+  }
+}
+@media screen {
 }
