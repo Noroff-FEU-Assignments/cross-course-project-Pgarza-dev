@@ -317,10 +317,6 @@ section a {
 .sign-up:hover {
   background-color: hwb(30 0% 0%);
 }
-/* .sign-up {
-  background-color: #8c8418;
-  background-image: url("C:\Users\pgarz\OneDrive\Documents\GitHub\cross-course-project-Pgarza-dev\.github\images\mans-hand-landscape.jpg");
-} */
 
 .footer-columns {
   display: flex;
