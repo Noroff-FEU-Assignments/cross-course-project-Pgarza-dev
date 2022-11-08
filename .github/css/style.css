@@ -192,10 +192,6 @@ section a {
   flex-direction: column; */
 }
 
-/* section p {
-  margin-top: 5px;
-} */
-
 .jacket-colors {
   border-bottom: 1px solid #000;
 }
@@ -249,10 +245,6 @@ section a {
 .sign-up:hover {
   background-color: hwb(30 0% 0%);
 }
-/* .sign-up {
-  background-color: #8c8418;
-  background-image: url("C:\Users\pgarz\OneDrive\Documents\GitHub\cross-course-project-Pgarza-dev\.github\images\mans-hand-landscape.jpg");
-} */
 
 .footer-columns {
   display: flex;
@@ -271,6 +263,10 @@ section a {
 .footer-list a {
   text-decoration: none;
   color: black;
+}
+
+.footer-list a:hover {
+  text-decoration: underline;
 }
 
 .secure-payment-container {
@@ -403,11 +399,6 @@ section a {
   width: 550px;
   height: 450px;
   margin-left: 70px;
-  /* margin-right: 100px;
-  margin-right: 50px;
-  margin-left: 50px; */
-  /* padding: 5px; */
-  /* background-color: rgb(245, 245, 245); */
 }
 
 .box-3 {
@@ -472,10 +463,6 @@ h3 {
   border: none;
   font-weight: bold;
 }
-
-/* .on-hover:active {
-  background-color: #ffaa00;
-} */
 
 .m-button {
   background-color: #ffaa00;
