@@ -74,7 +74,7 @@ header {
   flex-direction: row;
   margin-top: 10px;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
