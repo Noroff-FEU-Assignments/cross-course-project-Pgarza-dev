@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="\.github\css\style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
   <title>RainyDays</title>
 </head>
 
@@ -27,7 +27,7 @@
 
     <div>
       <a href="index.html">
-        <img class="logo" src=".github\images\RainyDays_Logo.png" alt="RainyDays Logo" /></a>
+        <img class="logo" src="../images/RainyDays_Logo.png" alt="RainyDays Logo" /></a>
       <input class="search-bar" type="text" name="search bar" placeholder="Search" />
       <p class="payment">Amount:</p>
       <p class="payment">Checkout</p>
@@ -48,67 +48,25 @@
   </header>
 </body>
 <main>
+  <section id="orders-card" class="orders-card">
 
-  <section class="your-orders-float-right">
-    <div class="your-orders">
-      <h2>YOUR ORDERS</h2>
-      <div class="orders-box">
-        <p>1 x WIND BREAKER</p>
-        <p>599-</p>
-        <a href="#">Remove</a>
-      </div>
-      <div class="total-box">
-        <h2>TOTAL</h2>
-        <p>599-</p>
-      </div>
-      <div>
-        <a href="information.html"><button class="checkout-button">CHECK OUT</button></a>
-      </div>
-      <div>
-        <label for="discount code">Discount code</label>
-        <input class="discount-code" type="text" id="discount-code" pattern="" placeholder="Discount code*" size="30" />
-      </div>
-      <div>
-        <h3 class="insurance-header">RAINY DAYS INSURANCE</h3>
-        <div class="insurance-prices">
-          <p>,99- 6 MO</p>
-          <a href="#"><button class="add-button">ADD</button></a>
-        </div>
-        <div class="insurance-prices">
-          <p>199,- 12 MO</p>
-          <a href="#"><button class="add-button">ADD</button></a>
-        </div>
-        <div class="insurance-prices">
-          <p>299,- 18 MO</p>
-          <a href="#"><button class="add-button">ADD</button></a>
-        </div>
-      </div>
-      <div class="insurance-disclaimer">
-        <p>**Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore cupiditate tempora molestias voluptatem
-          veritatis necessitatibus consequatur doloremque, soluta, vitae dignissimos ipsam, repellendus assumenda ab
-          odit alias iste magnam reprehenderit voluptatum.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="orders-card">
-
-    <section class="added-items-purchased">
+    <section class="added-items">
       <div>
       </div>
-      <div class="purchased-product-box">
+      <div class="product-box">
         <div class="items-added-box">
-          <h1>1. ITEMS ADDED TO CART</h1>
-          <img class="purchased-jacket" src=".github\images\RainyDays_Jacket2.png" alt="" />
+          <h1>1. Order Items</h1>
+          <img id="jacket-one" class="jacket-one" src="../images/RainyDays_Jacket2.png" alt="" />
         </div>
       </div>
 
-      <div class="box-3-purchased">
-        <h1>Wind Breaker</h1>
-        <div class="purchased-jacket-colors">
+      <div id="box-3" class="box-3">
+        <h1>Mens Hiking Jacket</h1>
+        <h2>Wind Breaker</h2>
+        <div class="jacket-page-colors">
           <p>Colors</p>
           <div class="color-choice">
-            <a href="#" class="color-choice-black"></a>
+            <a href="#" class="color-choice-turquoise"></a>
             <a href="#" class="color-choice-red"></a>
             <a href="#" class="color-choice-blue"></a>
             <a href="#" class="color-choice-green"></a>
@@ -138,78 +96,80 @@
             </p>
             <p>37 Reviews</p>
           </a>
-          <b>
-            <p>Nok. 599.-</p>
-          </b>
+        </div>
+
+        <h3>Nok. 599.-</h3>
+      </div>
+    </section>
+
+    <section>
+      <div class="your-orders">
+
+        <h2>YOUR ORDERS</h2>
+        <div class="orders-box">
+          <p>1 x WIND BREAKER</p>
+          <p>599-</p>
+          <a href="#">Remove</a>
+        </div>
+
+        <div class="total-box">
+          <h2>TOTAL</h2>
+          <p>599-</p>
+        </div>
+
+        <div>
+          <a href="#"><button class="checkout-button">CHECK OUT</button></a>
+
+        </div>
+
+        <div>
+          <label for="discount code">Discount code</label>
+          <input class="discount-code" type="text" id="discount-code" pattern="" placeholder="Discount code*"
+            size="30" />
+        </div>
+
+        <div>
+          <h3 class="insurance-header">RAINY DAYS INSURANCE</h3>
+          <div class="insurance-prices">
+            <p>,99- 6 MO</p>
+            <a href="#"><button class="add-button">ADD</button></a>
+          </div>
+          <div class="insurance-prices">
+            <p>199,- 12 MO</p>
+            <a href="#"><button class="add-button">ADD</button></a>
+          </div>
+          <div class="insurance-prices">
+            <p>299,- 18 MO</p>
+            <a href="#"><button class="add-button">ADD</button></a>
+          </div>
+        </div>
+
+        <div class="insurance-disclaimer">
+          <p>**Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore cupiditate tempora molestias voluptatem
+            veritatis necessitatibus consequatur doloremque, soluta, vitae dignissimos ipsam, repellendus assumenda ab
+            odit alias iste magnam reprehenderit voluptatum.</p>
         </div>
 
       </div>
     </section>
   </section>
 
-
-
   <section>
-    <div class="purchase-info-box">
-      <h1>2. DELIVERY INFORMATION</h1>
-      <label for="name"><b>Basic information</b></label>
-      <div>
-        <input class="name-input" type="text" id="first name" pattern="" placeholder="First Name" size="30" />
-        <input class="name-input" type="text" id="last name" pattern="" placeholder="Last Name" size="30">
-        <input class="email-input" type="text" id="email address" pattern="" placeholder="Email Address" size="30">
-        <input class="company-input" type="text" id="company name" pattern="" placeholder="Company Name" size="30">
-      </div>
-      <label for="name"><b>Billing Address</b></label>
-      <div>
-        <input class="street-input" type="text" id="street" pattern="" placeholder="Street" size="30" />
-        <input class="city-input" type="text" id="city" pattern="" placeholder="City" size="30">
-        <input class="post-code-input" type="text" id="post code" pattern="" placeholder="Post code" size="30">
-        <input class="country-input" type="text" id="county" pattern="" placeholder="County" size="30">
-      </div>
+    <div>
+      <a href="information.html" id="info-box">
+        <h1 class="info-box">2. DELIVERLY INFORMATION</h1>
+      </a>
+      </a>
     </div>
-
-    <div class="delivery-info-box">
-      <h2>3. DELIVERY METHOD</h2>
-      <div class="insurance-prices">
-        <p>14 Day Delivery</p>
-        <p>Free</p>
-        <a href="#"><button class="add-button">ADD</button></a>
-      </div>
-      <div class="insurance-prices">
-        <p>7 Day Delivery</p>
-        <p>49,-</p>
-        <a href="#"><button class="add-button">ADD</button></a>
-      </div>
-      <div class="insurance-prices">
-        <p>3 Day Delivery</p>
-        <p>99,-</p>
-        <a href="#"><button class="add-button">ADD</button></a>
-      </div>
-
+    <div>
+      <a href="information.html" id="info-box">
+        <h1 class="info-box">3. DELIVERY METHOD</h1>
+      </a>
     </div>
-    <div class="purchase-info-box">
-      <h1>4. PAYMENT</h1>
-      <label for="name"><b>Payment information</b></label>
-      <div>
-        <div>
-          <input class="card-number" type="text" id="card number" pattern="" placeholder="Card number" size="16" />
-          <input class="card-type" type="text" id="card type" pattern="" placeholder="Card Type " size="30">
-        </div>
-        <div>
-          <input class="name-on-card" type="text" id="name on card" pattern="" placeholder="Name on card" size="30">
-        </div>
-        <div>
-          <input class="experation-date" type="text" id="experation data" pattern="" placeholder="Exp. Date" size="30">
-          <input class="ccv" type="text" id="CCV" pattern="" placeholder="CCV" size="30">
-        </div>
-        <div>
-          <input type="checkbox" type="" id="save card" pattern="" placeholder="" size="" value="">
-          <span>Save Card</span>
-
-        </div>
-
-        <a href="congratulations.html"><button class="secure-payment">Secure Payment</button></a>
-      </div>
+    <div>
+      <a href="information.html" id="info-box">
+        <h1 class="info-box">4. PAYMENT</h1>
+      </a>
     </div>
   </section>
 
@@ -229,6 +189,7 @@
             </text>
           </g>
         </svg>
+
 
         John Doe <svg xmlns="http://www.w3.org/2000/svg" width="90" height="17" viewBox="0 0 90 17">
           <g id="Group_22" data-name="Group 22" transform="translate(-171 -1764)">

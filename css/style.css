@@ -1019,6 +1019,19 @@ THIS IS THE AFTER PURCHASES PAGE
   text-decoration: underline;
 }
 
+/*------ 
+VIEW MY ORDERS PAGE 
+------*/
+
+#jacket-one {
+  width: 140px;
+  height: 180px;
+}
+
+#box-3 {
+  max-width: 390px;
+}
+
 /* PAGE RESPONSIVNESS */
 @media (max-width: 600px) {
 }
