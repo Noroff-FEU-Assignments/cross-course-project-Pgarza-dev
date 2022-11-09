@@ -685,9 +685,9 @@ h3 {
   /* margin-bottom: -105px; */
 }
 
-#orders-card {
-  margin-bottom: -105px;
-}
+/* #orders-card {
+  height: 460px;
+} */
 
 .your-orders {
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
@@ -1022,14 +1022,36 @@ THIS IS THE AFTER PURCHASES PAGE
 /*------ 
 VIEW MY ORDERS PAGE 
 ------*/
-
-#jacket-one {
-  width: 140px;
-  height: 180px;
+.added-items {
+  margin-bottom: 20px;
 }
 
-#box-3 {
-  max-width: 390px;
+.purchased-items {
+  margin-top: 75px;
+}
+
+.view-order-container {
+  box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
+  height: 275px;
+  width: 900px;
+  display: grid;
+  grid-template-columns: ;
+  margin-left: 120px;
+  border-radius: 10px;
+  padding: 10px 10px 0px 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.container {
+  background-color: rgb(232 232 232);
+  height: 115px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.view-order {
+  display: flex;
 }
 
 /* PAGE RESPONSIVNESS */
