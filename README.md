@@ -5,6 +5,7 @@ cross-course-project-Pgarza-dev created by GitHub Classroom
 Rainy Days Project
 This project is a jacket e-commerce website for a fictional company called Rainy Days.
 
+Prototype: https://xd.adobe.com/view/16cf8f28-8b34-4da0-aca6-66c70a3e1a00-439c/
 The website: https://jolly-narwhal-395c4e.netlify.app is navigated from the main page and then clicking on Hiking(jacket). From there you are presented with the jacket informaiton(about this item), size, color and quantity choices a well as an (add to cart) button. By hovering over the jacket thumbnails you will see closer view of the jacket.
 
 After clicking the add to cart button you will then be sent to the cart page where you can see the jacket price (your orders box) on the left hand side along with other choices that can be offered by the company. Click on (check out) button to proceed to next page.
