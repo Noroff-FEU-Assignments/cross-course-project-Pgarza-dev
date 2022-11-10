@@ -1042,6 +1042,22 @@ VIEW MY ORDERS PAGE
 }
 
 /* PAGE RESPONSIVNESS */
+
+@media (max-width: 820px) {
+  .search-bar {
+    width: 100%;
+    margin-top: 0px;
+  }
+  .logo,
+  .payment,
+  .free-shipping {
+    visibility: hidden;
+  }
+
+  .header {
+  }
+}
+
 @media (max-width: 820px) {
   .home-img {
     background-image: url(../images/headshot.jpg);
@@ -1075,7 +1091,4 @@ VIEW MY ORDERS PAGE
   .social-media-icons {
     justify-content: center;
   }
-}
-.grid {
-  display: grid;
 }
