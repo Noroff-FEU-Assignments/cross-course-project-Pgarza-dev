@@ -398,9 +398,8 @@ section a {
   margin-left: 70px;
 }
 
-.box-3 {
+.box-3-jacket {
   max-width: 390px;
-  margin-left: 250px;
 }
 
 .box-3 > p,
@@ -1164,5 +1163,17 @@ VIEW MY ORDERS PAGE
 @media (max-width: 1000px) {
   .social-media-icons {
     justify-content: center;
+  }
+}
+
+@media (max-width: 1299px) {
+}
+
+@media (max-width: 1299px) {
+  .box-1 {
+    display: none;
+  }
+  .card {
+    gap: 0;
   }
 }
