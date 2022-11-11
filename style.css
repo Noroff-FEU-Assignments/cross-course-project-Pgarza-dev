@@ -1059,6 +1059,10 @@ VIEW MY ORDERS PAGE
     background-image: url(./images/headshot-s.jpg);
   }
 
+  .footer-image {
+    background-image: url(./images/)
+  }
+
   nav {
     /* display: none; */
   }
