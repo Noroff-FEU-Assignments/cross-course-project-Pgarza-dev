@@ -1051,20 +1051,22 @@ VIEW MY ORDERS PAGE
   .logo,
   .payment,
   .free-shipping {
-    visibility: hidden;
+    display: none;
+    /* visibility: hidden; */
   }
 
   .home-img {
     background-image: url(./images/headshot-s.jpg);
   }
 
-  .header {
+  nav {
+    /* display: none; */
   }
 }
 
 @media (max-width: 820px) {
   .home-img {
-    background-image: url(../images/headshot.jpg);
+    background-image: url(./images/headshot-small.jpg);
     padding: 335px 141px;
     display: flex;
   }
