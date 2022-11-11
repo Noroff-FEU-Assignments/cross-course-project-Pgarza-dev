@@ -1144,7 +1144,17 @@ VIEW MY ORDERS PAGE
   }
 }
 
+@media (max-width: 1074px) {
+  .payment {
+    margin-left: 700px;
+  }
+}
+
 @media (max-width: 1000px) {
+  .header-li {
+    display: none;
+  }
+
   .footer-columns {
     flex-direction: column;
     text-align: center;
