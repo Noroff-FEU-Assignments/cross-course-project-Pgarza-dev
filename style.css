@@ -127,7 +127,7 @@ header {
   margin-left: 10px;
 }
 .home-img {
-  background-image: url(../images/headshot.jpg);
+  background-image: url(./images/headshot-large.jpg);
   padding-bottom: 600px;
   padding-top: 500px;
   background-repeat: no-repeat;
