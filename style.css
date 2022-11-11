@@ -1059,12 +1059,29 @@ VIEW MY ORDERS PAGE
     background-image: url(./images/headshot-s.jpg);
   }
 
-  .footer-image {
-    background-image: url(./images/)
+  .welcome-content {
+    color: black;
+    width: 0px;
+    position: static;
   }
 
-  nav {
-    /* display: none; */
+  .footer-image {
+    background-image: url(./images/mans-hand-landscape-medium.jpg);
+    height: 265px;
+    width: 100%;
+  }
+
+  .newsletter {
+    margin-right: 30px;
+    position: static;
+    margin: auto;
+    padding-top: 75px;
+    font-weight: 400;
+  }
+
+  .search-bar {
+    margin: 0px;
+    width: 95%;
   }
 }
 
