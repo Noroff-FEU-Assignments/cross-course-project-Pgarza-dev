@@ -418,7 +418,7 @@ h3 {
   font-size: 20px;
 }
 
-.items-added-box > h1 {
+.items-added-title {
   font-size: 28px;
 }
 
@@ -595,7 +595,7 @@ h3 {
 .product-box {
   height: 380px;
   width: 295px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 
 .color-choice {
@@ -651,6 +651,12 @@ h3 {
   margin-bottom: 30px;
   margin-top: 12px;
   justify-content: space-between;
+}
+.info-container {
+  margin-top: -100px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
 }
 
 #info-box {
@@ -1027,7 +1033,7 @@ VIEW MY ORDERS PAGE
   height: 275px;
   width: 900px;
   display: grid;
-  grid-template-columns: ;
+  /* grid-template-columns: ; */
   margin-left: 120px;
   border-radius: 10px;
   padding: 10px 10px 0px 10px;
@@ -1048,7 +1054,18 @@ VIEW MY ORDERS PAGE
 }
 
 /* PAGE RESPONSIVNESS */
+
 @media (max-width: 375px) {
+  .items-added-title {
+    font-size: 18px;
+  }
+  .search-bar {
+    width: 85%;
+    margin: 15px 20px;
+  }
+  .items-added-box {
+    width: 40%;
+  }
   .home-img {
     display: none;
   }
@@ -1061,8 +1078,8 @@ VIEW MY ORDERS PAGE
     width: 180px;
   }
   .jacket-one {
-    height: 230px;
-    width: 180px;
+    height: 275px;
+    width: 213px;
   }
   .card {
     padding-top: 0px;
@@ -1070,11 +1087,38 @@ VIEW MY ORDERS PAGE
   .box-2 {
     width: 0px;
   }
-  .review-contant-border {
-    /* padding-left: 0px; */
+  .box-3 {
+    margin-left: 0px;
   }
   .your-orders {
-
+    width: 82%;
+    height: 98%;
+  }
+  .added-items {
+    width: 82%;
+    padding: 20px 20px;
+    margin: 0px;
+  }
+  .discount-code {
+    width: 100%;
+  }
+  .input-email {
+    width: 40%;
+  }
+  .review-container {
+    gap: 6rem;
+  }
+  .info-container {
+    margin-top: 20px;
+  }
+  .newsletter {
+    font-size: 10px;
+    width: 70%;
+  }
+  .info-box {
+    width: 270px;
+    font-size: 16px;
+    margin-top: 20px;
   }
 }
 
@@ -1092,6 +1136,13 @@ VIEW MY ORDERS PAGE
     height: 230px;
     width: 180px;
   }
+  .box-3 {
+    margin-left: 0px;
+  }
+  .added-items {
+    width: 82%;
+    padding: 20px 20px;
+  }
 }
 
 @media (max-width: 390px) {
@@ -1108,7 +1159,7 @@ VIEW MY ORDERS PAGE
     height: 45px;
   }
   .search-bar {
-    width: 95%;
+    /* width: 95%; */
   }
   .home-img {
     background-image: url(./images/headshot-small.jpg);
@@ -1130,12 +1181,21 @@ VIEW MY ORDERS PAGE
   .box-2 {
     margin-bottom: 0px;
   }
+  .items-added-title {
+    font-size: 20px;
+  }
+  .box-3 {
+    margin: auto;
+  }
+  .info-container {
+    margin-top: 50px auto;
+  }
 }
 @media (max-width: 631px) {
-  .jacket-one {
+  /* .jacket-one {
     height: 370px;
     width: 295px;
-  }
+  } */
   .box-2 {
     width: 300px;
   }
@@ -1150,6 +1210,21 @@ VIEW MY ORDERS PAGE
 @media (max-width: 468px) {
   .review-content-hidden-border {
     margin: auto;
+  }
+}
+@media (max-width: 503px) {
+  .info-box {
+  }
+  .checkout-button {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (max-width: 760px) {
+  .added-items {
+    height: 1025px;
+    margin-right: 60px;
+    justify-content: center;
   }
 }
 
@@ -1170,7 +1245,7 @@ VIEW MY ORDERS PAGE
     height: 45px;
   }
   .search-bar {
-    width: 95%;
+    /* width: 95%; */
   }
   .logo-container {
     margin: 10px auto;
@@ -1194,6 +1269,9 @@ VIEW MY ORDERS PAGE
     position: unset;
     top: 136px;
     float: none;
+  }
+  .orders-card {
+    padding-top: 0px;
   }
   .card {
     padding-top: 30px;
@@ -1280,10 +1358,30 @@ VIEW MY ORDERS PAGE
     margin-left: 0px;
   }
 }
+@media (max-width: 1301px) {
+  .added-items {
+    width: 95%;
+  }
+  .orders-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 30px;
+  }
+  .your-orders {
+    margin: auto;
+    margin: 20px;
+  }
+  /* .info-box {
+    margin-left: 60px;
+  } */
+  .info-container {
+    margin-top: 0px;
+  }
+}
 
 @media (max-width: 1388px) {
   .orders-card {
     display: flex;
-  }
   }
 }
