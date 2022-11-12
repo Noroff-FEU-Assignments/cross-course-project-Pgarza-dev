@@ -833,9 +833,13 @@ INFORMATION PAGE------------ */
 }
 
 .purchase-info-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
   height: 400px;
-  width: 900px;
+  width: 54%;
   margin: 20px 0px 20px 30px;
   border-radius: 10px;
   margin-left: 30px;
@@ -849,7 +853,7 @@ INFORMATION PAGE------------ */
 .city-input {
   border: 1px solid #c1c1c1;
   height: 45px;
-  width: 437px;
+  width: 49%;
   border-radius: 5px;
   margin: 10px 0px 10px 0px;
 }
@@ -859,7 +863,7 @@ INFORMATION PAGE------------ */
   border: 1px solid #c1c1c1;
   height: 45px;
   border-radius: 5px;
-  width: 878px;
+  width: 98.5%;
   margin-bottom: 10px;
 }
 
@@ -867,7 +871,7 @@ INFORMATION PAGE------------ */
 .country-input {
   border: 1px solid #c1c1c1;
   height: 45px;
-  width: 437px;
+  width: 49%;
   border-radius: 5px;
 }
 
