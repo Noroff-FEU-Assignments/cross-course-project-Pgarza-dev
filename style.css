@@ -288,8 +288,8 @@ section a {
 
 .login-in {
   border: 1px solid white;
-  max-width: 390px;
-  width: 390px;
+  /* max-width: 390px; */
+  width: 85%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -1120,6 +1120,12 @@ VIEW MY ORDERS PAGE
     font-size: 16px;
     margin-top: 20px;
   }
+  .thumbnail,
+  .box-2,
+  .jacket-one,
+  .box-4 {
+    display: none;
+  }
 }
 
 @media (max-width: 414px) {
@@ -1177,6 +1183,7 @@ VIEW MY ORDERS PAGE
     padding-top: 155px;
   }
 }
+
 @media (min-width: 425px) {
   .box-2 {
     margin-bottom: 0px;
@@ -1213,8 +1220,6 @@ VIEW MY ORDERS PAGE
   }
 }
 @media (max-width: 503px) {
-  .info-box {
-  }
   .checkout-button {
     margin-right: auto;
     margin-left: auto;
@@ -1281,7 +1286,6 @@ VIEW MY ORDERS PAGE
     height: 265px;
     width: 100%;
   }
-
   .newsletter {
     margin-right: 30px;
     position: static;
@@ -1295,6 +1299,7 @@ VIEW MY ORDERS PAGE
     display: flex;
   }
 }
+
 @media (max-width: 1071px) {
   .payment {
     margin-left: 700px;
