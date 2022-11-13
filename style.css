@@ -693,7 +693,7 @@ h3 {
   width: 420px; */
   /* margin-left: 120px; */
   height: 738px;
-    width: 630px;
+  width: 630px;
   margin-bottom: 20px;
   border-radius: 10px;
   padding: 10px 10px 0px 10px;
@@ -1095,11 +1095,14 @@ VIEW MY ORDERS PAGE
   }
   .added-items {
     width: 100%;
-    height: 100%
+    height: 100%;
     margin: auto;
   }
   .items-added-title {
     font-size: 14px;
+  }
+  .total-box {
+    width: 280px;
   }
 }
 
@@ -1345,7 +1348,7 @@ VIEW MY ORDERS PAGE
     margin-top: 50px auto;
   }
   .info-box {
-    width: 362px; 
+    width: 362px;
   }
   .added-items {
     width: 100%;
@@ -1373,10 +1376,10 @@ VIEW MY ORDERS PAGE
     margin-right: auto;
     margin-left: auto;
   }
-  .container,
+  /* .container
    {
     width: 400px;
-  }
+  } */
 }
 @media (max-width: 631px) {
   /* .jacket-one {
