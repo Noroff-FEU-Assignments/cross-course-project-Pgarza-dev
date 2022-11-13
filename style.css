@@ -144,7 +144,7 @@ header {
 .welcome-content {
   color: black;
   text-decoration: underline;
-  position: relative;
+  position: inherit;
   float: right;
   right: 130px;
 }
