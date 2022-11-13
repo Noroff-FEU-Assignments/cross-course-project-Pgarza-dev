@@ -12,6 +12,7 @@ body {
 main {
   background-color: #f2f2f2;
 }
+
 /* HOME PAGE */
 
 nav {
@@ -85,7 +86,6 @@ header {
 .nav-list {
   display: flex;
   text-align: center;
-  /* gap: 1rem; */
   flex-wrap: wrap;
   list-style: none;
   border-top: 1px solid white;
@@ -122,10 +122,6 @@ header {
   border-radius: 10px;
   margin: 15px 0px 20px 20px;
   border: none;
-}
-
-.cart-icon {
-  margin-left: 10px;
 }
 .home-img {
   background-image: url(./images/headshot-large.jpg);
@@ -186,8 +182,6 @@ section a {
   cursor: pointer;
   margin-top: 30px;
   margin-bottom: 20px;
-  /* display: flex;
-  flex-direction: column; */
 }
 
 .jacket-colors {
@@ -197,8 +191,6 @@ section a {
 .footer-image {
   background-image: url(../images/mans-hand-landscape.jpg);
   width: 100%;
-  /* padding-top: 200px;
-  padding-bottom: 400px; */
   background-repeat: no-repeat;
   background-size: cover;
   height: 645px;
@@ -218,10 +210,6 @@ section a {
   position: relative;
   top: 35%;
   left: 65%;
-  /* float: right;
-  margin-right: 200px; */
-  /* margin-left: 980px;
-  margin-top: -28px; */
   font-weight: 100;
 }
 
@@ -288,7 +276,6 @@ section a {
 
 .login-in {
   border: 1px solid white;
-  /* max-width: 390px; */
   width: 85%;
   margin-left: auto;
   margin-right: auto;
@@ -364,7 +351,6 @@ section a {
 }
 
 .thumbnail {
-  /* border: 1px solid #000; */
   height: 95px;
   display: flex;
   margin-top: 6px;
@@ -389,7 +375,6 @@ section a {
   max-width: 390px;
   width: 100px;
   margin-left: 30px;
-  /* margin-right: 35px; */
 }
 
 .box-2 {
@@ -428,15 +413,11 @@ h3 {
   margin-left: auto;
   margin-right: auto;
 }
-/* .box-3 > * {
-  padding: 0px 0px 20px 0px;
-} */
 
 .box-4 {
   max-width: 800px;
   width: 300px;
   margin-left: 120px;
-  /* margin-left: 100px; */
 }
 
 .jacket-one {
@@ -465,24 +446,8 @@ h3 {
   font-weight: bold;
 }
 
-.m-button {
-  background-color: #ffaa00;
-  color: #000;
-  padding: 10px 15px 10px 15px;
-  margin-top: 15px;
-  border: none;
-  font-weight: bold;
-}
-
-.l-button {
-  background-color: #ffaa00;
-  color: #000;
-  padding: 10px 15px 10px 15px;
-  margin-top: 15px;
-  border: none;
-  font-weight: bold;
-}
-
+.m-button,
+.l-button,
 .xl-button {
   background-color: #ffaa00;
   color: #000;
@@ -576,14 +541,11 @@ h3 {
   display: flex;
   width: 59%;
   height: 585px;
-  /* width: 1000px; */
   flex-wrap: wrap;
-  /* margin: 0px 0px 0px 30px; */
   padding: 20px 0px 0px 20px;
   text-align: left;
   font-family: arial;
   background-color: rgb(255, 255, 255);
-  /* gap: 1em; */
 }
 
 .items-added-box {
@@ -595,7 +557,6 @@ h3 {
 .product-box {
   height: 380px;
   width: 295px;
-  /* margin-bottom: 100px; */
 }
 
 .color-choice {
@@ -680,25 +641,16 @@ h3 {
 .orders-card {
   display: flex;
   padding-top: 160px;
-  /* margin-bottom: -105px; */
 }
-
-/* #orders-card {
-  height: 460px;
-} */
 
 .your-orders {
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
-  /* height: 720px;
-  width: 420px; */
-  /* margin-left: 120px; */
   height: 738px;
   width: 630px;
   margin-bottom: 20px;
   border-radius: 10px;
   padding: 10px 10px 0px 10px;
   background-color: rgb(255, 255, 255);
-  /* margin-left: 20px; */
 }
 
 .orders-box {
@@ -966,11 +918,9 @@ input::placeholder {
   float: right;
   margin-top: 160px;
   margin-right: 30px;
-  /* margin-right: 190px; */
 }
 
 /* ------------
----------------
 THIS IS THE AFTER PURCHASES PAGE
 ------------- */
 
@@ -1046,7 +996,6 @@ VIEW MY ORDERS PAGE
   height: 275px;
   width: 900px;
   display: grid;
-  /* grid-template-columns: ; */
   margin-left: 120px;
   border-radius: 10px;
   padding: 10px 10px 0px 10px;
@@ -1262,9 +1211,6 @@ VIEW MY ORDERS PAGE
   .nav-container {
     height: 45px;
   }
-  .search-bar {
-    /* width: 95%; */
-  }
   .home-img {
     background-image: url(./images/headshot-small.jpg);
     padding: 155px 0;
@@ -1276,7 +1222,6 @@ VIEW MY ORDERS PAGE
     width: 190px;
     height: 240px;
   }
-
   .newsletter {
     padding-top: 155px;
   }
@@ -1322,7 +1267,6 @@ VIEW MY ORDERS PAGE
     margin-left: auto;
   }
 }
-
 @media (max-width: 425px) {
   .logo {
     width: 284px;
@@ -1377,22 +1321,13 @@ VIEW MY ORDERS PAGE
     margin-right: auto;
     margin-left: auto;
   }
-  /* .container
-   {
-    width: 400px;
-  } */
 }
 @media (max-width: 631px) {
-  /* .jacket-one {
-    height: 370px;
-    width: 295px;
-  } */
   .box-2 {
     width: 300px;
   }
   .box-3-jacket {
     margin-bottom: 50px;
-    /* margin-top: -66px; */
   }
   .card {
     height: 1300px;
@@ -1442,7 +1377,6 @@ VIEW MY ORDERS PAGE
 @media (max-width: 760px) {
   .added-items {
     height: 1025px;
-    /* margin-right: 60px; */
     justify-content: center;
   }
   .congratulations-box {
@@ -1459,11 +1393,6 @@ VIEW MY ORDERS PAGE
   }
 }
 @media (max-width: 710px) {
-  /* .search-bar {
-    margin-top: 0px;
-    margin-left: 270px;
-    width: 389px;
-  } */
   .logo {
     margin-top: 10px;
   }
@@ -1499,9 +1428,6 @@ VIEW MY ORDERS PAGE
     margin-right: auto;
     margin-left: auto;
   }
-  .logo {
-    /* margin-bottom: -46px; */
-  }
   .purchased-jacket {
     height: 264px;
     width: 204px;
@@ -1529,9 +1455,6 @@ VIEW MY ORDERS PAGE
   .nav-container {
     height: 45px;
   }
-  .search-bar {
-    /* width: 95%; */
-  }
   .logo-container {
     margin: 10px auto;
     width: 95%;
@@ -1540,7 +1463,6 @@ VIEW MY ORDERS PAGE
   .payment,
   .free-shipping {
     display: none;
-    /* visibility: hidden; */
   }
   .home-img {
     background-image: url(./images/headshot-small.jpg);
@@ -1658,7 +1580,6 @@ VIEW MY ORDERS PAGE
     margin-left: auto;
   }
 }
-
 @media (max-width: 1122px) {
   .box-4 {
     width: 90%;
@@ -1668,13 +1589,11 @@ VIEW MY ORDERS PAGE
     height: 950px;
   }
 }
-
 @media (max-width: 1191px) {
   .payment {
     margin-left: 700px;
   }
 }
-
 @media (max-width: 1299px) {
   .box-1 {
     display: none;
@@ -1686,7 +1605,6 @@ VIEW MY ORDERS PAGE
     justify-content: space-evenly;
     height: 50%;
   }
-  /* .box-2, */
   .box-4 {
     margin-bottom: 50px;
     margin-left: 0px;
@@ -1700,15 +1618,7 @@ VIEW MY ORDERS PAGE
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* margin-left: 30px; */
   }
-  /* .your-orders {
-    margin: auto;
-    margin: 20px;
-  } */
-  /* .info-box {
-    margin-left: 60px;
-  } */
   .info-container {
     margin-top: 0px;
   }
