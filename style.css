@@ -698,6 +698,7 @@ h3 {
   border-radius: 10px;
   padding: 10px 10px 0px 10px;
   background-color: rgb(255, 255, 255);
+  /* margin-left: 20px; */
 }
 
 .orders-box {
@@ -1199,9 +1200,9 @@ VIEW MY ORDERS PAGE
     margin-right: auto;
     margin-left: auto;
   }
-  .total-box {
+  /* .total-box {
     width: 268px;
-  }
+  } */
 }
 
 @media (max-width: 414px) {
@@ -1347,9 +1348,9 @@ VIEW MY ORDERS PAGE
   .info-container {
     margin-top: 50px auto;
   }
-  .info-box {
+  /* .info-box {
     width: 362px;
-  }
+  } */
   .added-items {
     width: 100%;
     /* margin: auto; */
@@ -1467,14 +1468,22 @@ VIEW MY ORDERS PAGE
     margin-top: 10px;
   }
 }
+@media (max-width: 737px) {
+  .search-bar {
+    margin-top: 60px;
+    margin-bottom: 0px;
+  }
+  .logo {
+    margin-top: 0px;
+  }
+}
 @media (max-width: 768px) {
   .box-4 {
     margin-top: 50px;
   }
   .your-orders {
     width: 90%;
-    margin-right: auto;
-    margin-left: auto;
+    margin-left: 20px;
   }
   .your-orders-float-right {
     margin-top: 340px;
