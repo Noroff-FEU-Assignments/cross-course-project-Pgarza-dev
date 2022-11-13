@@ -197,7 +197,7 @@ section a {
 .footer-image {
   background-image: url(../images/mans-hand-landscape.jpg);
   width: 100%;
-  /* padding-top: 200px; 
+  /* padding-top: 200px;
   padding-bottom: 400px; */
   background-repeat: no-repeat;
   background-size: cover;
@@ -1023,8 +1023,8 @@ THIS IS THE AFTER PURCHASES PAGE
   text-decoration: underline;
 }
 
-/*------ 
-VIEW MY ORDERS PAGE 
+/*------
+VIEW MY ORDERS PAGE
 ------*/
 .added-items {
   margin-bottom: 20px;
@@ -1060,6 +1060,33 @@ VIEW MY ORDERS PAGE
 }
 
 /* PAGE RESPONSIVNESS */
+@media (max-width: 320px) {
+  .full-name,
+  .email-address,
+  .new-password,
+  .confirm-password,
+  .confirm-button {
+    width: 230px;
+  }
+
+  .congratulations-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+  #congratulations-box {
+    padding-top: 0px;
+  }
+  .hidden {
+    display: none;
+  }
+  .search-bar {
+    margin-top: 50px;
+  }
+  .your-orders-float-right {
+    margin-top: 0px;
+  }
+}
 
 @media (max-width: 375px) {
   .items-added-title {
@@ -1098,15 +1125,20 @@ VIEW MY ORDERS PAGE
   }
   .your-orders {
     width: 82%;
-    height: 98%;
+    height: 100%;
   }
   .added-items {
     width: 82%;
     padding: 20px 20px;
     margin: 0px;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    /* height: 844px; */
   }
   .discount-code {
-    width: 100%;
+    width: 95%;
   }
   .input-email {
     width: 40%;
@@ -1128,11 +1160,21 @@ VIEW MY ORDERS PAGE
   }
   .thumbnail,
   .box-2,
-  .jacket-one,
   .box-4 {
     display: none;
   }
   .purchased-product-box {
+    display: none;
+  }
+  .congratulations-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+  #congratulations-box {
+    padding-top: 0px;
+  }
+  .hidden {
     display: none;
   }
 }
@@ -1155,10 +1197,24 @@ VIEW MY ORDERS PAGE
     margin-left: 0px;
   }
   .added-items {
-    width: 82%;
+    width: 100%;
     padding: 20px 20px;
   }
   .purchased-product-box {
+    display: none;
+  }
+  .info-box {
+    width: 272px;
+  }
+  .congratulations-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+  #congratulations-box {
+    padding-top: 0px;
+  }
+  .hidden {
     display: none;
   }
 }
@@ -1214,20 +1270,74 @@ VIEW MY ORDERS PAGE
     margin: 20px auto;
     width: 100%;
   }
+  .added-items {
+    width: 100%;
+  }
+  #congratulations-box {
+    padding-top: -160px;
+  }
+  .congratulations-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+  #congratulations-box {
+    padding-top: 0px;
+  }
+  .hidden {
+    display: none;
+  }
 }
 
-@media (min-width: 425px) {
+@media (max-width: 425px) {
+  .logo {
+    width: 284px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    margin-top: 7px;
+  }
+  .search-bar {
+    margin-top: 65px;
+    width: 90%;
+  }
   .box-2 {
     margin-bottom: 0px;
+    margin-right: auto;
   }
   .items-added-title {
     font-size: 20px;
   }
-  .box-3 {
+  /* .box-3 {
     margin: auto;
-  }
+  } */
   .info-container {
     margin-top: 50px auto;
+  }
+  .info-box {
+    /* width: 362px; */
+  }
+  .added-items {
+    width: 100%;
+    /* margin: auto; */
+  }
+  .jacket-one {
+    height: 350px;
+    width: 270px;
+  }
+  .box-3 {
+    margin: 0px auto;
+  }
+  .congratulations-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+  #congratulations-box {
+    padding-top: 0px;
+  }
+  .hidden {
+    display: none;
   }
 }
 @media (max-width: 631px) {
@@ -1240,7 +1350,7 @@ VIEW MY ORDERS PAGE
   }
   .box-3-jacket {
     margin-bottom: 50px;
-    margin-top: -66px;
+    /* margin-top: -66px; */
   }
   .card {
     height: 1300px;
@@ -1264,6 +1374,17 @@ VIEW MY ORDERS PAGE
     margin: 20px auto;
     width: 100%;
   }
+  .added-items {
+    width: 100%;
+  }
+  .congratulations-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+  #congratulations-box {
+    padding-top: 0px;
+  }
 }
 @media (max-width: 468px) {
   .review-content-hidden-border {
@@ -1279,8 +1400,50 @@ VIEW MY ORDERS PAGE
 @media (max-width: 760px) {
   .added-items {
     height: 1025px;
-    margin-right: 60px;
+    /* margin-right: 60px; */
     justify-content: center;
+  }
+  .congratulations-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+  #congratulations-box {
+    padding-top: 0px;
+  }
+}
+@media (max-width: 710px) {
+  /* .search-bar {
+    margin-top: 0px;
+    margin-left: 270px;
+    width: 389px;
+  } */
+  .logo {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .box-4 {
+    margin-top: 50px;
+  }
+  .your-orders {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .your-orders-float-right {
+    margin-top: 340px;
+    margin-right: 0px;
+  }
+  .added-items-purchased {
+    flex-direction: column;
+  }
+  .purchase-info-box,
+  .delivery-info-box,
+  .footer-image {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -1307,7 +1470,7 @@ VIEW MY ORDERS PAGE
     margin: 10px auto;
     width: 95%;
   }
-  .logo,
+
   .payment,
   .free-shipping {
     display: none;
@@ -1343,6 +1506,33 @@ VIEW MY ORDERS PAGE
     margin: auto;
     padding-top: 75px;
     font-weight: 400;
+  }
+  .congratulations-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+  #congratulations-box {
+    padding-top: 0px;
+  }
+  .your-orders {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .your-orders-float-right {
+    margin-top: 340px;
+    margin-right: 0px;
+  }
+  .added-items-purchased {
+    flex-direction: column;
+  }
+  .purchase-info-box,
+  .delivery-info-box,
+  .footer-image {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @media (min-width: 980px) {
@@ -1381,10 +1571,32 @@ VIEW MY ORDERS PAGE
     font-weight: 400;
   }
 }
+@media (max-width: 1080px) {
+  .your-orders {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .your-orders-float-right {
+    margin-top: 500px;
+    margin-right: 0px;
+  }
+  .added-items-purchased {
+    flex-direction: column;
+  }
+  .purchase-info-box,
+  .delivery-info-box,
+  .footer-image {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 @media (max-width: 1122px) {
   .box-4 {
     width: 90%;
+    margin-top: 50px;
   }
   .card {
     height: 950px;
@@ -1408,7 +1620,7 @@ VIEW MY ORDERS PAGE
     justify-content: space-evenly;
     height: 50%;
   }
-  .box-2,
+  /* .box-2, */
   .box-4 {
     margin-bottom: 50px;
     margin-left: 0px;
@@ -1422,7 +1634,7 @@ VIEW MY ORDERS PAGE
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 30px;
+    /* margin-left: 30px; */
   }
   /* .your-orders {
     margin: auto;
@@ -1441,3 +1653,26 @@ VIEW MY ORDERS PAGE
     display: flex;
   }
 }
+@media (max-width: 1440px) {
+  .your-orders {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .your-orders-float-right {
+    margin-top: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+  .added-items-purchased {
+    flex-direction: column;
+  }
+  .purchase-info-box,
+  .delivery-info-box,
+  .footer-image {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+} ;
