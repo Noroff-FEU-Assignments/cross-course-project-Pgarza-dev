@@ -251,6 +251,11 @@ section a {
   flex-grow: 1;
 }
 
+.footer-headers {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 .footer-list a {
   text-decoration: none;
   color: black;
