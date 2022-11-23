@@ -1,5 +1,5 @@
 :root {
-  background-color: #f2f2f2;
+  bg-color: #f2f2f2;
 }
 
 * {
@@ -10,12 +10,12 @@
 
 body {
   font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
 }
 
-main {
+/* main {
   background-color: #f2f2f2;
-}
+} */
 
 /* HOME PAGE */
 
@@ -441,9 +441,7 @@ h3 {
   font-weight: bold;
 }
 
-.s-button {
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
+.button {
   background-color: #ffaa00;
   color: #000;
   padding: 10px 15px 10px 15px;
@@ -452,27 +450,16 @@ h3 {
   font-weight: bold;
 }
 
-.m-button,
-.l-button,
-.xl-button {
-  background-color: #ffaa00;
-  color: #000;
-  padding: 10px 15px 10px 15px;
-  margin-top: 15px;
-  border: none;
-  font-weight: bold;
+.s-button {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .xxl-button {
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: #ffaa00;
-  color: #000;
-  padding: 10px 15px 10px 15px;
-  margin-top: 15px;
-  border: none;
-  font-weight: bold;
 }
+
 .on-hover:hover {
   background-color: #ff7700;
 }
