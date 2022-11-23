@@ -1,5 +1,5 @@
 :root {
-  bg-color: #f2f2f2;
+  --bg-color: #f2f2f2;
 }
 
 * {
@@ -10,6 +10,7 @@
 
 body {
   font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--bg-color);
   /* background-color: #f2f2f2; */
 }
 
@@ -1054,9 +1055,9 @@ VIEW MY ORDERS PAGE
     width: 85%;
     margin: 15px 20px;
   }
-  .items-added-box {
+  /* .items-added-box {
     width: 40%;
-  }
+  } */
   .home-img {
     display: none;
   }
@@ -1170,6 +1171,7 @@ VIEW MY ORDERS PAGE
   }
   .info-box {
     width: 272px;
+    font-size: 16px;
   }
   .congratulations-box {
     width: 100%;
@@ -1282,9 +1284,10 @@ VIEW MY ORDERS PAGE
   .info-container {
     margin-top: 50px auto;
   }
-  /* .info-box {
-    width: 362px;
-  } */
+  .info-box {
+    width: 272px;
+    font-size: 16px;
+  }
   .added-items {
     width: 100%;
     /* margin: auto; */
