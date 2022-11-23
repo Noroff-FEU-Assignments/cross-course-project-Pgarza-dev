@@ -293,10 +293,7 @@ section a {
   padding-top: 20px;
 }
 
-.full-name,
-.email-address,
-.new-password,
-.confirm-password {
+.account-info {
   border: 2px solid #c1c1c145;
   height: 45px;
   width: 315px;
@@ -304,10 +301,8 @@ section a {
   margin: 10px auto 10px auto;
   box-shadow: 0 2px 8px 2px rgb(0 0 0 / 5%);
 }
-.full-name:hover,
-.email-address:hover,
-.new-password:hover,
-.confirm-password:hover {
+
+.account:hover {
   box-shadow: 0 2px 8px 2px rgb(0 0 0 /15%);
 }
 
@@ -317,6 +312,7 @@ section a {
   font-size: 12px;
   color: rgba(0, 0, 0, 45%);
 }
+
 .confirm-button {
   width: 315px;
   height: 45px;
@@ -460,16 +456,11 @@ h3 {
   border-top-right-radius: 10px;
 }
 
-.on-hover:hover {
+.button:hover {
   background-color: #ff7700;
 }
 
 .add-to-cart {
-  background-color: #ffaa00;
-  color: #000;
-  padding: 10px 15px 10px 15px;
-  margin-top: 15px;
-  border: none;
   border-radius: 5px;
 }
 
@@ -553,6 +544,10 @@ h3 {
   width: 295px;
 }
 
+.color-boxes {
+  height: 15px;
+  width: 15px;
+}
 .color-choice {
   display: flex;
   gap: 0.5em;
@@ -561,16 +556,16 @@ h3 {
 .color-choice-black {
   border: 1px solid rgb(0, 0, 0);
   background-color: rgb(0, 0, 0);
-  height: 15px;
-  width: 15px;
+  border-color: white;
+}
+.color-choice-black:hover {
+  border-color: black;
 }
 
 .color-choice-red {
   border: 1px solid red;
   background-color: red;
   border-color: white;
-  height: 15px;
-  width: 15px;
 }
 
 .color-choice-red:hover {
@@ -581,8 +576,6 @@ h3 {
   border: 1px solid blue;
   background-color: blue;
   border-color: white;
-  height: 15px;
-  width: 15px;
 }
 
 .color-choice-blue:hover {
@@ -593,8 +586,6 @@ h3 {
   border: 1px solid green;
   background-color: green;
   border-color: white;
-  height: 15px;
-  width: 15px;
 }
 
 .color-choice-green:hover {
@@ -614,9 +605,9 @@ h3 {
   width: 25%;
 }
 
-#info-box {
+/* #info-box {
   text-align: left;
-}
+} */
 
 .info-box {
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
@@ -627,6 +618,7 @@ h3 {
   padding-left: 10px;
   height: 40px;
   background-color: rgb(255, 255, 255);
+  text-align: left;
 }
 
 .info-box:hover {
@@ -647,13 +639,16 @@ h3 {
   background-color: rgb(255, 255, 255);
 }
 
-.orders-box {
-  background-color: #f2f2f2;
-  height: 115px;
+.orders-style {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.orders-box {
+  background-color: #f2f2f2;
+  height: 115px;
   padding: 10px 20px 0px 20px;
 }
 
@@ -661,10 +656,6 @@ h3 {
   background-color: rgb(232 232 232);
   height: 115px;
   margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -800,9 +791,7 @@ INFORMATION PAGE------------ */
   background-color: rgb(255, 255, 255);
 }
 
-.name-input,
-.street-input,
-.city-input {
+.basic-info-1 {
   border: 1px solid #c1c1c1;
   height: 45px;
   width: 49%;
@@ -810,8 +799,7 @@ INFORMATION PAGE------------ */
   margin: 10px 0px 10px 0px;
 }
 
-.email-input,
-.company-input {
+.basic-info-2 {
   border: 1px solid #c1c1c1;
   height: 45px;
   border-radius: 5px;
@@ -819,13 +807,10 @@ INFORMATION PAGE------------ */
   margin-bottom: 10px;
 }
 
-.post-code-input,
-.country-input {
-  border: 1px solid #c1c1c1;
-  height: 45px;
-  width: 49%;
-  border-radius: 5px;
-  margin-bottom: 10px;
+/* .basic-info-1:hover,
+.basic-info-2:hover,
+.account-info:hover {
+  box-shadow: 0 2px 8px 2px rgb(0 0 0 / 15%);
 }
 
 .name-input:hover,
@@ -841,10 +826,9 @@ INFORMATION PAGE------------ */
 .experation-date:hover,
 .ccv:hover,
 .card-number:hover,
-.name-on-card:hover,
-.password:hover {
+.name-on-card:hover {
   box-shadow: 0 2px 8px 2px rgb(0 0 0 / 15%);
-}
+} */
 
 .delivery-info-box {
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
