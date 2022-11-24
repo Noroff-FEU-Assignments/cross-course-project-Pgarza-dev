@@ -1581,6 +1581,22 @@ VIEW MY ORDERS PAGE
     font-weight: 400;
   }
 }
+
+@media (max-width: 1024px) {
+  .jacket-card {
+    box-shadow: -1px 0px 3px 1px #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: white;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+  }
+}
+
 @media (max-width: 1080px) {
   .your-orders {
     width: 90%;
