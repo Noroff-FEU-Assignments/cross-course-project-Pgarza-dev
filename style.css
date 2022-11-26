@@ -1056,6 +1056,9 @@ VIEW MY ORDERS PAGE
   .total-box {
     width: 280px;
   }
+  .header {
+    position: fixed;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1206,7 +1209,7 @@ VIEW MY ORDERS PAGE
     background-color: var(--main-color);
     display: flex;
     flex-direction: column;
-    position: unset;
+    position: fixed;
   }
   .welcome-content {
     display: none;
@@ -1285,6 +1288,7 @@ VIEW MY ORDERS PAGE
   .box-2 {
     margin-bottom: 0px;
     margin-right: auto;
+    margin-top: 143px;
   }
   .items-added-title {
     font-size: 20px;
@@ -1301,6 +1305,7 @@ VIEW MY ORDERS PAGE
   }
   .added-items {
     width: 100%;
+    margin-top: 164px;
     /* margin: auto; */
   }
   .jacket-one {
@@ -1314,6 +1319,7 @@ VIEW MY ORDERS PAGE
     width: 100%;
     height: 100%;
     border-radius: 0px;
+    padding-top: 185px;
   }
   #congratulations-box {
     padding-top: 0px;
@@ -1324,6 +1330,13 @@ VIEW MY ORDERS PAGE
   .view-order-container {
     margin-right: auto;
     margin-left: auto;
+    margin-top: 200px;
+  }
+  .login-in {
+    margin-top: 146px;
+  }
+  .your-orders-float-right {
+    margin-top: 183px;
   }
 }
 @media (max-width: 631px) {
@@ -1340,7 +1353,7 @@ VIEW MY ORDERS PAGE
     display: none;
   }
   .your-orders-float-right {
-    float: none;
+    /* float: none; */
     margin-top: 0px;
     margin-right: 0px;
   }
@@ -1467,7 +1480,7 @@ VIEW MY ORDERS PAGE
     background-color: var(--main-color);
     display: flex;
     flex-direction: column;
-    position: unset;
+    position: fixed;
   }
   .nav-container {
     height: 45px;
