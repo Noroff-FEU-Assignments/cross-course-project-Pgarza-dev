@@ -277,6 +277,7 @@ section a {
 .footer-list a {
   text-decoration: none;
   color: black;
+  font-size: 12px;
 }
 
 .footer-list a:hover {
