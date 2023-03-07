@@ -19,7 +19,7 @@
       a.appendChild(r);
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
   </script>
-  <script defer src="js/jackets.js"></script>
+
 </head>
 
 <body>
@@ -109,11 +109,11 @@
           <p class="in-stock-text">In Stock</p>
           <h3>599.00 kr</h3>
           <div class="sizes">
-            <button class="button s-button">S</button>
-            <button class="button">M</button>
-            <button class="button">L</button>
-            <button class="button">XL</button>
-            <button class="button xxl-button">XXL</button>
+            <button onclick="clicked()" class="button s-button">S</button>
+            <button onclick="clicked()" class="button">M</button>
+            <button onclick="clicked()" class="button">L</button>
+            <button onclick="clicked()" class="button">XL</button>
+            <button onclick="clicked()" class="button xxl-button">XXL</button>
           </div>
 
           <input type="number" class="quantity" name="quantity" id="quantity" pattern="" placeholder="Qty">
@@ -334,9 +334,9 @@
                   src="https://cdn.icon-icons.com/icons2/1186/PNG/512/1490135017-visa_82256.png"
                   alt="Visa Card Logo"></a>
             </li>
-            <li><a href="#"><img class="secure-payment-icons"
+            <!-- <li><a href="#"><img class="secure-payment-icons"
                   src="https://cdn.icon-icons.com/icons2/412/PNG/128/MasterCard_40946.png" alt="Master Card Logo">
-              </a></li>
+              </a></li> -->
             <li><a href="#">VIPPS
               </a></li>
             <!-- </div> -->
@@ -410,6 +410,7 @@
       </div>
     </section>
   </footer>
+  <script src="js/jackets.js"></script>
 </body>
 
 </html>

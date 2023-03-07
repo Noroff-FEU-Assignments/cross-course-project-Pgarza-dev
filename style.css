@@ -348,6 +348,24 @@ section a {
   box-shadow: 0 2px 8px 2px rgb(0 0 0 / 5%);
 }
 
+/* form classes for message errors */
+.form-error {
+  display: none;
+  color: red;
+  font-size: 1rem;
+  margin-top: 2px;
+}
+
+.form-submitted {
+  display: none;
+  color: rgb(0, 255, 0);
+  font-size: 1.2rem;
+  background: rgba(0, 255, 0, 0.1);
+  border: 2px solid rgba(0, 255, 0);
+  padding: 10px;
+  width: 200px;
+}
+
 #member:hover {
   text-decoration: underline;
 }
