@@ -34,3 +34,9 @@ addButtons.forEach((addButton) => {
     addButton.classList.add("insuranceButton");
   });
 });
+
+// const addedHtml = document.createElement("p");
+
+// addedHtml.innerHTML += `<div class="addedInsurance">
+//                           <p>sds</p>
+//                         </div>`;

@@ -709,8 +709,8 @@ h3 {
   margin: 0px auto 15px auto;
   /* margin-bottom: 15px;
   margin-left: 240px; */
-  width: 150px;
-  height: 30px;
+  width: 270px;
+  height: 35px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1036,7 +1036,8 @@ VIEW MY ORDERS PAGE
 }
 
 .selected-size-btn,
-.insuranceButton {
+.insuranceButton,
+.deliveryButton {
   background-color: #ff7700;
 }
 
