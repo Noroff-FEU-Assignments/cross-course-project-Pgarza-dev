@@ -502,6 +502,10 @@ h3 {
   border-top-right-radius: 10px;
 }
 
+.selected-size-btn {
+  background-color: #ff7700;
+}
+
 .add-to-cart {
   border-radius: 5px;
 }

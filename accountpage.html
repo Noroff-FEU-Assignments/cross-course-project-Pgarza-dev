@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css" />
   <title>RainyDays - account - page</title>
   <!-- Hotjar Tracking Code for my site -->
-  <script>
+  <!-- <script>
     (function (h, o, t, j, a, r) {
       h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
       h._hjSettings = { hjid: 3393290, hjsv: 6 };
@@ -18,7 +18,8 @@
       r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
       a.appendChild(r);
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-  </script>
+  </script> -->
+  <script defer src="js/accountpage.js"></script>
 </head>
 
 <body>
@@ -54,34 +55,33 @@
   </header>
 
   <main>
-    <form action="" id="contactForm">
+    <form name="loginForm" action="information.html" id="contactForm">
+      <div class="form-submitted">Form submitted! Thanks!</div>
       <div class="card">
         <div class="login-in">
           <h1>Create An Account</h1>
-          <label for="first name">
-            <input class="account-info" type="text" id="name" pattern="" placeholder="First Name" size="" />
+          <label for="inputName">
+            <input required class="account-info" type="text" id="inputName" placeholder="Name" />
           </label>
-          <div class="form-error" id="nameError">Please enter your first name</div>
+          <div class="form-error" id="nameError">Please enter your name</div>
 
-          <label for="email">
-            <input class="account-info" type="text" id="emailAddress" pattern="" placeholder="Email" size="" />
+          <label for="emailAddress">
+            <input required class="account-info" type="email" id="emailAddress" placeholder="Email" />
           </label>
           <div class="form-error" id="emailError">Enter valid email</div>
 
           <label for="password">
-            <input class="account-info" type="text" id="password" pattern="" placeholder="Password" size="" />
+            <input required class="account-info" type="password" id="password" placeholder="Password" />
           </label>
-          <div class="form-error" id="emailError">Password must have minimum of 9 charactors</div>
+          <div class="form-error" id="passwordError">Password must have minimum of 5 charactors</div>
 
-          <label for="confirm password">
-            <input class="account-info" type="text" id="confirmPassword" pattern="" placeholder="Confirm Password"
-              size="" />
+          <label for="confirmPassword">
+            <input required class="account-info" type="password" id="confirmPassword" placeholder="Confirm Password" />
           </label>
-          <div class="form-error" id="emailError">Please renter your password</div>
+          <div class="form-error" id="confirmError">Confirm password</div>
 
           <span class="privacy-text">By creating an account you agree to our Terms of Service and Privacy Policy</span>
-          <a href="information.html"><button type="submit" id="#submitButton"
-              class="confirm-button">Confirm</button></a>
+          <button type="submit" id="#submitButton" class="confirm-button">Confirm</button>
           <p id="member">Already a member?</p>
         </div>
     </form>
@@ -262,17 +262,17 @@
         <div class="footer-columns">
           <ul class="footer-list">
             <li class="footer-headers">SECURE PAYMENT</li>
-            <!-- <div class="secure-payment-container"> -->
+
             <li><a href="#"><img class="secure-payment-icons"
                   src="https://cdn.icon-icons.com/icons2/1186/PNG/512/1490135017-visa_82256.png"
                   alt="Visa Card Logo"></a>
             </li>
-            <li><a href="#"><img class="secure-payment-icons"
+            <!-- <li><a href="#"><img class="secure-payment-icons"
                   src="https://cdn.icon-icons.com/icons2/412/PNG/128/MasterCard_40946.png" alt="Master Card Logo">
-              </a></li>
+              </a></li> -->
             <li><a href="#">VIPPS
               </a></li>
-            <!-- </div> -->
+
           </ul>
 
           <ul class="footer-list">
@@ -343,7 +343,7 @@
       </div>
     </section>
   </footer>
-  <script src="js/accountpage.js"></script>
+
 </body>
 
 </html>
