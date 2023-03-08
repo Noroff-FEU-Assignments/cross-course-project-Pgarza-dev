@@ -502,10 +502,6 @@ h3 {
   border-top-right-radius: 10px;
 }
 
-.selected-size-btn {
-  background-color: #ff7700;
-}
-
 .add-to-cart {
   border-radius: 5px;
 }
@@ -1037,6 +1033,11 @@ VIEW MY ORDERS PAGE
 .view-order {
   display: grid;
   grid-template-columns: 1fr auto;
+}
+
+.selected-size-btn,
+.insuranceButton {
+  background-color: #ff7700;
 }
 
 /* PAGE RESPONSIVNESS */
