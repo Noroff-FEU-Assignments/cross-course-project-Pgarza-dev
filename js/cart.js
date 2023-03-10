@@ -35,8 +35,46 @@ addButtons.forEach((addButton) => {
   });
 });
 
-// const addedHtml = document.createElement("p");
+//Get references to the buttons and content divs
+// const button1 = document.getElementById("six-months-button");
+// const button2 = document.getElementById("twelve-months-button");
+// const button3 = document.getElementById("eightee-months-button");
 
-// addedHtml.innerHTML += `<div class="addedInsurance">
-//                           <p>sds</p>
-//                         </div>`;
+// const content1 = document.getElementById("six-months");
+// const content2 = document.getElementById("twelve-months");
+// const content3 = document.getElementById("eighteen-months");
+
+// //Add event listeners to the buttons
+
+// button1.addEventListener("click", () => {
+//   content1.style.display = "block";
+//   content2.style.display = "none";
+//   content3.style.display = "none";
+// });
+// // button1.addEventListener("click", () => {
+// //   content1.style.display = "block";
+// //   content2.style.display = "block";
+// //   content3.style.display = "block";
+// // });
+
+// button2.addEventListener("click", () => {
+//   content1.style.display = "none";
+//   content2.style.display = "block";
+//   content3.style.display = "none";
+// });
+// // button2.addEventListener("click", () => {
+// //   content1.style.display = "block";
+// //   content2.style.display = "block";
+// //   content3.style.display = "block";
+// // });
+
+// button3.addEventListener("click", () => {
+//   content1.style.display = "none";
+//   content2.style.display = "none";
+//   content3.style.display = "block";
+// });
+// // button3.addEventListener("click", () => {
+// //   content1.style.display = "block";
+// //   content2.style.display = "block";
+// //   content3.style.display = "block";
+// // });

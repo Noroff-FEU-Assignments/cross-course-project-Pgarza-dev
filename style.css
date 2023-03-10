@@ -683,12 +683,14 @@ h3 {
 
 .orders-style {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+  align-content: flex-start;
 }
 
-.orders-box {
+.orders-box,
+.insuranceAdded {
   background-color: #f2f2f2;
   height: 115px;
   padding: 10px 20px 0px 20px;
@@ -768,6 +770,27 @@ h3 {
   justify-content: space-between;
   padding: 10px 10px 10px 10px;
   border-bottom: 1px solid #c1c1c1;
+}
+
+/* Hide all content divs initially */
+#content1,
+#content2,
+#content3 {
+  display: none;
+}
+
+/* Style the visible content div */
+#content1 {
+  background-color: red;
+}
+
+/* Style the other content divs */
+#content2 {
+  background-color: green;
+}
+
+#content3 {
+  background-color: blue;
 }
 
 /* --------------------

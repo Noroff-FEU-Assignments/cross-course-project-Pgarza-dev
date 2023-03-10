@@ -156,67 +156,67 @@
 
 
     <section>
-      <div class="purchase-info-box">
-        <h1>2. DELIVERY INFORMATION</h1>
-        <label for="name"><b>Basic information</b></label>
-        <div>
-          <input class="basic-info-1" type="text" id="first name" pattern="" placeholder="First Name" size="30" />
-          <input class="basic-info-1" type="text" id="last name" pattern="" placeholder="Last Name" size="30">
-          <input class="basic-info-2" type="text" id="email address" pattern="" placeholder="Email Address" size="30">
-          <input class="basic-info-2" type="text" id="company name" pattern="" placeholder="Company Name" size="30">
+      <form name="loginForm" action="" id="payment-form">
+        <div class="purchase-info-box">
+          <h1>2. DELIVERY INFORMATION</h1>
+          <label for="name"><b>Basic information</b></label>
+          <div>
+            <input class="basic-info-1" type="text" id="firstName" placeholder="First Name" />
+            <input class="basic-info-1" type="text" id="lastName" placeholder="Last Name">
+            <input class="basic-info-2" type="text" id="email-address" placeholder="Email Address">
+            <input class="basic-info-2" type="text" id="companyName" placeholder="Company Name">
+          </div>
+          <label for="name"><b>Billing Address</b></label>
+          <div>
+            <input class="basic-info-1" type="text" id="street" placeholder="Street" />
+            <input class="basic-info-1" type="text" id="city" placeholder="City">
+            <input class="basic-info-1" type="text" id="postCode" placeholder="Post code">
+            <input class="basic-info-1" type="text" id="county" placeholder="County">
+          </div>
         </div>
-        <label for="name"><b>Billing Address</b></label>
-        <div>
-          <input class="basic-info-1" type="text" id="street" pattern="" placeholder="Street" size="30" />
-          <input class="basic-info-1" type="text" id="city" pattern="" placeholder="City" size="30">
-          <input class="basic-info-1" type="text" id="post code" pattern="" placeholder="Post code" size="30">
-          <input class="basic-info-1" type="text" id="county" pattern="" placeholder="County" size="30">
+
+        <div class="delivery-info-box">
+          <h2>3. DELIVERY METHOD</h2>
+          <div class="insurance-prices">
+            <p>14 Day Delivery</p>
+            <p>Free</p>
+            <button class="add-button deliveryButton">ADD</button>
+          </div>
+          <div class="insurance-prices">
+            <p>7 Day Delivery</p>
+            <p>49,-</p>
+            <button class="add-button deliveryButton">ADD</button>
+          </div>
+          <div class="insurance-prices">
+            <p>3 Day Delivery</p>
+            <p>99,-</p>
+            <button class="add-button deliveryButton">ADD</button>
+          </div>
+
         </div>
+        <div class="purchase-info-box">
+          <h1>4. PAYMENT</h1>
+          <label for="name"><b>Payment information</b></label>
+          <div>
+            <div>
+              <input class="card-number" type="text" id="card number" pattern="" placeholder="Card number" size="16" />
+              <input class="card-type" type="text" id="card type" pattern="" placeholder="Card Type " size="30">
+            </div>
+            <div>
+              <input class="name-on-card" type="text" id="name on card" pattern="" placeholder="Name on card" size="30">
+            </div>
+            <div>
+              <input class="experation-date" type="text" id="experation data" pattern="" placeholder="Exp. Date"
+                size="30">
+              <input class="ccv" type="text" id="CCV" pattern="" placeholder="CCV" size="30">
+            </div>
+            <div>
+              <input type="checkbox" type="" id="save card" pattern="" placeholder="" size="" value="">
+              <span>Save Card</span>
+            </div>
+      </form>
+      <a href="congratulations.html"><button class="secure-payment">Secure Payment</button></a>
       </div>
-
-      <div class="delivery-info-box">
-        <h2>3. DELIVERY METHOD</h2>
-        <div class="insurance-prices">
-          <p>14 Day Delivery</p>
-          <p>Free</p>
-          <button class="add-button deliveryButton">ADD</button>
-        </div>
-        <div class="insurance-prices">
-          <p>7 Day Delivery</p>
-          <p>49,-</p>
-          <button class="add-button deliveryButton">ADD</button>
-        </div>
-        <div class="insurance-prices">
-          <p>3 Day Delivery</p>
-          <p>99,-</p>
-          <button class="add-button deliveryButton">ADD</button>
-        </div>
-
-      </div>
-      <div class="purchase-info-box">
-        <h1>4. PAYMENT</h1>
-        <label for="name"><b>Payment information</b></label>
-        <div>
-          <div>
-            <input class="card-number" type="text" id="card number" pattern="" placeholder="Card number" size="16" />
-            <input class="card-type" type="text" id="card type" pattern="" placeholder="Card Type " size="30">
-          </div>
-          <div>
-            <input class="name-on-card" type="text" id="name on card" pattern="" placeholder="Name on card" size="30">
-          </div>
-          <div>
-            <input class="experation-date" type="text" id="experation data" pattern="" placeholder="Exp. Date"
-              size="30">
-            <input class="ccv" type="text" id="CCV" pattern="" placeholder="CCV" size="30">
-          </div>
-          <div>
-            <input type="checkbox" type="" id="save card" pattern="" placeholder="" size="" value="">
-            <span>Save Card</span>
-
-          </div>
-
-          <a href="congratulations.html"><button class="secure-payment">Secure Payment</button></a>
-        </div>
       </div>
     </section>
 

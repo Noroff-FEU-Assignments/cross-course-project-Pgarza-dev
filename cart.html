@@ -19,6 +19,7 @@
       a.appendChild(r);
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
   </script>
+  <script defer src="js/data.js"></script>
   <script defer src="js/cart.js"></script>
 </head>
 
@@ -123,15 +124,16 @@
         <div class="your-orders">
 
           <h2>YOUR ORDERS</h2>
-          <div class="orders-box orders-style">
-            <p>1 x WIND BREAKER</p>
-            <p>599-</p>
-            <a href="#">Remove</a>
+          <div class="orders-box orders-style addedInsurance">
+            <!-- <div class="insuranceAdded"></div> -->
+            <!-- <p>1 x WIND BREAKER</p>
+              <p>599-</p>
+              <a href="#">Remove</a> -->
           </div>
-
-          <div class="total-box orders-style">
+          <div class="total-box orders-style my-class">
             <h2>TOTAL</h2>
-            <p class="addedInsurance">599-</p>
+            <p class="totalAmount"></p>
+
           </div>
 
           <div>
@@ -147,17 +149,17 @@
 
           <div>
             <h3 class="insurance-header">RAINY DAYS INSURANCE</h3>
-            <div class="insurance-prices">
+            <div id="six-months" class="insurance-prices">
               <p>,99- 6 MO</p>
-              <button class="add-button insuranceButton">ADD</button>
+              <button id="six-months-button" class="add-button insuranceButton">ADD</button>
             </div>
-            <div class="insurance-prices">
+            <div id="twelve-months" class="insurance-prices">
               <p>199,- 12 MO</p>
-              <button class="add-button insuranceButton">ADD</button>
+              <button id="twelve-months-button" class="add-button insuranceButton">ADD</button>
             </div>
-            <div class="insurance-prices">
+            <div id="eighteen-months" class="insurance-prices">
               <p>299,- 18 MO</p>
-              <button class="add-button insuranceButton">ADD</button>
+              <button id="eightee-months-button" class=" add-button insuranceButton">ADD</button>
             </div>
           </div>
 
