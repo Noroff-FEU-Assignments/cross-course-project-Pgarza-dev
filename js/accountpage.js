@@ -1,3 +1,4 @@
+// FORM VALIDATION
 const form = document.querySelector("#contactForm");
 const inputName = document.querySelector("#inputName");
 const nameError = document.querySelector("#nameError");

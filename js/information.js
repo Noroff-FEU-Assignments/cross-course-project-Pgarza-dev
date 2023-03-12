@@ -49,21 +49,38 @@ const city = document.querySelector("#city");
 const cityError = document.querySelector("#cityError");
 const postCode = document.querySelector("#postCode");
 const postCodeError = document.querySelector("#postCodeError");
-const county = document.querySelector("#county");
-const countyError = document.querySelector("#countyError");
+// const county = document.querySelector("#county");
+// const countyError = document.querySelector("#countyError");
+const creditCardNumber = document.querySelector("#creditCardNumber");
+const creditCardNumberError = document.querySelector("#creditCardNumberError");
+const nameOnCard = document.querySelector("#nameOnCard");
+const nameOnCardError = document.querySelector("#nameOnCardError");
+const cardExperationData = document.querySelector("#cardExperationData");
+const cardExperationDataError = document.querySelector(
+  "#cardExperationDataError"
+);
+const ccv = document.querySelector("#ccv");
+const ccvError = document.querySelector("#ccvError");
 
-const submitButton = document.querySelector("#submitButton");
+const submitButton = document.querySelector("#securePayment");
 const submitMessage = document.querySelector(".form-submitted");
 
 function validateForm(event) {
   event.preventDefault();
 
   // checks validation of each input
-  if (checkLength(inputName.value, 4) === true) {
-    nameError.style.display = "none";
+  if (checkLength(firstName.value, 2) === true) {
+    firstNameError.style.display = "none";
     // inputName.style.display = "none";
   } else {
-    nameError.style.display = "block";
+    firstNameError.style.display = "block";
+  }
+
+  if (checkLength(lastName.value, 2) === true) {
+    lastNameError.style.display = "none";
+    // emailAddress.style.display = "none";
+  } else {
+    lastNameError.style.display = "block";
   }
 
   if (validatEmail(emailAddress.value) === true) {
@@ -73,26 +90,58 @@ function validateForm(event) {
     emailError.style.display = "block";
   }
 
-  if (checkLength(password.value, 5) === true) {
-    passwordError.style.display = "none";
+  if (checkLength(streetAddress.value, 5) === true) {
+    streetAddressError.style.display = "none";
     // password.style.display = "none";
   } else {
-    passwordError.style.display = "block";
+    streetAddressError.style.display = "block";
   }
 
-  if (checkLength(confirmPassword.value, 5) === true) {
-    confirmPasswordError.style.display = "none";
+  if (checkLength(city.value, 2) === true) {
+    cityError.style.display = "none";
     // confirmPassword.style.display = "none";
   } else {
-    confirmPasswordError.style.display = "block";
+    cityError.style.display = "block";
+  }
+
+  if (checkLength(postCode.value, 4) === true) {
+    postCodeError.style.display = "none";
+    // confirmPassword.style.display = "none";
+  } else {
+    postCodeError.style.display = "block";
+  }
+
+  if (checkLength(creditCardNumber.value, 15) === true) {
+    creditCardNumberError.style.display = "none";
+    // confirmPassword.style.display = "none";
+  } else {
+    creditCardNumberError.style.display = "block";
+  }
+
+  if (checkLength(nameOnCard.value, 2) === true) {
+    nameOnCardError.style.display = "none";
+    // confirmPassword.style.display = "none";
+  } else {
+    nameOnCardError.style.display = "block";
+  }
+
+  if (checkLength(ccv.value, 2) === true) {
+    ccvError.style.display = "none";
+  } else {
+    ccvError.style.display = "block";
   }
 
   //displays submission message if all true
   if (
-    checkLength(inputName.value, 4) === true &&
-    checkLength(password.value, 5) === true &&
-    checkLength(confirmPassword.value, 5) === true &&
-    validatEmail(emailAddress.value) === true
+    checkLength(firstName.value, 2) === true &&
+    checkLength(lastName.value, 2) === true &&
+    validatEmail(emailAddress.value) === true &&
+    checkLength(streetAddress.value, 5) === true &&
+    checkLength(city.value, 2) === true &&
+    checkLength(postCode.value, 4) === true &&
+    checkLength(creditCardNumber.value, 15) === true &&
+    checkLength(nameOnCard.value, 2) === true &&
+    checkLength(ccv.value, 2) === true
   ) {
     submitMessage.style.display = "block";
     document.loginForm.submit();
