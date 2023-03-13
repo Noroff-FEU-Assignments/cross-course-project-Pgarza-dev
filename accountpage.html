@@ -19,7 +19,6 @@
       a.appendChild(r);
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
   </script>
-  <script defer src="js/accountpage.js"></script>
 </head>
 
 <body>
@@ -42,15 +41,20 @@
       <p class="payment">Amount: Checkout</p>
     </div>
 
-    <nav class="nav-container">
-      <ul class="nav-list">
-        <li><a href="#">MEN</a></li>
-        <li><a href="#">WOMEN</a></li>
-        <li><a href="#">KIDS</a></li>
-        <li><a class="hidden" href="#">ACTIVITY</a></li>
-        <li><a class="hidden" href="#">SIZE</a></li>
-        <li><a class="hidden" href="#">EXPLORE</a></li>
+    <nav class=" navbar">
+      <ul class="nav-menu">
+        <li><a href="#jackets nav-item" class="nav-link">MEN</a></li>
+        <li><a href="#jackets nav-item" class="nav-link">WOMEN</a></li>
+        <li><a class=" nav-item nav-link" href="#jackets">KIDS</a></li>
+        <li><a class=" nav-item nav-link" href="comingsoon.html">ACTIVITY</a></li>
+        <li><a class=" nav-item nav-link" href="comingsoon.html">SIZE</a></li>
+        <li><a class=" nav-item nav-link" href="comingsoon.html">EXPLORE</a></li>
       </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </nav>
   </header>
 
@@ -343,7 +347,8 @@
       </div>
     </section>
   </footer>
-
+  <script src="js/accountpage.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
