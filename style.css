@@ -38,7 +38,7 @@ header {
 }
 
 .navbar {
-  min-height: 70px;
+  min-height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,7 +162,7 @@ header {
 }
 
 .payment {
-  padding-left: 50px;
+  /* padding-left: 50px; */
   display: inline-block;
   color: var(--secondary-color);
 }
@@ -172,7 +172,7 @@ header {
   flex-direction: row;
   margin-top: 10px;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -216,7 +216,7 @@ header {
 
 .search-bar {
   height: 30px;
-  width: 60%;
+  width: 30%;
   border-radius: 10px;
   margin: 15px 0px 20px 20px;
   border: none;
