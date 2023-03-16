@@ -167,17 +167,17 @@
             <label for="firstName">
               <input required class="basic-info-1" type="text" id="firstName" placeholder="First Name" />
             </label>
-            <div class="form-error" id="firstNameError">First name required</div>
+            <div class="form-error" id="firstNameError">(First name required)</div>
 
             <label for="lastName">
               <input required class="basic-info-1" type="text" id="lastName" placeholder="Last Name">
             </label>
-            <div class="form-error" id="lastNameError">Last name required</div>
+            <div class="form-error" id="lastNameError">(Last name required)</div>
 
             <label for="emailAddress">
               <input class="basic-info-2" type="text" id="email-address" placeholder="Email Address">
             </label>
-            <div class="form-error" id="emailError">Email required</div>
+            <div class="form-error" id="emailError">(Email required)</div>
 
             <label for="companyName">
               <input class="basic-info-2" type="text" id="companyName" placeholder="Company Name">
@@ -188,17 +188,17 @@
             <label for="steetAddress">
               <input required class="basic-info-1" type="text" id="street" placeholder="Street" />
             </label>
-            <div class="form-error" id="streetAddressError">Street address required</div>
+            <div class="form-error" id="streetAddressError">(Street address required)</div>
 
             <label for="city">
               <input required class="basic-info-1" type="text" id="city" placeholder="City">
             </label>
-            <div class="form-error" id="cityError">City required </div>
+            <div class="form-error" id="cityError">(City required) </div>
 
             <label for="postCode">
               <input required class="basic-info-1" type="text" id="postCode" placeholder="Post code">
             </label>
-            <div class="form-error" id="postCodeError">Post code required</div>
+            <div class="form-error" id="postCodeError">(Post code required)</div>
 
             <label for="county">
               <input class="basic-info-1" type="text" id="county" placeholder="County">
@@ -234,7 +234,16 @@
                 <input required class="card-number" type="text" id="creditCardNumber" placeholder="Card number"
                   size="16" />
               </label>
-              <div class="form-error" id="creditCardNumberError">16 digits required</div>
+              <div class="form-error" id="creditCardNumberError">(16 digits required)</div>
+
+              <!-- <div class="dropdown">
+                <input type="checkbox" id="cardType" class="dropbtn ">Card Type</input>
+                <div class="dropdown-content">
+                  <a href="#">Visa</a>
+                  <a href="#">Master Card </a>
+                  <a href="#">American xpress</a>
+                </div>
+              </div> -->
 
               <label for="cardType">
                 <input class="card-type" type="text" id="cardType" placeholder="Card Type " size="30">
@@ -244,7 +253,7 @@
               <label for="nameOnCard">
                 <input required class="name-on-card" type="text" id="nameOnCard" placeholder="Name on card" size="30">
               </label>
-              <div class="form-error" id="nameOnCardError">Name on card required</div>
+              <div class="form-error" id="nameOnCardError">(Name on card required)</div>
             </div>
 
             <div>
@@ -254,14 +263,17 @@
               <label for="ccv">
                 <input required class="ccv" type="text" id="ccv" placeholder="CCV" size="30">
               </label>
-              <div class="form-error" id="ccvError">CCV digits required</div>
-
+              <div class="form-error" id="ccvError">(Expiration date & CCV digits required)</div>
             </div>
             <div>
               <label for="saveCard">
+                <div class="dropdown"></div>
                 <input type="checkbox" type="" id="saveCard" placeholder="" size="" value=""> Save Card
               </label>
             </div>
+
+
+
             <button type="submit" id="#securePayment" class="secure-payment"">Secure Payment</button>
 
             <!-- <a href=" congratulations.html"><button class="secure-payment">Secure Payment</button></a> -->
