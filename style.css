@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: "Open Sans", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
   background-color: var(--bg-color);
   /* background-color: #f2f2f2; */
 }
@@ -959,7 +959,7 @@ INFORMATION PAGE------------ */
   margin-bottom: 10px;
 }
 
-/* .basic-info-1:hover,
+.basic-info-1:hover,
 .basic-info-2:hover,
 .account-info:hover {
   box-shadow: 0 2px 8px 2px rgb(0 0 0 / 15%);
@@ -980,7 +980,19 @@ INFORMATION PAGE------------ */
 .card-number:hover,
 .name-on-card:hover {
   box-shadow: 0 2px 8px 2px rgb(0 0 0 / 15%);
-} */
+}
+
+select {
+  border: 1px solid #c1c1c1;
+  height: 45px;
+  width: 32%;
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
+}
+
+select:hover {
+  box-shadow: 0 2px 8px 2px rgb(0 0 0 / 15%);
+}
 
 /* .dropbtn {
   cursor: pointer;
@@ -1016,7 +1028,7 @@ INFORMATION PAGE------------ */
 
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
-}
+} */
 
 .delivery-info-box {
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
@@ -1028,7 +1040,7 @@ INFORMATION PAGE------------ */
   padding-top: 3px;
   padding-left: 10px;
   background-color: rgb(255, 255, 255);
-} */
+}
 
 .card-number-input,
 .card-name-input {

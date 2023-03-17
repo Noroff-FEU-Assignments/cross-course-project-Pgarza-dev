@@ -71,7 +71,6 @@
           <h2>TOTAL</h2>
           <p>599-</p>
         </div>
-
         <div>
           <label for="discount code">Discount code</label>
           <input class="discount-code" type="text" id="discount-code" pattern="" placeholder="Discount code*"
@@ -101,10 +100,7 @@
     </section>
 
     <section class="orders-card">
-
       <section class="added-items-purchased">
-
-
         <div class="purchased-product-box">
           <div class="items-added-box">
             <h1>1. ITEMS ADDED TO CART</h1>
@@ -223,8 +219,8 @@
             <p>99,-</p>
             <button class="add-button deliveryButton">ADD</button>
           </div>
-
         </div>
+
         <div class="purchase-info-box">
           <h1>4. PAYMENT</h1>
           <h5><b>Payment information</b></h5>
@@ -235,19 +231,14 @@
                   size="16" />
               </label>
               <div class="form-error" id="creditCardNumberError">(16 digits required)</div>
-
-              <!-- <div class="dropdown">
-                <input type="checkbox" id="cardType" class="dropbtn ">Card Type</input>
-                <div class="dropdown-content">
-                  <a href="#">Visa</a>
-                  <a href="#">Master Card </a>
-                  <a href="#">American xpress</a>
-                </div>
-              </div> -->
-
-              <label for="cardType">
-                <input class="card-type" type="text" id="cardType" placeholder="Card Type " size="30">
-              </label>
+              <div>
+                <select name="Card Type" id="bank">
+                  <option value="Visa">Card Type</option>
+                  <option value="Visa">Visa</option>
+                  <option value="master-card">Master-card</option>
+                  <option value="american-express">American Express</option>
+                </select>
+              </div>
             </div>
             <div>
               <label for="nameOnCard">
@@ -255,7 +246,6 @@
               </label>
               <div class="form-error" id="nameOnCardError">(Name on card required)</div>
             </div>
-
             <div>
               <label for="cardExperationData">
                 <input class="experation-date" type="month" id="cardExperationData" placeholder="" size="">
@@ -271,167 +261,162 @@
                 <input type="checkbox" type="" id="saveCard" placeholder="" size="" value=""> Save Card
               </label>
             </div>
-
-
-
             <button type="submit" id="#securePayment" class="secure-payment"">Secure Payment</button>
-
-            <!-- <a href=" congratulations.html"><button class="secure-payment">Secure Payment</button></a> -->
       </form>
-      </div>
       </div>
     </section>
 
-    <h2 class="review-border">REVIEWS</h2>
-    <div class="review-container">
-      <article class="review-contant-border">
-        <p> <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58">
-            <g id="Group_309" data-name="Group 309" transform="translate(15937 19551.5)">
-              <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(-15937 -19551.5)" fill="#c5c18a"
-                stroke="#707070" stroke-width="1">
-                <circle cx="29" cy="29" r="29" stroke="none" />
-                <circle cx="29" cy="29" r="28.5" fill="none" />
-              </g>
-              <text id="J" transform="translate(-15911 -19537)" fill="#707070" font-size="20"
-                font-family="SegoeUI, Segoe UI">
-                <tspan x="0" y="22">J</tspan>
-              </text>
-            </g>
-          </svg>
+    <h2 class=" review-border">REVIEWS</h2>
+              <div class="review-container">
+                <article class="review-contant-border">
+                  <p> <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58">
+                      <g id="Group_309" data-name="Group 309" transform="translate(15937 19551.5)">
+                        <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(-15937 -19551.5)" fill="#c5c18a"
+                          stroke="#707070" stroke-width="1">
+                          <circle cx="29" cy="29" r="29" stroke="none" />
+                          <circle cx="29" cy="29" r="28.5" fill="none" />
+                        </g>
+                        <text id="J" transform="translate(-15911 -19537)" fill="#707070" font-size="20"
+                          font-family="SegoeUI, Segoe UI">
+                          <tspan x="0" y="22">J</tspan>
+                        </text>
+                      </g>
+                    </svg>
 
-          John Doe <svg xmlns="http://www.w3.org/2000/svg" width="90" height="17" viewBox="0 0 90 17">
-            <g id="Group_22" data-name="Group 22" transform="translate(-171 -1764)">
-              <path id="Polygon_1" data-name="Polygon 1"
-                d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
-                transform="translate(171 1764)" fill="#e11c37" />
-              <path id="Polygon_3" data-name="Polygon 3"
-                d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
-                transform="translate(189 1764)" fill="#e11c37" />
-              <path id="Polygon_4" data-name="Polygon 4"
-                d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
-                transform="translate(207 1764)" fill="#e11c37" />
-              <g id="Polygon_5" data-name="Polygon 5" transform="translate(225 1764)" fill="none">
-                <path d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
-                  stroke="none" />
-                <path
-                  d="M 9 3.215726852416992 L 7.600359916687012 7.493419647216797 L 3.095122337341309 7.493419647216797 L 6.73993968963623 10.12312984466553 L 5.343143463134766 14.39212608337402 L 9 11.75372982025146 L 12.65685081481934 14.39212608337402 L 11.26005935668945 10.12312984466553 L 14.90487766265869 7.493419647216797 L 10.39964008331299 7.493419647216797 L 9 3.215726852416992 M 9 0 L 11.12460994720459 6.493419647216797 L 18 6.493419647216797 L 12.43768978118896 10.5065803527832 L 14.56229972839355 17 L 9 12.98683929443359 L 3.437689781188965 17 L 5.562310218811035 10.5065803527832 L 0 6.493419647216797 L 6.87539005279541 6.493419647216797 L 9 0 Z"
-                  stroke="none" fill="#e11c37" />
-              </g>
-              <g id="Polygon_6" data-name="Polygon 6" transform="translate(243 1764)" fill="#fff">
-                <path
-                  d="M 13.60957431793213 15.69606494903564 L 9.292550086975098 12.58137035369873 L 9 12.37030029296875 L 8.707449913024902 12.58137035369873 L 4.39041805267334 15.69606494903564 L 6.037519931793213 10.66207027435303 L 6.151130199432373 10.31484985351562 L 5.854859828948975 10.10109996795654 L 1.547561168670654 6.993420124053955 L 6.87539005279541 6.993420124053955 L 7.237880229949951 6.993420124053955 L 7.350599765777588 6.648910045623779 L 9 1.607868552207947 L 10.64939975738525 6.648910045623779 L 10.76212024688721 6.993420124053955 L 11.12460994720459 6.993420124053955 L 16.45243835449219 6.993420124053955 L 12.14513969421387 10.10109996795654 L 11.84887027740479 10.31484985351562 L 11.96247959136963 10.66207027435303 L 13.60957431793213 15.69606494903564 Z"
-                  stroke="none" />
-                <path
-                  d="M 9 3.215726852416992 L 7.600359916687012 7.493419647216797 L 3.095122337341309 7.493419647216797 L 6.73993968963623 10.12312984466553 L 5.343143463134766 14.39212608337402 L 9 11.75372982025146 L 12.65685081481934 14.39212608337402 L 11.26005935668945 10.12312984466553 L 14.90487766265869 7.493419647216797 L 10.39964008331299 7.493419647216797 L 9 3.215726852416992 M 9 0 L 11.12460994720459 6.493419647216797 L 18 6.493419647216797 L 12.43768978118896 10.5065803527832 L 14.56229972839355 17 L 9 12.98683929443359 L 3.437689781188965 17 L 5.562310218811035 10.5065803527832 L 0 6.493419647216797 L 6.87539005279541 6.493419647216797 L 9 0 Z"
-                  stroke="none" fill="#e11c37" />
-              </g>
-            </g>
-          </svg>
-        </p>
-        <p class="review-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus eaque
-          nulla quae enim ratione suscipit dolores veritatis voluptates velit
-          eum distinctio saepe atque est consectetur, repellat magnam in
-          corrupti expedita?
-        </p>
-      </article>
+                    John Doe <svg xmlns="http://www.w3.org/2000/svg" width="90" height="17" viewBox="0 0 90 17">
+                      <g id="Group_22" data-name="Group 22" transform="translate(-171 -1764)">
+                        <path id="Polygon_1" data-name="Polygon 1"
+                          d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
+                          transform="translate(171 1764)" fill="#e11c37" />
+                        <path id="Polygon_3" data-name="Polygon 3"
+                          d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
+                          transform="translate(189 1764)" fill="#e11c37" />
+                        <path id="Polygon_4" data-name="Polygon 4"
+                          d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
+                          transform="translate(207 1764)" fill="#e11c37" />
+                        <g id="Polygon_5" data-name="Polygon 5" transform="translate(225 1764)" fill="none">
+                          <path
+                            d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
+                            stroke="none" />
+                          <path
+                            d="M 9 3.215726852416992 L 7.600359916687012 7.493419647216797 L 3.095122337341309 7.493419647216797 L 6.73993968963623 10.12312984466553 L 5.343143463134766 14.39212608337402 L 9 11.75372982025146 L 12.65685081481934 14.39212608337402 L 11.26005935668945 10.12312984466553 L 14.90487766265869 7.493419647216797 L 10.39964008331299 7.493419647216797 L 9 3.215726852416992 M 9 0 L 11.12460994720459 6.493419647216797 L 18 6.493419647216797 L 12.43768978118896 10.5065803527832 L 14.56229972839355 17 L 9 12.98683929443359 L 3.437689781188965 17 L 5.562310218811035 10.5065803527832 L 0 6.493419647216797 L 6.87539005279541 6.493419647216797 L 9 0 Z"
+                            stroke="none" fill="#e11c37" />
+                        </g>
+                        <g id="Polygon_6" data-name="Polygon 6" transform="translate(243 1764)" fill="#fff">
+                          <path
+                            d="M 13.60957431793213 15.69606494903564 L 9.292550086975098 12.58137035369873 L 9 12.37030029296875 L 8.707449913024902 12.58137035369873 L 4.39041805267334 15.69606494903564 L 6.037519931793213 10.66207027435303 L 6.151130199432373 10.31484985351562 L 5.854859828948975 10.10109996795654 L 1.547561168670654 6.993420124053955 L 6.87539005279541 6.993420124053955 L 7.237880229949951 6.993420124053955 L 7.350599765777588 6.648910045623779 L 9 1.607868552207947 L 10.64939975738525 6.648910045623779 L 10.76212024688721 6.993420124053955 L 11.12460994720459 6.993420124053955 L 16.45243835449219 6.993420124053955 L 12.14513969421387 10.10109996795654 L 11.84887027740479 10.31484985351562 L 11.96247959136963 10.66207027435303 L 13.60957431793213 15.69606494903564 Z"
+                            stroke="none" />
+                          <path
+                            d="M 9 3.215726852416992 L 7.600359916687012 7.493419647216797 L 3.095122337341309 7.493419647216797 L 6.73993968963623 10.12312984466553 L 5.343143463134766 14.39212608337402 L 9 11.75372982025146 L 12.65685081481934 14.39212608337402 L 11.26005935668945 10.12312984466553 L 14.90487766265869 7.493419647216797 L 10.39964008331299 7.493419647216797 L 9 3.215726852416992 M 9 0 L 11.12460994720459 6.493419647216797 L 18 6.493419647216797 L 12.43768978118896 10.5065803527832 L 14.56229972839355 17 L 9 12.98683929443359 L 3.437689781188965 17 L 5.562310218811035 10.5065803527832 L 0 6.493419647216797 L 6.87539005279541 6.493419647216797 L 9 0 Z"
+                            stroke="none" fill="#e11c37" />
+                        </g>
+                      </g>
+                    </svg>
+                  </p>
+                  <p class="review-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus eaque
+                    nulla quae enim ratione suscipit dolores veritatis voluptates velit
+                    eum distinctio saepe atque est consectetur, repellat magnam in
+                    corrupti expedita?
+                  </p>
+                </article>
 
-      <article class="review-contant-border">
-        <p> <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58">
-            <g id="Group_309" data-name="Group 309" transform="translate(15933 19549.5)">
-              <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(-15933 -19549.5)" fill="#c5c18a"
-                stroke="#707070" stroke-width="1">
-                <circle cx="29" cy="29" r="29" stroke="none" />
-                <circle cx="29" cy="29" r="28.5" fill="none" />
-              </g>
-              <text id="M" transform="translate(-15913 -19535)" fill="#707070" font-size="20"
-                font-family="SegoeUI, Segoe UI">
-                <tspan x="0" y="22">M</tspan>
-              </text>
-            </g>
-          </svg> Mary Jane <svg xmlns="http://www.w3.org/2000/svg" width="90" height="17" viewBox="0 0 90 17">
-            <g id="Group_22" data-name="Group 22" transform="translate(-0.416)">
-              <path id="Polygon_1" data-name="Polygon 1"
-                d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
-                transform="translate(0.416)" fill="#e11c37" />
-              <path id="Polygon_3" data-name="Polygon 3"
-                d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
-                transform="translate(18.416)" fill="#e11c37" />
-              <path id="Polygon_4" data-name="Polygon 4"
-                d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
-                transform="translate(36.416)" fill="#e11c37" />
-              <path id="Polygon_5" data-name="Polygon 5"
-                d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
-                transform="translate(54.416)" fill="#e11c37" />
-              <path id="Polygon_6" data-name="Polygon 6"
-                d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
-                transform="translate(72.416)" fill="#e11c37" />
-            </g>
-          </svg>
+                <article class="review-contant-border">
+                  <p> <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58">
+                      <g id="Group_309" data-name="Group 309" transform="translate(15933 19549.5)">
+                        <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(-15933 -19549.5)" fill="#c5c18a"
+                          stroke="#707070" stroke-width="1">
+                          <circle cx="29" cy="29" r="29" stroke="none" />
+                          <circle cx="29" cy="29" r="28.5" fill="none" />
+                        </g>
+                        <text id="M" transform="translate(-15913 -19535)" fill="#707070" font-size="20"
+                          font-family="SegoeUI, Segoe UI">
+                          <tspan x="0" y="22">M</tspan>
+                        </text>
+                      </g>
+                    </svg> Mary Jane <svg xmlns="http://www.w3.org/2000/svg" width="90" height="17" viewBox="0 0 90 17">
+                      <g id="Group_22" data-name="Group 22" transform="translate(-0.416)">
+                        <path id="Polygon_1" data-name="Polygon 1"
+                          d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
+                          transform="translate(0.416)" fill="#e11c37" />
+                        <path id="Polygon_3" data-name="Polygon 3"
+                          d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
+                          transform="translate(18.416)" fill="#e11c37" />
+                        <path id="Polygon_4" data-name="Polygon 4"
+                          d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
+                          transform="translate(36.416)" fill="#e11c37" />
+                        <path id="Polygon_5" data-name="Polygon 5"
+                          d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
+                          transform="translate(54.416)" fill="#e11c37" />
+                        <path id="Polygon_6" data-name="Polygon 6"
+                          d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
+                          transform="translate(72.416)" fill="#e11c37" />
+                      </g>
+                    </svg>
 
-        </p>
-        <p class="review-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus eaque
-          nulla quae enim ratione suscipit dolores veritatis voluptates velit
-          eum distinctio saepe atque est consectetur, repellat magnam in
-          corrupti expedita?
-        </p>
-      </article>
+                  </p>
+                  <p class="review-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus eaque
+                    nulla quae enim ratione suscipit dolores veritatis voluptates velit
+                    eum distinctio saepe atque est consectetur, repellat magnam in
+                    corrupti expedita?
+                  </p>
+                </article>
 
-      <article class="review-content-hidden-border">
-        <p> <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58">
-            <g id="Group_310" data-name="Group 310" transform="translate(15937 19551.5)">
-              <g id="Group_309" data-name="Group 309">
-                <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(-15937 -19551.5)" fill="#c5c18a"
-                  stroke="#707070" stroke-width="1">
-                  <circle cx="29" cy="29" r="29" stroke="none" />
-                  <circle cx="29" cy="29" r="28.5" fill="none" />
-                </g>
-                <text id="P" transform="translate(-15914 -19537)" fill="#707070" font-size="20"
-                  font-family="SegoeUI, Segoe UI">
-                  <tspan x="0" y="22">P</tspan>
-                </text>
-              </g>
-            </g>
-          </svg>
-          Paul Smith <svg xmlns="http://www.w3.org/2000/svg" width="90" height="17" viewBox="0 0 90 17">
-            <g id="Group_22" data-name="Group 22" transform="translate(-171 -1764)">
-              <path id="Polygon_1" data-name="Polygon 1"
-                d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
-                transform="translate(171 1764)" fill="#e11c37" />
-              <path id="Polygon_3" data-name="Polygon 3"
-                d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
-                transform="translate(189 1764)" fill="#e11c37" />
-              <path id="Polygon_4" data-name="Polygon 4"
-                d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
-                transform="translate(207 1764)" fill="#e11c37" />
-              <g id="Polygon_5" data-name="Polygon 5" transform="translate(225 1764)" fill="#e11c37">
-                <path
-                  d="M 13.60957431793213 15.69606494903564 L 9.292550086975098 12.58137035369873 L 9 12.37030029296875 L 8.707449913024902 12.58137035369873 L 4.39041805267334 15.69606494903564 L 6.037519931793213 10.66207027435303 L 6.151130199432373 10.31484985351562 L 5.854859828948975 10.10109996795654 L 1.547561168670654 6.993420124053955 L 6.87539005279541 6.993420124053955 L 7.237880229949951 6.993420124053955 L 7.350599765777588 6.648910045623779 L 9 1.607868552207947 L 10.64939975738525 6.648910045623779 L 10.76212024688721 6.993420124053955 L 11.12460994720459 6.993420124053955 L 16.45243835449219 6.993420124053955 L 12.14513969421387 10.10109996795654 L 11.84887027740479 10.31484985351562 L 11.96247959136963 10.66207027435303 L 13.60957431793213 15.69606494903564 Z"
-                  stroke="none" />
-                <path
-                  d="M 9 3.215726852416992 L 7.600359916687012 7.493419647216797 L 3.095122337341309 7.493419647216797 L 6.73993968963623 10.12312984466553 L 5.343143463134766 14.39212608337402 L 9 11.75372982025146 L 12.65685081481934 14.39212608337402 L 11.26005935668945 10.12312984466553 L 14.90487766265869 7.493419647216797 L 10.39964008331299 7.493419647216797 L 9 3.215726852416992 M 9 0 L 11.12460994720459 6.493419647216797 L 18 6.493419647216797 L 12.43768978118896 10.5065803527832 L 14.56229972839355 17 L 9 12.98683929443359 L 3.437689781188965 17 L 5.562310218811035 10.5065803527832 L 0 6.493419647216797 L 6.87539005279541 6.493419647216797 L 9 0 Z"
-                  stroke="none" fill="#e11c37" />
-              </g>
-              <g id="Polygon_6" data-name="Polygon 6" transform="translate(243 1764)" fill="#fff">
-                <path
-                  d="M 13.60957431793213 15.69606494903564 L 9.292550086975098 12.58137035369873 L 9 12.37030029296875 L 8.707449913024902 12.58137035369873 L 4.39041805267334 15.69606494903564 L 6.037519931793213 10.66207027435303 L 6.151130199432373 10.31484985351562 L 5.854859828948975 10.10109996795654 L 1.547561168670654 6.993420124053955 L 6.87539005279541 6.993420124053955 L 7.237880229949951 6.993420124053955 L 7.350599765777588 6.648910045623779 L 9 1.607868552207947 L 10.64939975738525 6.648910045623779 L 10.76212024688721 6.993420124053955 L 11.12460994720459 6.993420124053955 L 16.45243835449219 6.993420124053955 L 12.14513969421387 10.10109996795654 L 11.84887027740479 10.31484985351562 L 11.96247959136963 10.66207027435303 L 13.60957431793213 15.69606494903564 Z"
-                  stroke="none" />
-                <path
-                  d="M 9 3.215726852416992 L 7.600359916687012 7.493419647216797 L 3.095122337341309 7.493419647216797 L 6.73993968963623 10.12312984466553 L 5.343143463134766 14.39212608337402 L 9 11.75372982025146 L 12.65685081481934 14.39212608337402 L 11.26005935668945 10.12312984466553 L 14.90487766265869 7.493419647216797 L 10.39964008331299 7.493419647216797 L 9 3.215726852416992 M 9 0 L 11.12460994720459 6.493419647216797 L 18 6.493419647216797 L 12.43768978118896 10.5065803527832 L 14.56229972839355 17 L 9 12.98683929443359 L 3.437689781188965 17 L 5.562310218811035 10.5065803527832 L 0 6.493419647216797 L 6.87539005279541 6.493419647216797 L 9 0 Z"
-                  stroke="none" fill="#e11c37" />
-              </g>
-            </g>
-          </svg>
-        </p>
-        <p class="review-text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus eaque
-          nulla quae enim ratione suscipit dolores veritatis voluptates velit
-          eum distinctio saepe atque est consectetur, repellat magnam in
-          corrupti expedita?
-        </p>
-      </article>
-    </div>
+                <article class="review-content-hidden-border">
+                  <p> <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58">
+                      <g id="Group_310" data-name="Group 310" transform="translate(15937 19551.5)">
+                        <g id="Group_309" data-name="Group 309">
+                          <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(-15937 -19551.5)"
+                            fill="#c5c18a" stroke="#707070" stroke-width="1">
+                            <circle cx="29" cy="29" r="29" stroke="none" />
+                            <circle cx="29" cy="29" r="28.5" fill="none" />
+                          </g>
+                          <text id="P" transform="translate(-15914 -19537)" fill="#707070" font-size="20"
+                            font-family="SegoeUI, Segoe UI">
+                            <tspan x="0" y="22">P</tspan>
+                          </text>
+                        </g>
+                      </g>
+                    </svg>
+                    Paul Smith <svg xmlns="http://www.w3.org/2000/svg" width="90" height="17" viewBox="0 0 90 17">
+                      <g id="Group_22" data-name="Group 22" transform="translate(-171 -1764)">
+                        <path id="Polygon_1" data-name="Polygon 1"
+                          d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
+                          transform="translate(171 1764)" fill="#e11c37" />
+                        <path id="Polygon_3" data-name="Polygon 3"
+                          d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
+                          transform="translate(189 1764)" fill="#e11c37" />
+                        <path id="Polygon_4" data-name="Polygon 4"
+                          d="M9,0l2.125,6.493H18l-5.562,4.013L14.562,17,9,12.987,3.438,17l2.125-6.493L0,6.493H6.875Z"
+                          transform="translate(207 1764)" fill="#e11c37" />
+                        <g id="Polygon_5" data-name="Polygon 5" transform="translate(225 1764)" fill="#e11c37">
+                          <path
+                            d="M 13.60957431793213 15.69606494903564 L 9.292550086975098 12.58137035369873 L 9 12.37030029296875 L 8.707449913024902 12.58137035369873 L 4.39041805267334 15.69606494903564 L 6.037519931793213 10.66207027435303 L 6.151130199432373 10.31484985351562 L 5.854859828948975 10.10109996795654 L 1.547561168670654 6.993420124053955 L 6.87539005279541 6.993420124053955 L 7.237880229949951 6.993420124053955 L 7.350599765777588 6.648910045623779 L 9 1.607868552207947 L 10.64939975738525 6.648910045623779 L 10.76212024688721 6.993420124053955 L 11.12460994720459 6.993420124053955 L 16.45243835449219 6.993420124053955 L 12.14513969421387 10.10109996795654 L 11.84887027740479 10.31484985351562 L 11.96247959136963 10.66207027435303 L 13.60957431793213 15.69606494903564 Z"
+                            stroke="none" />
+                          <path
+                            d="M 9 3.215726852416992 L 7.600359916687012 7.493419647216797 L 3.095122337341309 7.493419647216797 L 6.73993968963623 10.12312984466553 L 5.343143463134766 14.39212608337402 L 9 11.75372982025146 L 12.65685081481934 14.39212608337402 L 11.26005935668945 10.12312984466553 L 14.90487766265869 7.493419647216797 L 10.39964008331299 7.493419647216797 L 9 3.215726852416992 M 9 0 L 11.12460994720459 6.493419647216797 L 18 6.493419647216797 L 12.43768978118896 10.5065803527832 L 14.56229972839355 17 L 9 12.98683929443359 L 3.437689781188965 17 L 5.562310218811035 10.5065803527832 L 0 6.493419647216797 L 6.87539005279541 6.493419647216797 L 9 0 Z"
+                            stroke="none" fill="#e11c37" />
+                        </g>
+                        <g id="Polygon_6" data-name="Polygon 6" transform="translate(243 1764)" fill="#fff">
+                          <path
+                            d="M 13.60957431793213 15.69606494903564 L 9.292550086975098 12.58137035369873 L 9 12.37030029296875 L 8.707449913024902 12.58137035369873 L 4.39041805267334 15.69606494903564 L 6.037519931793213 10.66207027435303 L 6.151130199432373 10.31484985351562 L 5.854859828948975 10.10109996795654 L 1.547561168670654 6.993420124053955 L 6.87539005279541 6.993420124053955 L 7.237880229949951 6.993420124053955 L 7.350599765777588 6.648910045623779 L 9 1.607868552207947 L 10.64939975738525 6.648910045623779 L 10.76212024688721 6.993420124053955 L 11.12460994720459 6.993420124053955 L 16.45243835449219 6.993420124053955 L 12.14513969421387 10.10109996795654 L 11.84887027740479 10.31484985351562 L 11.96247959136963 10.66207027435303 L 13.60957431793213 15.69606494903564 Z"
+                            stroke="none" />
+                          <path
+                            d="M 9 3.215726852416992 L 7.600359916687012 7.493419647216797 L 3.095122337341309 7.493419647216797 L 6.73993968963623 10.12312984466553 L 5.343143463134766 14.39212608337402 L 9 11.75372982025146 L 12.65685081481934 14.39212608337402 L 11.26005935668945 10.12312984466553 L 14.90487766265869 7.493419647216797 L 10.39964008331299 7.493419647216797 L 9 3.215726852416992 M 9 0 L 11.12460994720459 6.493419647216797 L 18 6.493419647216797 L 12.43768978118896 10.5065803527832 L 14.56229972839355 17 L 9 12.98683929443359 L 3.437689781188965 17 L 5.562310218811035 10.5065803527832 L 0 6.493419647216797 L 6.87539005279541 6.493419647216797 L 9 0 Z"
+                            stroke="none" fill="#e11c37" />
+                        </g>
+                      </g>
+                    </svg>
+                  </p>
+                  <p class="review-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus eaque
+                    nulla quae enim ratione suscipit dolores veritatis voluptates velit
+                    eum distinctio saepe atque est consectetur, repellat magnam in
+                    corrupti expedita?
+                  </p>
+                </article>
+              </div>
 
   </main>
   <footer>
