@@ -1432,7 +1432,8 @@ VIEW MY ORDERS PAGE
     margin-right: auto;
     margin-left: auto;
     display: flex;
-    margin-top: 7px;
+    margin-top: 0px;
+    height: 65px;
   }
   .search-bar {
     margin-top: 65px;
@@ -1563,20 +1564,20 @@ VIEW MY ORDERS PAGE
     margin-left: auto;
   }
 }
-@media (max-width: 710px) {
+/* @media (max-width: 710px) {
   .logo {
     margin-top: 10px;
   }
-}
+} */
 @media (max-width: 737px) {
   .search-bar {
     margin-top: 60px;
     margin-bottom: 0px;
     display: none;
   }
-  .logo {
+  /* .logo {
     margin-top: 20px;
-  }
+  } */
 }
 @media (max-width: 768px) {
   .jacket-card {
