@@ -118,7 +118,6 @@ header {
     left: 0;
   }
 }
-
 .logo {
   background-image: url(../images/RainyDays_Logo.png);
   background-color: var(--main-color);
@@ -127,18 +126,15 @@ header {
   margin-top: -45px;
   margin-bottom: -55px;
 }
-
 .anchor-fix {
   margin-top: -25px;
 }
-
 .free-shipping {
   background-color: #594e38;
   width: 100%;
   padding-left: 10px;
   color: var(--secondary-color);
 }
-
 .header-li {
   display: inline-flex;
   float: right;
@@ -149,14 +145,12 @@ header {
   color: var(--secondary-color);
   margin-top: -29px;
 }
-
 .header-li a {
   color: white;
   list-style: none;
   text-decoration: none;
   padding-right: 10px;
 }
-
 .header {
   background-color: var(--main-color);
   display: flex;
@@ -164,13 +158,11 @@ header {
   position: fixed;
   z-index: 1000;
 }
-
 .payment {
   /* padding-left: 50px; */
   display: inline-block;
   color: var(--secondary-color);
 }
-
 .logo-container {
   display: flex;
   flex-direction: row;
@@ -179,11 +171,9 @@ header {
   justify-content: center;
   align-items: center;
 }
-
 .nav-container {
   background-color: var(--main-color);
 }
-
 .nav-list {
   display: flex;
   text-align: center;
@@ -346,6 +336,7 @@ section a {
 .footer-columns > * {
   flex-shrink: 1;
   flex-grow: 1;
+  width: 175px;
 }
 
 .footer-headers {
@@ -378,8 +369,9 @@ section a {
 }
 
 .secure-payment-icons {
-  width: 50px;
-  height: 40px;
+  /* width: 50px;
+  height: 40px; */
+  width: 25%;
 }
 
 .social-media-icons {
@@ -490,6 +482,10 @@ section a {
 
 .thumbnail:hover {
   zoom: 200%;
+}
+
+.details-to-flex {
+  display: flex;
 }
 
 .jacket-page-colors {
@@ -659,6 +655,7 @@ h3 {
   padding: 20px 0px 0px 20px;
   text-align: left;
   font-family: arial;
+  justify-content: space-between;
   /* background-color: rgb(255, 255, 255); */
 }
 
@@ -994,42 +991,6 @@ select:hover {
   box-shadow: 0 2px 8px 2px rgb(0 0 0 / 15%);
 }
 
-/* .dropbtn {
-  cursor: pointer;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-} */
-
 .delivery-info-box {
   box-shadow: 0 4px 8px 4px rgb(0 0 0 / 10%);
   height: 225px;
@@ -1236,9 +1197,6 @@ VIEW MY ORDERS PAGE
   .items-added-title {
     font-size: 14px;
   }
-  .total-box {
-    width: 280px;
-  }
   .header {
     position: fixed;
   }
@@ -1255,9 +1213,9 @@ VIEW MY ORDERS PAGE
   /* .items-added-box {
     width: 40%;
   } */
-  .home-img {
+  /* .home-img {
     display: none;
-  }
+  } */
   .article {
     margin-top: 80px;
   }
@@ -1282,6 +1240,7 @@ VIEW MY ORDERS PAGE
   .your-orders {
     width: 82%;
     height: 100%;
+    margin-bottom: 20px;
   }
   .added-items {
     width: 82%;
@@ -1320,9 +1279,9 @@ VIEW MY ORDERS PAGE
   .box-4 {
     display: none;
   }
-  .purchased-product-box {
+  /* .purchased-product-box {
     display: none;
-  }
+  } */
   .congratulations-box {
     width: 100%;
     height: 100%;
@@ -1364,9 +1323,9 @@ VIEW MY ORDERS PAGE
     width: 100%;
     padding: 20px 20px;
   }
-  .purchased-product-box {
+  /* .purchased-product-box {
     display: none;
-  }
+  } */
   .info-box {
     width: 272px;
     font-size: 16px;
@@ -1420,13 +1379,13 @@ VIEW MY ORDERS PAGE
     width: 100%;
   }
   .your-orders-float-right {
-    float: none;
+    float: right;
     margin-top: 0px;
     margin-right: 0px;
   }
-  .added-items-purchased {
+  /* .added-items-purchased {
     display: none;
-  }
+  } */
   .purchase-info-box {
     margin: 20px auto;
     width: 100%;
@@ -1458,6 +1417,13 @@ VIEW MY ORDERS PAGE
   }
 }
 @media (max-width: 425px) {
+  .added-items-purchased {
+    margin-left: 0px;
+    padding: 0px;
+  }
+  .product-box {
+    margin-top: 85px;
+  }
   .jacket-card {
     width: 70%;
   }
@@ -1481,7 +1447,7 @@ VIEW MY ORDERS PAGE
     font-size: 20px;
   }
   /* .box-3 {
-    margin: auto;
+    padding-left: 0px;
   } */
   .info-container {
     margin-top: 50px auto;
@@ -1492,15 +1458,15 @@ VIEW MY ORDERS PAGE
   }
   .added-items {
     width: 100%;
-    margin-top: 164px;
-    /* margin: auto; */
+    /* margin-top: 164px; */
+    margin: auto;
   }
   .jacket-one {
     height: 350px;
     width: 270px;
   }
   .box-3 {
-    margin: 0px auto;
+    margin: auto;
   }
   .congratulations-box {
     width: 100%;
@@ -1517,11 +1483,12 @@ VIEW MY ORDERS PAGE
   .view-order-container {
     margin-right: auto;
     margin-left: auto;
-    margin-top: 200px;
+    /* margin-top: 200px; */
   }
   /* .login-in {
     margin-top: 146px;
   } */
+
   .your-orders-float-right {
     margin-top: 183px;
   }
@@ -1536,17 +1503,17 @@ VIEW MY ORDERS PAGE
   .card {
     height: 1300px;
   }
-  .purchased-product-box {
+  /* .purchased-product-box {
     display: none;
-  }
+  } */
   .your-orders-float-right {
-    /* float: none; */
+    float: right;
     margin-top: 0px;
     margin-right: 0px;
   }
-  .added-items-purchased {
+  /* .added-items-purchased {
     display: none;
-  }
+  } */
   .purchase-info-box {
     margin: 20px auto;
     width: 100%;
@@ -1608,7 +1575,7 @@ VIEW MY ORDERS PAGE
     display: none;
   }
   .logo {
-    margin-top: 0px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -1618,7 +1585,7 @@ VIEW MY ORDERS PAGE
 
   .box-3 {
     margin-left: 0px;
-    padding-left: 110px;
+    /* padding-left: 110px; */
   }
   .box-4 {
     margin-top: 50px;
@@ -1707,7 +1674,7 @@ VIEW MY ORDERS PAGE
     float: none;
   }
   .orders-card {
-    padding-top: 0px;
+    padding-top: 120px;
   }
   /* .card {
     padding-top: 30px;
@@ -1889,7 +1856,6 @@ VIEW MY ORDERS PAGE
   .added-items-purchased {
     flex-direction: column;
     background-color: #f2f2f2;
-    margin-left: 50px;
   }
   .purchase-info-box,
   .delivery-info-box,
