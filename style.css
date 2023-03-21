@@ -1202,6 +1202,21 @@ VIEW MY ORDERS PAGE
   background-color: #ff7700;
 }
 
+.about-us-container {
+  background-image: url(images/lake-fog-sunrise-with-autumn-foliage-mountains-new-england-stowe.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  margin: auto;
+  padding-top: 400px;
+}
+
 /* PAGE RESPONSIVNESS */
 @media (max-width: 320px) {
   .full-name,
