@@ -239,22 +239,41 @@ header {
   justify-content: flex-start;
   width: 200px;
   height: 0px;
-  animation: slogan 5s ease-out 2s 1 both;
+  animation: slogan 3s ease-out 1 both;
 }
 
 @keyframes slogan {
   0% {
-    color: white;
+    color: rgba(255, 255, 255, 0);
+  }
+  15% {
+    color: rgba(66, 66, 66);
+  }
+  20% {
+    color: rgb(129, 129, 129);
   }
   25% {
-    color: rgb(192, 192, 192);
+    color: rgba(192, 192, 192);
   }
   50% {
-    color: rgb(129, 129, 129);
+    color: rgba(255, 255, 255);
   }
   75% {
     color: rgb(66, 66, 66);
   }
+  80% {
+    color: rgb(255, 255, 255);
+  }
+  90% {
+    color: rgb(0, 0, 0);
+  }
+  95% {
+    color: rgb(255, 255, 255);
+  }
+  97% {
+    color: rgb(128, 128, 128);
+  }
+
   100% {
     color: black;
   }
@@ -1746,11 +1765,11 @@ VIEW MY ORDERS PAGE
     margin-left: auto;
   }
 }
-@media (min-width: 980px) {
+/* @media (min-width: 980px) {
   .card {
     display: flex;
   }
-}
+} */
 
 @media (max-width: 1071px) {
   .payment {
