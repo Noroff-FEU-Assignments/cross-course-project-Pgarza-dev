@@ -231,10 +231,33 @@ header {
 
 .welcome-content {
   color: black;
-  text-decoration: underline;
+  /* text-decoration: underline;
   position: inherit;
   float: right;
-  right: 130px;
+  right: 130px; */
+  display: flex;
+  justify-content: flex-start;
+  width: 200px;
+  height: 0px;
+  animation: slogan 5s ease-out 2s 1 both;
+}
+
+@keyframes slogan {
+  0% {
+    color: white;
+  }
+  25% {
+    color: rgb(192, 192, 192);
+  }
+  50% {
+    color: rgb(129, 129, 129);
+  }
+  75% {
+    color: rgb(66, 66, 66);
+  }
+  100% {
+    color: black;
+  }
 }
 
 ul {
@@ -1417,6 +1440,9 @@ VIEW MY ORDERS PAGE
   }
 }
 @media (max-width: 425px) {
+  .anchor-fix {
+    margin-top: 0px;
+  }
   .added-items-purchased {
     margin-left: 0px;
     padding: 0px;
