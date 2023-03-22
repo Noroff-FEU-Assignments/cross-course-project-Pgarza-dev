@@ -322,44 +322,68 @@ section a {
   border-bottom: 1px solid #000;
 }
 
-.footer-image {
+/* .footer-image {
   background-image: url(../images/mans-hand-landscape.jpg);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 645px;
+} */
+.hand-image {
+  display: flex;
+  margin: auto;
+  height: 20vw;
 }
 
 .input-email {
-  width: 266px;
+  width: 200px;
   height: 30px;
   margin-top: 10px;
   border: none;
   border-radius: 5px;
+  padding: 10px;
 }
 
-.newsletter {
+/* .newsletter {
   color: white;
   width: 360px;
   position: relative;
   top: 35%;
   left: 65%;
   font-weight: bold;
+} */
+.newsletter {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: -185px; */
 }
-
+.background-color {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -200px;
+  color: white;
+  width: 30vh;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(43, 29, 29, 0.655);
+}
 .concent-btn {
   float: left;
   margin-top: 10px;
 }
 
 .sign-up {
-  margin-left: 10px;
   width: 70px;
   height: 30px;
   background-color: #ffaa00;
   color: #000;
   border: none;
   border-radius: 5px;
+  margin-top: 10px;
 }
 
 .sign-up:hover {
@@ -1233,7 +1257,7 @@ VIEW MY ORDERS PAGE
 .moving-paragraph,
 .about-us-title,
 .location {
-  animation: moveUp 3s ease-in-out forwards;
+  animation: moveUp 1.5s ease-in-out forwards;
   font-weight: normal;
   border-radius: 20px;
   text-align: center;
@@ -1519,6 +1543,9 @@ VIEW MY ORDERS PAGE
   }
 }
 @media (max-width: 425px) {
+  .hand-image {
+    height: 52vw;
+  }
   .anchor-fix {
     margin-top: 0px;
   }
@@ -1685,6 +1712,9 @@ VIEW MY ORDERS PAGE
   } */
 }
 @media (max-width: 768px) {
+  .hand-image {
+    height: 52vw;
+  }
   .jacket-card {
     width: 70%;
   }
