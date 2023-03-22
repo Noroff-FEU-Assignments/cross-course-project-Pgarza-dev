@@ -218,7 +218,7 @@ header {
 .home-img {
   background-image: url(./images/headshot-large.jpg);
   padding-bottom: 600px;
-  padding-top: 500px;
+  padding-top: 200px;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -1215,6 +1215,51 @@ VIEW MY ORDERS PAGE
   width: 600px;
   margin: auto;
   padding-top: 400px;
+  color: #f2f2f2;
+}
+/* .moving-paragraph {
+  position: relative;
+  animation: move-up 2s forwards;
+}
+
+@keyframes move-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+} */
+.moving-paragraph,
+.about-us-title,
+.location {
+  animation: moveUp 3s ease-in-out forwards;
+  font-weight: normal;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+.map {
+  text-decoration: underline;
+  color: white;
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(100%);
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+      0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+      0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+      0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+      0 20px 20px rgba(0, 0, 0, 0.15);
+    background-color: rgba(14, 12, 12, 0);
+  }
+  to {
+    transform: translateY(-110px);
+    text-shadow: none;
+    background-color: rgba(14, 12, 12, 0.655);
+  }
 }
 
 /* PAGE RESPONSIVNESS */
