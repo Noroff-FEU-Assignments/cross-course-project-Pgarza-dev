@@ -321,6 +321,12 @@ section a {
 .jacket-colors {
   border-bottom: 1px solid #000;
 }
+.jacket-card:hover {
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 4px rgb(0 0 0 / 20%);
+  transition: box-shadow ease-in-out 0.2s;
+}
 
 /* .footer-image {
   background-image: url(../images/mans-hand-landscape.jpg);
