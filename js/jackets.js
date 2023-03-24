@@ -44,7 +44,7 @@ if (product) {
                 37 Reviews</p>
             </a>
           </div>
-          <p class="in-stock-text">In Stock</p>
+          <p class="in-stock-text">In stock - ${product.instock}</p>
           <h3>599.00 kr</h3>
           <div class="sizes">
             <button class="button s-button sizeButton">S</button>
@@ -54,7 +54,7 @@ if (product) {
             <button class="button xxl-button sizeButton">XXL</button>
           </div>
           <input type="number" class="quantity" name="quantity" id="quantity" pattern="" placeholder="Qty">
-          <a href="cart.html"> <button class="button add-to-cart">ADD TO CART</button></a>
+          <a href="cart.html?id=${product.imgSrc}"> <button class="button add-to-cart" >BUY NOW!</button></a>
         </div>
         <div class="box-4">
           <h3>ABOUT THIS ITEM</h3>

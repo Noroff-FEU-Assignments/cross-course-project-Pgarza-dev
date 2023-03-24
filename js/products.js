@@ -8,6 +8,7 @@ const products = [
     description:
       'Stay warm and dry in any weather while also making a sustainable choice with our versatile and stylish jacket. Made with 100% recycled materials, this jacket is designed to keep you comfortable while minimizing environmental impact. Its water-resistant outer layer and soft inner lining provide insulation, while adjustable features and zippered pockets make it perfect for outdoor adventures or running errands in the city.',
     imgSrc: './images/RainyDays_Jacket2.png',
+    numberOfUnits: '',
   },
   {
     id: 1,
@@ -17,6 +18,7 @@ const products = [
     instock: 50,
     description: 'Fight winter',
     imgSrc: './images/RainyDays_Jacket1.png',
+    numberOfUnits: '',
   },
   {
     id: 2,
@@ -26,6 +28,7 @@ const products = [
     instock: 23,
     description: 'Perfect for Spring',
     imgSrc: './images/RainyDays_Jacket3.png',
+    numberOfUnits: '',
   },
   {
     id: 3,
@@ -35,6 +38,7 @@ const products = [
     instock: 10,
     description: 'A must have for exploring the mountain range!',
     imgSrc: './images/RainyDays_Jacket4.png',
+    numberOfUnits: '',
   },
   {
     id: 4,
@@ -44,5 +48,6 @@ const products = [
     instock: 43,
     description: "Staying warm when the weather isn't.",
     imgSrc: './images/RainyDays_Jacket5.png',
+    numberOfUnits: '',
   },
 ];

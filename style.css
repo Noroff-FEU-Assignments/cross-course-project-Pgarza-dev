@@ -632,6 +632,9 @@ h3 {
 
 .in-stock-text {
   font-weight: bold;
+  color: blue;
+  text-decoration: 3px underline;
+  margin-bottom: 5px;
 }
 
 .button {

@@ -19,7 +19,6 @@
       a.appendChild(r);
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
   </script>
-
 </head>
 
 <body>
@@ -31,7 +30,7 @@
       <nav>
         <ul class="header-li">
           <li><a href="#newsletter">Newsletter</a></li>
-          <li><a href="#">About Us</a></li>
+          <li><a href="about.html">About Us</a></li>
           <li><a href="accountpage.html">Sign In | Join</a></li>
         </ul>
       </nav>
@@ -43,8 +42,8 @@
     </div>
     <nav class=" navbar">
       <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link nav-item">MEN</a></li>
-        <li><a href="index.html" class="nav-link nav-item">WOMEN</a></li>
+        <li><a href="index.html#mensJackets" class="nav-link nav-item">MEN</a></li>
+        <li><a href="index.html#mensJackets" class="nav-link nav-item">WOMEN</a></li>
         <li><a class=" nav-item nav-link" href="index.html">KIDS</a></li>
         <li><a class=" nav-item nav-link" href="comingsoon.html">ACTIVITY</a></li>
         <li><a class=" nav-item nav-link" href="comingsoon.html">EXPLORE</a></li>
@@ -58,13 +57,12 @@
   </header>
   <main>
     <section id="orders-card" class="orders-card">
-      <section class="added-items">
-        <div>
-        </div>
+      <section class="added-items ">
         <div class="product-box">
           <div class="items-added-box">
             <h1 class="items-added-title">1. ITEMS ADDED TO CART</h1>
-            <img class="jacket-one" src="../images/RainyDays_Jacket2.png" alt="Wind breaker jacket" />
+            <img class="jacket-one product-img" id="product-img" src="../images/RainyDays_Jacket2.png"
+              alt="Wind breaker jacket" />
           </div>
         </div>
         <div class="box-3 box-3-flex">
@@ -111,18 +109,18 @@
             <button class="button sizeButton">XL</button>
             <button class="xxl-button button sizeButton">XXL</button>
           </div>
-          <input type="number" class="quantity" name="quantity" id="quantity" pattern="" placeholder="Qty">
-          <a href="cart.html"> <button class=" button add-to-cart">ADD TO CART</button></a>
+          <!-- <input type="number" class="quantity" name="quantity" id="quantity" placeholder="Qty"> -->
+          <button class=" button add-to-cart">ADD TO CART</button>
         </div>
       </section>
       <section>
         <div class="your-orders">
           <h2>YOUR ORDERS</h2>
           <div class="orders-box orders-style addedInsurance">
-            <!-- <div class="insuranceAdded"></div> -->
-            <!-- <p>1 x WIND BREAKER</p>
-              <p>599-</p>
-              <a href="#">Remove</a> -->
+            <!--<div class="insuranceAdded"></div>
+             <p>1 x WIND BREAKER</p>
+            <p>599-</p>
+            <a href="#">Remove</a> -->
           </div>
           <div class="total-box orders-style my-class">
             <h2>TOTAL</h2>
@@ -423,6 +421,7 @@
   <script src="js/app.js"></script>
   <script src="js/data.js"></script>
   <script src="js/cart.js"></script>
+  <script src="js/jackets.js"></script>
   <script src="js/index.js"></script>
 </body>
 
