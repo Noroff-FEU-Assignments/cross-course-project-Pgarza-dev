@@ -1,13 +1,24 @@
 const jacketProduct = document.querySelector('.jacketProduct');
 
-jacketProduct.innerHTML += `<div class="card">
-        
+const urlParams = new URLSearchParams(window.location.search);
+
+const productId = urlParams.get('id');
+
+// Find product with matching ID
+const product = products.find((product) => product.imgSrc === productId);
+
+// Set image on page to selected product image
+const productImg = document.querySelector('.product-img');
+productImg.src = product.imgSrc;
+
+if (product) {
+  jacketProduct.innerHTML = `<div class="card">
         <div class="box-2">
-                  <img class="jacket-one product-img" src="" />
+                  <img class="jacket-one" src="${product.imgSrc}" alt="${product.name}" />
         </div>
         <div class="box-3-jacket">
           <h1>Mens Hiking Jacket</h1>
-          <h4>Wind Breaker</h4>
+          <h4>${product.name}</h4>
           <div class="jacket-page-colors">
             <p>Color</p>
             <a href="#">
@@ -47,15 +58,8 @@ jacketProduct.innerHTML += `<div class="card">
         </div>
         <div class="box-4">
           <h3>ABOUT THIS ITEM</h3>
-          <ul>
-            <li class="about-jacket">
-              Stay warm and dry in any weather while also making a sustainable choice with our versatile and stylish
-              jacket. Made with 100% recycled materials, this jacket is designed to keep you comfortable while
-              minimizing environmental
-              impact. Its water-resistant outer layer and soft inner lining provide insulation, while adjustable
-              features and
-              zippered pockets make it perfect for outdoor adventures or running errands in the city.
-            </li>
+          <ul class="about-product">
+            <li class="about-jacket about-product">${product.description}</li>
             <li class="about-jacket">
               Made from 100% recycled material!
             </li>
@@ -65,6 +69,9 @@ jacketProduct.innerHTML += `<div class="card">
           </ul>
         </div>
       </div>`;
+} else {
+  jacketProduct.innerHTML = '<p>Product not found.</p>';
+}
 
 const sizeButtons = document.querySelectorAll('.sizeButton');
 
@@ -82,13 +89,3 @@ sizeButtons.forEach((sizeButton) => {
     sizeButton.classList.add('selected-size-btn');
   });
 });
-
-const urlParams = new URLSearchParams(window.location.search);
-const productId = urlParams.get('id');
-
-// Find product with matching ID
-const product = products.find((product) => product.imgSrc === productId);
-
-// Set image on page to selected product image
-const productImg = document.querySelector('.product-img');
-productImg.src = product.imgSrc;

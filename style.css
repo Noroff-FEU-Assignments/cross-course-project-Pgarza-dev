@@ -642,6 +642,9 @@ h3 {
   border: none;
   font-weight: bold;
 }
+.button-margin {
+  margin-bottom: 10px;
+}
 
 .button:hover {
   background-color: var(--hover-color);
