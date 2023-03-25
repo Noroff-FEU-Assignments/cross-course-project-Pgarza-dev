@@ -1,5 +1,5 @@
 const addedItems = document.querySelector('.added-items');
-const ordersBox = document.querySelector('.orders-box');
+// const ordersBox = document.querySelector('.orders-box');
 const cartItemsEl = document.querySelector('.orders-box');
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -74,7 +74,7 @@ if (product) {
   //           <p>${product.price}</p>
   //           <a href="#">Remove</a>`;
 } else {
-  jacketProduct.innerHTML = '<p>Product not found.</p>';
+  addedItems.innerHTML = '<p>Product not found.</p>';
 }
 
 // CART ARRAY
