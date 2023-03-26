@@ -15,6 +15,8 @@ productImg.src = product.imgSrc;
 
 if (product) {
   addedItems.innerHTML = `<div class="product-box">
+        <div class="back-btn"><a href="index.html#mensJackets">Keep shopping</div></a>
+
           <div class="items-added-box">
             <h1 class="items-added-title">1. ITEMS ADDED TO CART</h1>
             <img class="jacket-one" id="product-img" src="${product.imgSrc}" alt="${product.name}" />

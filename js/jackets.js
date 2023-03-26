@@ -13,6 +13,8 @@ productImg.src = product.imgSrc;
 
 if (product) {
   jacketProduct.innerHTML = `<div class="card">
+      <div class="back-btn"><a href="index.html#mensJackets">Keep Shopping</a></div>
+
         <div class="box-2">
                   <img class="jacket-one" src="${product.imgSrc}" alt="${product.name}" />
         </div>
@@ -53,7 +55,7 @@ if (product) {
             <button class="button sizeButton">XL</button>
             <button class="button xxl-button sizeButton">XXL</button>
           </div>
-          <input type="number" class="quantity" name="quantity" id="quantity" pattern="" placeholder="Qty">
+          
           <a href="cart.html?id=${product.imgSrc}"> <button class="button add-to-cart" >BUY NOW!</button></a>
         </div>
         <div class="box-4">

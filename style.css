@@ -731,6 +731,13 @@ h3 {
 }
 
 /*---------ITEMS ADDED TO CART PAGE-------  */
+.back-btn {
+  color: black;
+  height: 20px;
+}
+.back-btn:hover {
+  text-decoration: 2px underline;
+}
 
 .added-items {
   /* box-shadow: 0 4px 8px 4px rgb(0 0 0 / 2%); */
@@ -1265,7 +1272,7 @@ VIEW MY ORDERS PAGE
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 600px;
+  max-width: 600px;
   margin: auto;
   padding-top: 400px;
   color: #f2f2f2;
@@ -1417,6 +1424,8 @@ VIEW MY ORDERS PAGE
   }
   .review-container {
     gap: 6rem;
+    display: flex;
+    flex-direction: column;
   }
   .info-container {
     margin-top: 20px;
@@ -2012,6 +2021,38 @@ VIEW MY ORDERS PAGE
   }
 }
 @media (max-width: 1440px) {
+  .your-orders,
+  .your-orders-checkout {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .your-orders-float-right {
+    /* margin-top: 500px; */
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+  .added-items-purchased {
+    flex-direction: column;
+    background-color: #f2f2f2;
+  }
+  .purchase-info-box,
+  .delivery-info-box,
+  .footer-image {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .view-order-container {
+    margin-left: 20px;
+    width: 90%;
+  }
+  .added-items {
+    width: 90%;
+  }
+}
+@media (max-width: 2560px) {
   .your-orders,
   .your-orders-checkout {
     width: 90%;
