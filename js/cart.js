@@ -1,25 +1,29 @@
 const addedItems = document.querySelector('.added-items');
-// const ordersBox = document.querySelector('.orders-box');
 const cartItemsEl = document.querySelector('.orders-box');
 
-const urlParams = new URLSearchParams(window.location.search);
+const urlParamsCart = new URLSearchParams(window.location.search);
 
-const productId = urlParams.get('id');
+const productIdCart = urlParamsCart.get('id');
 
-// Find product with matching ID
-const product = products.find((product) => product.imgSrc === productId);
+const urlCart = 'http://pg-technologies.local/wp-json/wc/store/products/';
 
-// Set image on page to selected product image
-const productImg = document.querySelector('.product-img');
-productImg.src = product.imgSrc;
+async function singleProductCart() {
+  const response = await fetch(urlCart + productIdCart);
+  const product = await response.json();
 
-if (product) {
+  console.log(product);
+
+  renderCartProduct(product);
+}
+singleProductCart();
+
+function renderCartProduct(product) {
   addedItems.innerHTML = `<div class="product-box">
         <div class="back-btn"><a href="index.html#mensJackets">Keep shopping</div></a>
-
           <div class="items-added-box">
             <h1 class="items-added-title">1. ITEMS ADDED TO CART</h1>
-            <img class="jacket-one" id="product-img" src="${product.imgSrc}" alt="${product.name}" />
+            <img class="jacket-one product-img" id="product-img" src="${product.images[0].src}"
+              alt="${product.images[0].alt}" />
           </div>
         </div>
         <div class="box-3 box-3-flex">
@@ -69,92 +73,17 @@ if (product) {
           <button class=" button add-to-cart" onclick="changeNumberofUnits('minus', ${product.id})">+</button>
           <button class=" button add-to-cart" onclick="changeNumberofUnits('plus', ${product.id})">-</button>
           <button class=" button add-to-cart" onclick="addToCart(${product.id})">ADD TO CART</button>
-        </div>        
-        `;
-  // ordersBox.innerHTML = `
-  //           <p>${product.name}</p>
-  //           <p>${product.price}</p>
-  //           <a href="#">Remove</a>`;
-} else {
-  addedItems.innerHTML = '<p>Product not found.</p>';
+        </div>`;
+  cartItemsEl.innerHTML = `<div> 
+            <p>${product.name}</p>
+            <p>${product.price_html}</p>
+            <a href="#">Remove</a>
+            </div>`;
 }
-
-// CART ARRAY
-let cart = [];
-
-//ADD TO CART
-function addToCart(id) {
-  //CHECK IF PRODUCT ALREADY EXIST IN CART
-  if (cart.some((item) => item.id === id)) {
-    alert('Product already in cart!');
-  } else {
-    const item = products.find((product) => product.id === id);
-
-    cart.push({
-      ...item,
-      numberOfUnits: 1,
-    });
-  }
-}
-
-updateCart();
-
-//UPDATE CART
-function updateCart() {
-  renderCartItems();
-  //renderSubtotal();
-}
-//RENDER CART ITEM
-function renderCartItems() {
-  cartItemsEl.innerHTML = '';
-
-  cartItemsEl.innerHTML += `<p>${product.name}</p>
-              <p>${product.price}</p>
-              <p>${product.numberOfUnits}</p>
-              <a href="#">Remove</a>`;
-}
-
-//CHANGE NUMBER OF UNITS
-function changeNumberofUnits(action, id) {
-  cart = cart.map((item) => {
-    let numberofUnits = item.numberOfUnits;
-    if (item.id === id) {
-      if (action === 'minus') {
-        numberofUnits--;
-      } else if (action === 'plus') {
-        numberofUnits++;
-      }
-    }
-    return {
-      ...item,
-      numberofUnits,
-    };
-  });
-
-  updateCart();
-}
+renderCartProduct();
 
 // CHANGING BUTTON COLORS
-const sizeButtons = document.querySelectorAll('.sizeButton');
 const addButtons = document.querySelectorAll('.insuranceButton');
-
-//changes bg color of size buttons
-function changeBackgroundColor() {
-  document.querySelector('.sizeButton').style.backgroundColor = '#ffaa00';
-  // document.querySelector("addButtons").style.backgroundColor = "#ffaa00";
-}
-sizeButtons.onclick = changeBackgroundColor;
-// addButtons.onclick = changeBackgroundColor;
-
-sizeButtons.forEach((sizeButton) => {
-  sizeButton.classList.remove('selected-size-btn');
-  sizeButton.addEventListener('click', () => {
-    sizeButtons.forEach((sizeButton) => {
-      sizeButton.classList.remove('selected-size-btn');
-    });
-    sizeButton.classList.add('selected-size-btn');
-  });
-});
 
 //changes bg color of add buttons
 function addButtonsBackgroundColor() {
@@ -172,46 +101,11 @@ addButtons.forEach((addButton) => {
   });
 });
 
-//Get references to the buttons and content divs
-// const button1 = document.getElementById("six-months-button");
-// const button2 = document.getElementById("twelve-months-button");
-// const button3 = document.getElementById("eightee-months-button");
+// Get references to the buttons and content divs
+const button1 = document.getElementById('six-months-button');
+const button2 = document.getElementById('twelve-months-button');
+const button3 = document.getElementById('eightee-months-button');
 
-// const content1 = document.getElementById("six-months");
-// const content2 = document.getElementById("twelve-months");
-// const content3 = document.getElementById("eighteen-months");
-
-// //Add event listeners to the buttons
-
-// button1.addEventListener("click", () => {
-//   content1.style.display = "block";
-//   content2.style.display = "none";
-//   content3.style.display = "none";
-// });
-// // button1.addEventListener("click", () => {
-// //   content1.style.display = "block";
-// //   content2.style.display = "block";
-// //   content3.style.display = "block";
-// // });
-
-// button2.addEventListener("click", () => {
-//   content1.style.display = "none";
-//   content2.style.display = "block";
-//   content3.style.display = "none";
-// });
-// // button2.addEventListener("click", () => {
-// //   content1.style.display = "block";
-// //   content2.style.display = "block";
-// //   content3.style.display = "block";
-// // });
-
-// button3.addEventListener("click", () => {
-//   content1.style.display = "none";
-//   content2.style.display = "none";
-//   content3.style.display = "block";
-// });
-// // button3.addEventListener("click", () => {
-// //   content1.style.display = "block";
-// //   content2.style.display = "block";
-// //   content3.style.display = "block";
-// // });
+const content1 = document.getElementById('six-months');
+const content2 = document.getElementById('twelve-months');
+const content3 = document.getElementById('eighteen-months');
