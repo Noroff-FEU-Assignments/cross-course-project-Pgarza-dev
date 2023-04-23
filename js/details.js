@@ -1,11 +1,11 @@
-// const jacketProduct = document.querySelector('.jacketProduct');
-
+//SINGLE PRODUCTS
 const urlParams = new URLSearchParams(window.location.search);
 
 const productId = urlParams.get('id');
 
 const url = 'http://pg-technologies.local/wp-json/wc/store/products/';
 
+// SINGLE PRODUCTS RENDERED
 async function singleProduct() {
   const response = await fetch(url + productId);
   const product = await response.json();

@@ -40,7 +40,7 @@ function createFeaturedHTML(featuredProducts) {
     featuredButton.classList.add('add-to-cart', 'button', 'button-margin');
     featuredButton.innerText = 'Take a look';
     featuredButton.onclick = function () {
-      window.location.href = `../jackets.html?id=${featuredProducts.id}`;
+      window.location.href = `../jackets.html?id=${imgData.id}`;
     };
 
     // featuredProductContainer.append(activityTitle);
