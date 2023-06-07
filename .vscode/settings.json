@@ -1,0 +1,6 @@
+{
+  "editor.fontSize": 16,
+  "githubPullRequests.ignoredPullRequestBranches": ["main"],
+  "prettier.bracketSameLine": true,
+  "prettier.singleQuote": true
+}
